@@ -94,7 +94,6 @@ h5,
 h6{
 	font-family: 'Iran-Medium';
 	font-weight: normal;
-	color:#111111;
 }
 
 h1{font-size:42px;}
@@ -162,13 +161,15 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {background-color: #ffffff;}
 
 fieldset{
-	padding:15px;
-	border:1px solid #4b5658;
+	padding:25px 0 0 0;
+	border:2px solid #3e474f;
+	border-radius: 4px;
 }
 
 legend{
-	font-size: 20px;
-	color:#4b5658;
+	font-size: 33px;
+	color:#3e474f;
+	text-align: center;
 	padding:0 15px;
 }
 
@@ -498,11 +499,19 @@ label.error{
 
 .button-holder{
 	width: 100%;
-	margin-top:20px;
+	overflow: hidden;
+	margin-top:15px;
 }
 
 .button-holder a,
-.button-holder input{margin:0 5px;}
+.button-holder input{
+	float: right;
+	width:49%;
+	margin-right: 2%;
+}
+
+.button-holder a:nth-child(2n+1),
+.button-holder input:nth-child(2n+1){margin-right: 0;}
 
 .bttn{
 	position: relative;
@@ -581,6 +590,13 @@ input[type="submit"]:active{
 	-webkit-transform:translateY(1px);
 	-moz-transform:translateY(1px);
 	transform:translateY(1px);
+}
+
+.bttn svg{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	margin-left: 5px;
 }
 
 /* -- _Switch -- */
@@ -1882,7 +1898,7 @@ a.close:hover{background-color: #3079AB;}
 	}
 
 	legend{
-		font-size: 13px;
+		font-size: 20px;
 		color:#4b5658;
 		padding:0 12px;
 	}

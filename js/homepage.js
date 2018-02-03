@@ -20,7 +20,7 @@ slider.control('bullets' ,{autohide:false });
  
 var offersCarousel = new MasterSlider();
 offersCarousel.setup('offers-carousel' , {
-    width:760,
+    width:740,
     height:400,
     space:10,
     loop:true,

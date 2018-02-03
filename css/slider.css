@@ -313,6 +313,7 @@
 	direction: ltr;
 	overflow: hidden;
 	min-height: 570px;
+	text-align: center;
 }
 .ms-partialview-template .ms-view {
 	overflow: visible;
@@ -327,8 +328,11 @@
 
 .ms-partialview-template .ms-slide-info {
 	direction: rtl;
+	color:#ffffff;
 	text-align: center;
-	margin-top: 20px;
+	padding:20px;
+	margin-top: 40px;
+	background-color: #3e474f;
 }
 
 .ms-partialview-template img{border-radius: 4px;}
