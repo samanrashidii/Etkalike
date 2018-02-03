@@ -1,13 +1,12 @@
 ﻿/*   Main Styles by Front-end   */
 
-.top-header{
-	padding:30px 0 30px 130px;
-	background-color: #ececec;
-}
+.top-header{background-color: #ebebeb;}
+
+.top-header .frame{padding:30px 10px 30px 130px;}
 
 .top-header .frame > div{
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	margin-right: -1px;
 	margin-left: -1px;
 }
@@ -42,7 +41,7 @@
 
 .logo{
 	position: absolute;
-	top:-24px;
+	top:5px;
 	left:0;
 	font-size: 11px;
 	text-align: center;
@@ -77,7 +76,7 @@
 	height: 100%;
 	visibility: hidden;
 	opacity: 0;
-	background-color: rgba(25,25,25, .7);
+	background-color: rgba(0,0,0, .7);
 	z-index: 999999;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
@@ -87,6 +86,29 @@
 .search-overlay.active{
 	visibility: visible;
 	opacity: 1;
+}
+
+.bottom-header{background-color: #3e474f;}
+
+.navigation > ul > li{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.navigation > ul > li > a{
+	display: block;
+	font-size: 13px;
+	color:#b2bbbd;
+	padding:15px 0 12px 0;
+}
+
+.navigation > ul > li > a:hover{color:#ffffff;}
+
+.navigation > ul > li > a svg{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 17px;
+	margin-left: 10px;
 }
 
 

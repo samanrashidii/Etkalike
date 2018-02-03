@@ -20,7 +20,7 @@ Documentation : http://www.samanrashidi.com/samanira
 Direction = rtl;
 Font Main = Iran;
 Font Side = Iran-Medium;
-Font-Size Main = 14px;
+Font-Size Main = 13px;
 Color Main = #4b5658;
 Color Side = #3079AB;
 Transition Duration = .2s;
@@ -54,7 +54,7 @@ body{
 	direction: rtl;
 	line-height: 1.5;
 	font-family: 'Iran', 'Iran-Medium', Tahoma, sans-serif;
-	font-size:14px;
+	font-size: 13px;
 	color:#4b5658;
 	background-color:#ffffff;
 }
@@ -176,7 +176,7 @@ input,
 textarea,
 button{
 	font-family: 'Iran';
-	font-size: 14px;
+	font-size: 13px;
  	color:#4b5658;
 	outline:none;
 	background-color: #ffffff;
@@ -193,7 +193,7 @@ select{
 	height: 50px;
 	line-height: 50px;
 	font-family: 'Iran';
-	font-size: 14px;
+	font-size: 13px;
 	color:#4b5658;
 	text-align: center;
 	padding:0 15px;
@@ -227,7 +227,7 @@ textarea{
 label{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 14px;
+	font-size: 13px;
 	color:#808080;
 	padding:15px 0;
 }
@@ -248,9 +248,8 @@ input[type="submit"]{
 }
 
 input[type="search"]{
-	height: 41px;
-	line-height: 42px;
-	font-size: 13px;
+	height: 40px;
+	line-height: 41px;
 	padding-left: 60px;
 	border-color:transparent !important;
 }
@@ -424,7 +423,7 @@ label.error{
 	position: relative;
 	display: inline-block;
 	font-family: 'Iran';
-	font-size: 14px;
+	font-size: 13px;
 	color: #686b6d;
 	padding:4px 32px 4px 0;
 	margin:0;
@@ -564,7 +563,7 @@ label.error{
 
 .bttn.small{
 	min-width: 120px;
-	font-size: 14px;
+	font-size: 13px;
 	padding:8px 5px;
 }
 
@@ -1131,7 +1130,7 @@ a.close:hover{background-color: #3079AB;}
 }
 
 .tick-bullet li{
-	font-size: 14px;
+	font-size: 13px;
 	color: #3079AB;
 	margin-bottom: 16px;
 }
@@ -1285,7 +1284,7 @@ a.close:hover{background-color: #3079AB;}
 	display: inline-block;
 	vertical-align: middle;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 13px;
 	padding-top:2px;
 	margin-left: 7px;
 }
@@ -1886,7 +1885,7 @@ a.close:hover{background-color: #3079AB;}
 	}
 
 	legend{
-		font-size: 14px;
+		font-size: 13px;
 		color:#4b5658;
 		padding:0 12px;
 	}
@@ -1917,7 +1916,7 @@ a.close:hover{background-color: #3079AB;}
 
 	.bttn.large{
 		min-width: 150px;
-		font-size: 14px;
+		font-size: 13px;
 		padding:10px;
 	}
 
@@ -2034,7 +2033,7 @@ a.close:hover{background-color: #3079AB;}
 		position: relative;
 		display: block;
 		overflow: hidden;
-		font-size: 14px;
+		font-size: 13px;
 		color:#4b5658;
 		text-align: right !important;
 		padding-right: 120px;
@@ -2070,7 +2069,7 @@ a.close:hover{background-color: #3079AB;}
 	}
 
 	.static-content h4{
-		font-size: 14px !important;
+		font-size: 13px !important;
 		margin-top:15px !important;
 	}
 
@@ -2102,7 +2101,7 @@ a.close:hover{background-color: #3079AB;}
 	.static-content .video-player{margin-top:15px !important;}
 
 	.double-quotes::before,
-	.double-quotes::after{font-size: 14px;}
+	.double-quotes::after{font-size: 13px;}
 
 	.post-stats{padding-top:10px;}
 
@@ -2119,7 +2118,7 @@ a.close:hover{background-color: #3079AB;}
 	textarea,
 	select{font-size: 16px !important;}
 
-	input[type="submit"]{font-size: 14px !important;}
+	input[type="submit"]{font-size: 13px !important;}
 
 	::-webkit-input-placeholder{font-size:12px;}
 	:-moz-placeholder{font-size:12px;}
@@ -2292,7 +2291,7 @@ a.close:hover{background-color: #3079AB;}
 	.number-bullet li::before,
 	.tick-bullet li::before{margin-left: 8px;}
 
-	.tick-bullet li{font-size: 14px;}
+	.tick-bullet li{font-size: 13px;}
 
 	.message{padding:10px;}
 
@@ -2321,7 +2320,7 @@ a.close:hover{background-color: #3079AB;}
 		width: 30px;
 		height: 30px;
 		line-height: 30px;
-		font-size: 14px;
+		font-size: 13px;
 	}
 
 }
