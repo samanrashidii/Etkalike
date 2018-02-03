@@ -111,6 +111,68 @@
 	margin-left: 10px;
 }
 
+.megamenu{
+	position:absolute;
+	top:auto;
+	right:0;
+	width: 100%;
+	text-align: right;
+	padding:0 15px;
+	visibility: hidden;
+	opacity: 0;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #ffffff;
+	background-size: cover;
+	border-top:none;
+	border-radius: 0 0 4px 4px;
+	z-index: 9999;
+	-webkit-box-shadow: 0 0 15px #3e474f;
+	-moz-box-shadow: 0 0 15px #3e474f;
+	box-shadow: 0 0 15px #3e474f;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.navigation > ul > li:hover .megamenu{
+	-webkit-animation: popUp .25s ease-in-out;
+	-moz-animation: popUp .25s ease-in-out;
+	animation: popUp .25s ease-in-out;
+	visibility: visible;
+	opacity: 1;
+}
+
+@-webkit-keyframes popUp {
+	0%{-webkit-transform:scale(1,1);}
+	50%{-webkit-transform:scale(.97,.97);}
+	100%{-webkit-transform:scale(1,1);}
+}
+
+@keyframes popUp {
+	0%{transform:scale(1,1);}
+	50%{transform:scale(.97,.97);}
+	100%{transform:scale(1,1);}
+}
+
+.menu-box{
+	display: inline-block;
+	vertical-align: top;
+	min-height: 400px;
+	text-align: center;
+	padding:25px 15px;
+}
+
+.menu-box h5{
+	font-size: 14px;
+	color:#3079AB;
+	padding:7px 15px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+
+.menu-box li{margin:10px 0;}
+.menu-box li a:hover{text-shadow: 0 0 1px #babfc3;}
 
 /*   Added Styles by Back-end   */
 
