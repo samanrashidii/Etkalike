@@ -177,6 +177,18 @@
 .menu-box li{margin:10px 0;}
 .menu-box li a:hover{text-shadow: 0 0 1px #babfc3;}
 
+.off-price{
+	font-size: 14px !important;
+	text-decoration: line-through;
+}
+
+.price-box strong{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 22px;
+	margin:15px 5px;
+}
+
 /*   Added Styles by Back-end   */
 
 
