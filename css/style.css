@@ -121,7 +121,7 @@
 	visibility: hidden;
 	opacity: 0;
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: center top;
 	background-color: #ffffff;
 	background-size: cover;
 	border-top:none;
@@ -136,11 +136,14 @@
 }
 
 .navigation > ul > li:hover .megamenu{
-	-webkit-animation: popUp .25s ease-in-out;
-	-moz-animation: popUp .25s ease-in-out;
-	animation: popUp .25s ease-in-out;
+	-webkit-animation: popUp .25s ease-in-out .4s;
+	-moz-animation: popUp .25s ease-in-out .4s;
+	animation: popUp .25s ease-in-out .4s;
 	visibility: visible;
 	opacity: 1;
+	-webkit-transition-delay: .4s;
+	-moz-transition-delay: .4s;
+	transition-delay: .4s;
 }
 
 @-webkit-keyframes popUp {

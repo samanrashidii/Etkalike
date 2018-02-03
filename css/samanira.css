@@ -522,14 +522,11 @@ label.error{
 .bttn:hover{background-color: #22577c;}
 
 .bttn.white{
-	color:#4b5658;
+	color:#3079AB;
 	background-color: #ffffff;
 }
 
-.bttn.white:hover{
-	color:#ffffff;
-	background-color: #3079AB;
-}
+.bttn.white:hover{background-color: #e1e1e1;}
 
 .bttn.black{background-color: #000000;}
 
@@ -574,7 +571,7 @@ label.error{
 }
 
 .bttn.large{
-	min-width: 250px;
+	min-width: 220px;
 	font-size: 16px;
 	padding:12px 10px;
 }

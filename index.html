@@ -21,6 +21,7 @@
     	================================================== -->
 		<link rel="stylesheet" type="text/css" href="css/samanira.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/media.css" media="screen"/>
 
@@ -29,6 +30,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/core.plugins.js"></script>
 		<script src="js/icons.js"></script>
+		<script src="js/slider.min.js"></script>
 		<script src="js/samanira.js"></script>
 		<script src="js/project.js"></script>
 
@@ -176,7 +178,69 @@
 			</header><!-- header end -->
 
 			<div class="body">
+				<div class="banner">
+					<div class="ms-layers-template">
+	                    <div class="master-slider" id="masterslider">
 
+	                        <!-- Slide 1 -->
+	                        <div class="ms-slide slide-1" style="z-index: 10" data-delay="10">
+	                            <img src="images/assets/blank.gif" data-src="images/homepage/banner-1.jpg" alt="Slider Image 1"/>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="-70"
+	                                data-effect="top(150)"
+	                                data-duration="3500"
+	                                data-delay="600"
+	                                data-ease="easeOutExpo"
+	                            ><h1 class="block-display center-aligned white-color">تلوزیون ۱۰۰ اینچی LG را <br/> از <strong class="site-color-3">اتکالاین</strong> بخرید</h1></div>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="70"
+	                                data-effect="bottom(150)"
+	                                data-duration="3500"
+	                                data-delay="600"
+	                                data-ease="easeOutExpo"
+	                            ><a class="bttn large" href="#">خرید کالا</a></div>
+	                            
+	                        </div><!-- ms-slide end -->
+	                        <!-- Slide 2 -->
+	                        <div class="ms-slide slide-2" style="z-index: 11" data-delay="7">
+	                            <img src="images/assets/blank.gif" data-src="images/homepage/banner-2.jpg" alt="Slider Image 2"/>
+	                            <div class="ms-layer"
+	                            	data-origin="br"
+	                            	data-offset-y="100"
+	                            	data-offset-x="70"
+	                                data-effect="right(250)"
+	                                data-duration="1500"
+	                                data-delay="0"
+	                                data-ease="easeOutExpo"
+	                            ><a class="bttn large" href="#">مشاهده جزییات کالا</a></div>
+	                             
+	                        </div><!-- ms-slide end -->
+	                        <!-- Slide 3 -->
+	                        <div class="ms-slide slide-3" style="z-index: 12" data-delay="7">
+	                            <img src="images/assets/blank.gif" data-src="images/homepage/banner-3.jpg" alt="Slider Image 3"/>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="-100"
+	                                data-effect="fade"
+	                                data-duration="2000"
+	                                data-delay="0"
+	                                data-ease="easeOutExpo"
+	                            ><h1 class="block-display center-aligned white-color">به زودی مدل های مختلف <strong class="site-color">PS4</strong></h1></div>
+	                            <div class="ms-layer"
+	                            	data-origin="mc"
+	                            	data-offset-y="0"
+	                                data-effect="fade"
+	                                data-duration="2000"
+	                                data-delay="500"
+	                                data-ease="easeOutExpo"
+	                            ><a class="bttn site large" href="#">همین الان سفارش دهید</a></div>
+	                        </div><!-- ms-slide end -->
+	                                             
+	                    </div><!-- master-slider end -->
+	                </div><!-- ms-layers-template end -->
+				</div><!-- banner en -->
 			</div><!-- body end -->
 			
 			<footer class="footer">
@@ -184,6 +248,22 @@
 			</footer><!-- footer end -->
 			
 		</div><!-- wrapper end -->
+<script>
+// Slider
 
+var slider = new MasterSlider();
+slider.setup('masterslider' , {
+  width:1920,
+  height:640,
+  loop:true,
+  autoplay:true,
+  fullwidth:true,
+  overPause:false,
+  centerControls:false,
+  speed:16,
+  view:'fade'
+});
+slider.control('bullets' ,{autohide:false });
+</script>
 	</body>
 </html>
