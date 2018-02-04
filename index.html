@@ -32,6 +32,7 @@
 		<script src="js/icons.js"></script>
 		<script src="js/slider.min.js"></script>
 		<script src="js/offers.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
 		<script src="js/samanira.js"></script>
 		<script src="js/project.js"></script>
 		<script src="js/homepage.js"></script>
@@ -248,12 +249,41 @@
 					<div class="frame">
 						<fieldset>
 							<legend>پیشنهاد ویژه</legend>
-							<div class="ms-partialview-template" id="partial-view-1">
+							<div class="ms-partialview-template" id="partial-view">
 								<div class="master-slider ms-skin-default" id="offers-carousel">
 
 								    <div class="ms-slide">
-								        <img src="images/assets/blank.gif" data-src="images/homepage/offer-1.jpg" alt="lorem ipsum dolor sit"/>  
-								        <div class="ms-info">
+								        <img src="images/assets/blank.gif" data-src="images/homepage/offer-1.jpg" alt="lorem ipsum dolor sit"/>
+										<div class="countdown-box-wrapper" id="feature-item-1">
+											<div class="countdown-box">
+												<span class="days">0</span>
+												<h6>روز</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="hours">0</span>
+												<h6>ساعت</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="minutes">0</span>
+												<h6>دقیقه</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="seconds">0</span>
+												<h6>ثانیه</h6>
+											</div><!-- countdown-box end -->
+											<script type="text/javascript">
+											    $("#feature-item-1").countdown("2018/02/08 17:21:00", function(event) {
+												   	$(this).find('.days').html(event.strftime('%D'));
+												    $(this).find('.hours').html(event.strftime('%H'));
+												    $(this).find('.minutes').html(event.strftime('%M'));
+												    $(this).find('.seconds').html(event.strftime('%S'));
+											    });
+											</script>
+										</div><!-- countdown-box-wrapper end -->
+										<div class="ms-info">
 								        	<h3>قاب آیفون X</h3>
 								        	<div class="price-box center-aligned">
 									        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
@@ -266,7 +296,36 @@
 							        	</div><!-- ms-info end -->
 								    </div><!-- ms-slide end -->
 								    <div class="ms-slide">
-								        <img src="images/assets/blank.gif" data-src="images/homepage/offer-2.jpg" alt="lorem ipsum dolor sit"/>     
+								        <img src="images/assets/blank.gif" data-src="images/homepage/offer-2.jpg" alt="lorem ipsum dolor sit"/>    
+								        <div class="countdown-box-wrapper" id="feature-item-2">
+											<div class="countdown-box">
+												<span class="days">0</span>
+												<h6>روز</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="hours">0</span>
+												<h6>ساعت</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="minutes">0</span>
+												<h6>دقیقه</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="seconds">0</span>
+												<h6>ثانیه</h6>
+											</div><!-- countdown-box end -->
+											<script type="text/javascript">
+											    $("#feature-item-2").countdown("2018/02/15 12:34:00", function(event) {
+												   	$(this).find('.days').text(event.strftime('%D'));
+												    $(this).find('.hours').text(event.strftime('%H'));
+												    $(this).find('.minutes').text(event.strftime('%M'));
+												    $(this).find('.seconds').text(event.strftime('%S'));
+											    });
+											</script>
+										</div><!-- countdown-box-wrapper end --> 
 								        <div class="ms-info">
 								        	<h3>ساعت دیجیتال Apple Watch 3.0</h3>
 								        	<div class="price-box center-aligned">
@@ -280,7 +339,36 @@
 							        	</div><!-- ms-info end -->
 								    </div><!-- ms-slide end -->
 								    <div class="ms-slide">
-								        <img src="images/assets/blank.gif" data-src="images/homepage/offer-3.jpg" alt="lorem ipsum dolor sit"/>    
+								        <img src="images/assets/blank.gif" data-src="images/homepage/offer-3.jpg" alt="lorem ipsum dolor sit"/>  
+								        <div class="countdown-box-wrapper" id="feature-item-3">
+											<div class="countdown-box">
+												<span class="days">0</span>
+												<h6>روز</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="hours">0</span>
+												<h6>ساعت</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="minutes">0</span>
+												<h6>دقیقه</h6>
+											</div><!-- countdown-box end -->
+
+											<div class="countdown-box">
+												<span class="seconds">0</span>
+												<h6>ثانیه</h6>
+											</div><!-- countdown-box end -->
+											<script type="text/javascript">
+											    $("#feature-item-3").countdown("2018/02/12 07:00:00", function(event) {
+												   	$(this).find('.days').text(event.strftime('%D'));
+												    $(this).find('.hours').text(event.strftime('%H'));
+												    $(this).find('.minutes').text(event.strftime('%M'));
+												    $(this).find('.seconds').text(event.strftime('%S'));
+											    });
+											</script>
+										</div><!-- countdown-box-wrapper end --> 
 								        <div class="ms-info">
 								        	<h3>عطر زنانه Dior</h3>
 								        	<div class="price-box center-aligned">
@@ -300,9 +388,20 @@
 					</div><!-- frame end -->
 				</div><!-- special-offers end -->
 
-				<div class="section-wrapper has-3-9-column has-top-margin">
+				<div class="main has-top-margin">
 					<div class="frame">
-
+						<div class="section-wrapper has-3-9-column has-top-margin">
+							<div class="section">
+								<div class="sidebar">
+									
+								</div><!-- sidebar end -->
+							</div><!-- section end -->
+							<div class="section">
+								<div class="main-section">
+									
+								</div><!-- main-section end -->
+							</div><!-- section end -->
+						</div><!-- section-wrapper end -->
 					</div><!-- frame end -->
 				</div><!-- section-wrapper end -->
 			</div><!-- body end -->

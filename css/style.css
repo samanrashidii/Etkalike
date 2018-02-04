@@ -189,6 +189,41 @@
 	margin:15px 5px;
 }
 
+.countdown-box-wrapper{
+	position: absolute;
+	bottom:0;
+	left:-10px;
+	width: calc(100% + 20px);
+	z-index: 999;
+}
+
+.countdown-box{
+	float: left;
+	width: 25%;
+	height: 85px;
+	text-align: center;
+	background-color: #242b31;
+	border-left:1px solid #2f363e;
+}
+
+.countdown-box:nth-child(4n+1){border-left: none;}
+
+.countdown-box span{
+	display: block;
+	width: 100%;
+	font-family: 'Iran-Medium';
+	font-size: 28px;
+	color:#ffffff;
+	padding-top:15px;
+}
+
+.countdown-box h6{
+	font-family: 'Iran';
+	font-size: 13px;
+	color:#3079AB;
+	margin-top:-5px;
+}
+
 /*   Added Styles by Back-end   */
 
 
