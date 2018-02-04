@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-// Banner Slider	
+// Banner Slider
 
 var slider = new MasterSlider();
 slider.setup('masterslider' , {
@@ -24,11 +24,13 @@ offersCarousel.setup('offers-carousel' , {
     height:400,
     space:10,
     loop:true,
+    autoplay:false,
+    overPause:true,
     view:'prtialwave'
 });
  
 offersCarousel.control('arrows');  
-offersCarousel.control('slideinfo',{insertTo:"#partial-view-1" , autohide:false});
+offersCarousel.control('slideinfo',{insertTo:"#partial-view" , autohide:false,});
 offersCarousel.control('circletimer' , {color:"#FFFFFF" , stroke:9});
 
 });
