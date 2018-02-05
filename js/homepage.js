@@ -24,7 +24,7 @@ offersCarousel.setup('offers-carousel' , {
     height:400,
     space:10,
     loop:true,
-    autoplay:false,
+    autoplay:true,
     overPause:true,
     view:'prtialwave'
 });
