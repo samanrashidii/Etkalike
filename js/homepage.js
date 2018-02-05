@@ -33,4 +33,29 @@ offersCarousel.control('arrows');
 offersCarousel.control('slideinfo',{insertTo:"#partial-view" , autohide:false,});
 offersCarousel.control('circletimer' , {color:"#FFFFFF" , stroke:9});
 
+// Proucts Carousel
+
+$('.product-items').owlCarousel({
+	autoWidth:true,
+	autoplay:true,
+	autoplayTimeout: 4000,
+	autoplaySpeed: 700,
+	autoplayHoverPause: true,
+    loop:false,
+    margin:23,
+    rewind : true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
 });

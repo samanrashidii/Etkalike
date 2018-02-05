@@ -50,7 +50,7 @@
 
 .search{
 	position: relative;
-	min-width: 650px;
+	min-width: 700px;
 	margin-right: 5px !important;
 	z-index: 9999999;
 }
@@ -194,7 +194,9 @@
 	bottom:0;
 	left:-10px;
 	width: calc(100% + 20px);
+	overflow:hidden;
 	z-index: 999;
+	border-radius: 0 0 4px 4px;
 }
 
 .countdown-box{
@@ -223,6 +225,127 @@
 	color:#3079AB;
 	margin-top:-5px;
 }
+
+.post-items li a{
+	position: relative;
+	display: block;
+	min-height: 70px;
+	font-size: 12px;
+	padding:10px 95px 10px 10px;
+	border-bottom:1px solid #aeaeae;
+}
+.post-items li:last-child a{border-bottom:none;}
+
+.post-items li a:hover{color:#3079AB;}
+
+.post-items li img{
+	position: absolute;
+	top:10px;
+	right:10px;
+	width: 75px !important;
+	height: 50px !important;
+	border-radius: 3px;
+}
+
+.post-items li p{padding-top:0;}
+
+.ads img{border-radius: 4px;}
+
+.product-items a{
+	position: relative;
+	display: block;
+	overflow:hidden;
+	color:#3e474f;
+	text-align: center;
+	background-color: #ffffff;
+	-webkit-box-shadow:0 0 10px #3e474f;
+	-moz-box-shadow:0 0 10px #3e474f;
+	box-shadow:0 0 10px #3e474f;
+	border-radius: 4px;
+}
+
+.product-items a:hover{
+	color:#3079AB;
+	-webkit-box-shadow:0 0 10px #3079AB;
+	-moz-box-shadow:0 0 10px #3079AB;
+	box-shadow:0 0 10px #3079AB;
+}
+
+.installment a::before{
+	content:'نقد و اقساط';
+	position: absolute;
+	top:-2px;
+	left:10px;
+	width: 40px;
+	height: 76px;
+	font-size: 11px;
+	color:#232323;
+	padding-top:37px;
+	background: url('../images/icons/ribbon-yellow.png') no-repeat center;
+	z-index: 100;
+}
+
+.sale a::before{
+	content:'تخفیف';
+	position: absolute;
+	top:-2px;
+	left:10px;
+	width: 40px;
+	height: 78px;
+	font-size: 11px;
+	color:#ffffff;
+	padding-top:45px;
+	background: url('../images/icons/ribbon-green.png') no-repeat center;
+	z-index: 100;
+}
+
+
+.product-items img{
+	width: 160px !important;
+	height: 160px !important;
+	padding:10px;
+}
+
+.item-details{
+	direction: rtl;
+	text-align: center;
+	padding:10px;
+	background-color: #f7f7f7;
+	border-top:1px solid #d3d3d3;
+}
+
+.item-details h6{
+	font-family: 'Iran';
+	font-size: 14px;
+	margin-bottom:7px;
+}
+
+.item-details .off-price{font-size: 11px !important;}
+
+.item-details .price-box strong{
+	display: block;
+	font-size: 13px;
+	margin:3px 0px;
+}
+
+.news-box{
+	display: block;
+	overflow:hidden;
+	background-color: #ffffff;
+	border:1px solid #3e474f;
+	border-radius: 4px;
+}
+
+.news-image{overflow:hidden;}
+
+.news-box:hover img{opacity: .9;}
+.news-box:hover{color:#3079AB;}
+.news-box:hover .post-stats{background-color: #e1e1e1;}
+
+.news-content{padding:10px;}
+
+.ads a{display: block;}
+.ads a:hover{opacity: .9;}
 
 /*   Added Styles by Back-end   */
 
