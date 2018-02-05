@@ -346,6 +346,22 @@
 .ads a{display: block;}
 .ads a:hover{opacity: .9;}
 
+.brands .owl-carousel .owl-stage-outer{padding:22px 0;}
+
+.brands .owl-carousel .owl-nav .owl-prev,
+.brands .owl-carousel .owl-nav .owl-next{
+	top:0;
+	height: 100%;
+	margin:0;
+	border-radius: 3px;
+}
+
+.footer{
+	width: 100%;
+	padding:40px 0;
+	background-color: #3e474f;
+}
+
 /*   Added Styles by Back-end   */
 
 

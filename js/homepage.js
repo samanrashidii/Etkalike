@@ -38,9 +38,8 @@ offersCarousel.control('circletimer' , {color:"#FFFFFF" , stroke:9});
 $('.product-items').owlCarousel({
 	autoWidth:true,
 	autoplay:true,
-	autoplayTimeout: 4000,
+	autoplayTimeout: 5000,
 	autoplaySpeed: 700,
-	autoplayHoverPause: true,
     loop:false,
     margin:23,
     rewind : true,
@@ -56,6 +55,30 @@ $('.product-items').owlCarousel({
             items:5
         }
     }
-})
+});
+
+// Brands Carousel
+
+$('.brand-items').owlCarousel({
+	autoWidth:true,
+	autoplay:true,
+	autoplayTimeout: 4000,
+	autoplaySpeed: 500,
+	center:true,
+    loop:true,
+    margin:20,
+    nav:true,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:5
+        },
+        1000:{
+            items:7
+        }
+    }
+});
 
 });
