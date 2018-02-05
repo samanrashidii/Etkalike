@@ -146,16 +146,13 @@
 	transition-delay: .4s;
 }
 
-@-webkit-keyframes popUp {
-	0%{-webkit-transform:scale(1,1);}
-	50%{-webkit-transform:scale(.97,.97);}
-	100%{-webkit-transform:scale(1,1);}
-}
-
 @keyframes popUp {
-	0%{transform:scale(1,1);}
-	50%{transform:scale(.97,.97);}
-	100%{transform:scale(1,1);}
+	0%{opacity: 0;}
+	20%{opacity: .2;}
+	40%{opacity: .4;}
+	60%{opacity: .6;}
+	80%{opacity: .8;}
+	100%{opacity: 1;}
 }
 
 .menu-box{
@@ -321,6 +318,8 @@
 }
 
 .item-details .off-price{font-size: 11px !important;}
+
+.item-details .price-box{height: 40px;}
 
 .item-details .price-box strong{
 	display: block;
