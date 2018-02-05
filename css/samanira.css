@@ -1681,7 +1681,7 @@ a.close:hover{background-color: #3079AB;}
 	width: 100%;
 	overflow: hidden;
 	background-color: #f7f7f7;
-	border:2px solid #3e474f;
+	border:1px solid #3e474f;
 	border-top:none;
 	border-radius: 0 0 5px 5px;
 }

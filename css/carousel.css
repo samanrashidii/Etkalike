@@ -64,7 +64,7 @@ user-select: none; }
   height: 50px;
   margin-top: -25px;
   color: transparent;
-  background: url(../images/assets/arrow-left.png) no-repeat 10px center #3079AB;
+  background: url(../images/assets/arrow-left.png) no-repeat center center #3079AB;
   border-radius: 0 3px 3px 0;
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
@@ -73,11 +73,11 @@ user-select: none; }
 .owl-carousel .owl-nav .owl-next{
   left:auto;
   right:0;
-  background: url(../images/assets/arrow-right.png) no-repeat 13px center #3079AB;
+  background: url(../images/assets/arrow-right.png) no-repeat center center #3079AB;
   border-radius: 3px 0 0 3px;
 }
 .owl-carousel .owl-nav .owl-prev:hover,
-.owl-carousel .owl-nav .owl-next:hover{background-color: #22577c;}
+.owl-carousel .owl-nav .owl-next:hover{background-color: #22577c;width: 35px;}
 .owl-carousel.owl-loaded {
 display: block; }
 .owl-carousel.owl-loading {

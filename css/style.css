@@ -255,17 +255,17 @@
 	color:#3e474f;
 	text-align: center;
 	background-color: #ffffff;
-	-webkit-box-shadow:0 0 10px #3e474f;
-	-moz-box-shadow:0 0 10px #3e474f;
-	box-shadow:0 0 10px #3e474f;
+	-webkit-box-shadow:0 0 4px #3e474f;
+	-moz-box-shadow:0 0 4px #3e474f;
+	box-shadow:0 0 4px #3e474f;
 	border-radius: 4px;
 }
 
 .product-items a:hover{
 	color:#3079AB;
-	-webkit-box-shadow:0 0 10px #3079AB;
-	-moz-box-shadow:0 0 10px #3079AB;
-	box-shadow:0 0 10px #3079AB;
+	-webkit-box-shadow:0 0 7px #000000;
+	-moz-box-shadow:0 0 7px #000000;
+	box-shadow:0 0 7px #000000;
 }
 
 .installment a::before{
@@ -331,7 +331,7 @@
 	display: block;
 	overflow:hidden;
 	background-color: #ffffff;
-	border:1px solid #3e474f;
+	border:1px dashed #3e474f;
 	border-radius: 4px;
 }
 
@@ -351,6 +351,7 @@
 .brands .owl-carousel .owl-nav .owl-prev,
 .brands .owl-carousel .owl-nav .owl-next{
 	top:0;
+	width:30px !important;
 	height: 100%;
 	margin:0;
 	border-radius: 3px;
