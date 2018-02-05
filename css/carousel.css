@@ -60,11 +60,11 @@ user-select: none; }
   position: absolute;
   left: 0;
   top: 50%;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
+  width: 30px;
+  height: 50px;
+  margin-top: -25px;
   color: transparent;
-  background: url(../images/assets/arrow-left.png) no-repeat 14px center #3079AB;
+  background: url(../images/assets/arrow-left.png) no-repeat 10px center #3079AB;
   border-radius: 0 3px 3px 0;
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
@@ -73,7 +73,7 @@ user-select: none; }
 .owl-carousel .owl-nav .owl-next{
   left:auto;
   right:0;
-  background: url(../images/assets/arrow-right.png) no-repeat 17px center #3079AB;
+  background: url(../images/assets/arrow-right.png) no-repeat 13px center #3079AB;
   border-radius: 3px 0 0 3px;
 }
 .owl-carousel .owl-nav .owl-prev:hover,

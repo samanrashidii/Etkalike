@@ -1622,8 +1622,7 @@ a.close:hover{background-color: #3079AB;}
 
 /* -- _Main Styles -- */
 
-.content.large{padding:60px 0;}
-.content{padding:30px 0;}
+.content{padding:40px 0;}
 
 .section-wrapper{width: 100%;}
 .section-wrapper::before{
@@ -1957,7 +1956,6 @@ a.close:hover{background-color: #3079AB;}
 	.font-size-xsmall{font-size: 10px;}
 	.font-size-xxsmall{font-size: 9px;}
 
-	.content.large{padding:30px 0;}
 	.content{padding:20px 0;}
 
 	.section-box{padding:12px;}
