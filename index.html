@@ -22,6 +22,7 @@
 		<link rel="stylesheet" type="text/css" href="css/samanira.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/media.css" media="screen"/>
 
@@ -33,6 +34,7 @@
 		<script src="js/slider.min.js"></script>
 		<script src="js/offers.js"></script>
 		<script src="js/jquery.countdown.min.js"></script>
+		<script src="js/carousel.min.js"></script>
 		<script src="js/samanira.js"></script>
 		<script src="js/project.js"></script>
 		<script src="js/homepage.js"></script>
@@ -275,7 +277,7 @@
 												<h6>ثانیه</h6>
 											</div><!-- countdown-box end -->
 											<script type="text/javascript">
-											    $("#feature-item-1").countdown("2018/02/08 17:21:00", function(event) {
+											    $("#feature-item-1").countdown("2018/02/08 17:21:15", function(event) {
 												   	$(this).find('.days').html(event.strftime('%D'));
 												    $(this).find('.hours').html(event.strftime('%H'));
 												    $(this).find('.minutes').html(event.strftime('%M'));
@@ -288,10 +290,10 @@
 								        	<div class="price-box center-aligned">
 									        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
 									        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
-								        	</div>
+								        	</div><!-- price-box end -->
 								        	<div class="button-holder">
 								        		<a class="bttn" href="#"><i class="fas fa-info-circle"></i> مشاهده جزئیات کالا</a>
-								        		<a class="bttn site" href="#"><i class="fas fa-cart-plus"></i> اضافه کردن به سبد خرید</a>
+								        		<a class="bttn site" href="#"><i class="fas fa-heart"></i> اضافه کردن به کالاهای مورد علاقه</a>
 								        	</div><!-- button-holder end -->
 							        	</div><!-- ms-info end -->
 								    </div><!-- ms-slide end -->
@@ -318,11 +320,11 @@
 												<h6>ثانیه</h6>
 											</div><!-- countdown-box end -->
 											<script type="text/javascript">
-											    $("#feature-item-2").countdown("2018/02/15 12:34:00", function(event) {
-												   	$(this).find('.days').text(event.strftime('%D'));
-												    $(this).find('.hours').text(event.strftime('%H'));
-												    $(this).find('.minutes').text(event.strftime('%M'));
-												    $(this).find('.seconds').text(event.strftime('%S'));
+											    $("#feature-item-2").countdown("2018/02/15 12:34:30", function(event) {
+												   	$(this).find('.days').html(event.strftime('%D'));
+												    $(this).find('.hours').html(event.strftime('%H'));
+												    $(this).find('.minutes').html(event.strftime('%M'));
+												    $(this).find('.seconds').html(event.strftime('%S'));
 											    });
 											</script>
 										</div><!-- countdown-box-wrapper end --> 
@@ -331,10 +333,10 @@
 								        	<div class="price-box center-aligned">
 									        	<strong class="site-color"><span>۲,۴۵۰,۰۰۰</span> تومان</strong>
 									        	<strong class="red-color off-price"><span>۲,۷۰۰,۰۰۰</span> تومان</strong>
-								        	</div>
+								        	</div><!-- price-box end -->
 								        	<div class="button-holder">
 								        		<a class="bttn" href="#"><i class="fas fa-info-circle"></i> مشاهده جزئیات کالا</a>
-								        		<a class="bttn site" href="#"><i class="fas fa-cart-plus"></i> اضافه کردن به سبد خرید</a>
+								        		<a class="bttn site" href="#"><i class="fas fa-heart"></i> اضافه کردن به کالاهای مورد علاقه</a>
 								        	</div><!-- button-holder end -->
 							        	</div><!-- ms-info end -->
 								    </div><!-- ms-slide end -->
@@ -362,10 +364,10 @@
 											</div><!-- countdown-box end -->
 											<script type="text/javascript">
 											    $("#feature-item-3").countdown("2018/02/12 07:00:00", function(event) {
-												   	$(this).find('.days').text(event.strftime('%D'));
-												    $(this).find('.hours').text(event.strftime('%H'));
-												    $(this).find('.minutes').text(event.strftime('%M'));
-												    $(this).find('.seconds').text(event.strftime('%S'));
+												   	$(this).find('.days').html(event.strftime('%D'));
+												    $(this).find('.hours').html(event.strftime('%H'));
+												    $(this).find('.minutes').html(event.strftime('%M'));
+												    $(this).find('.seconds').html(event.strftime('%S'));
 											    });
 											</script>
 										</div><!-- countdown-box-wrapper end --> 
@@ -374,10 +376,10 @@
 								        	<div class="price-box center-aligned">
 									        	<strong class="site-color"><span>۳۷۰,۰۰۰</span> تومان</strong>
 									        	<strong class="red-color off-price"><span>۴۱۰,۰۰۰</span> تومان</strong>
-								        	</div>
+								        	</div><!-- price-box end -->
 								        	<div class="button-holder">
 								        		<a class="bttn" href="#"><i class="fas fa-info-circle"></i> مشاهده جزئیات کالا</a>
-								        		<a class="bttn site" href="#"><i class="fas fa-cart-plus"></i> اضافه کردن به سبد خرید</a>
+								        		<a class="bttn site" href="#"><i class="fas fa-heart"></i> اضافه کردن به کالاهای مورد علاقه</a>
 								        	</div><!-- button-holder end -->
 							        	</div><!-- ms-info end -->
 								    </div><!-- ms-slide end -->
@@ -390,15 +392,423 @@
 
 				<div class="main has-top-margin">
 					<div class="frame">
-						<div class="section-wrapper has-3-9-column has-top-margin">
+						<div class="section-wrapper has-9-3-column">
 							<div class="section">
 								<div class="sidebar">
-									
+									<div class="section-box">
+										<div class="section-box-title">
+											<a href="#"><h4>اتکامگ</h4></a>
+										</div><!-- section-box-title end -->
+										<div class="section-box-content">
+											<div class="post-items">
+												<ul>
+													<li>
+														<a href="#">
+															<img src="images/magazine/mag-1.jpg" alt="" />
+															<p>حتمال تولید خودروهای مرسدس بنز در ایران</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<img src="images/magazine/mag-2.jpg" alt="" />
+															<p>نمایشگر ۲۷ اینچی ال جی با پشتیبانی از FreeSync اواخر ماه جاری عرضه می‌شود</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<img src="images/magazine/mag-3.jpg" alt="" />
+															<p>مایکروسافت در صدر لیست ۱۰۰ شرکت برتر حوزه‌ فناوری</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<img src="images/magazine/mag-4.jpg" alt="" />
+															<p>غیر فعال شدن ۱۴ هزار گوشی بعد از رجیستری</p>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<img src="images/magazine/mag-5.jpg" alt="" />
+															<p>مدیران ارشد هواوی به دلیل مشکلات مدیریتی جریمه شدند</p>
+														</a>
+													</li>
+												</ul>
+											</div><!-- post-items end -->
+										</div><!-- section-box content end -->
+									</div><!-- section-box end -->
+									<div class="card-box ads">
+										<a href="#"><img src="images/ads/ads-1.jpg" alt="" /></a>
+									</div><!-- card-box end -->
+									<div class="card-box ads">
+										<a href="#"><img src="images/ads/ads-3.gif" alt="" /></a>
+									</div><!-- card-box end -->
+									<div class="card-box ads">
+										<a href="#"><img src="images/ads/ads-2.jpg" alt="" /></a>
+									</div><!-- card-box end -->
+									<div class="card-box ads">
+										<a href="#"><img src="images/ads/ads-4.jpg" alt="" /></a>
+									</div><!-- card-box end -->
 								</div><!-- sidebar end -->
 							</div><!-- section end -->
 							<div class="section">
 								<div class="main-section">
-									
+									<div class="section-box">
+										<div class="section-box-title">
+											<a href="#"><h4>جدیدترین کالاها</h4></a>
+										</div><!-- section-box-title end -->
+										<div class="section-box-content">
+											<div class="product-items owl-carousel">
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-1.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>کیبورد گیمینگ</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-2.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>ماشین لباسشویی LG</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-3.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>هدست گیمینگ</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-4.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>اجاق گاز بوتان</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-5.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>میز تلوزیون چوبی</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-6.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>اسپیکر بلوتوثی</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-7.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>دستگاه XBOX 360</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											</div><!-- product-items end -->
+										</div><!-- section-box-content end -->
+									</div><!-- section-box end -->
+
+									<div class="section-box">
+										<div class="section-box-title">
+											<a href="#"><h4>پرفروش ترین کالاها</h4></a>
+										</div><!-- section-box-title end -->
+										<div class="section-box-content">
+											<div class="product-items owl-carousel">
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-1.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>کیبورد گیمینگ</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-2.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>ماشین لباسشویی LG</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-3.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>هدست گیمینگ</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-4.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>اجاق گاز بوتان</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-5.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>میز تلوزیون چوبی</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-6.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>اسپیکر بلوتوثی</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-7.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>دستگاه XBOX 360</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											</div><!-- product-items end -->
+										</div><!-- section-box-content end -->
+									</div><!-- section-box end -->
+
+									<div class="section-box">
+										<div class="section-box-title">
+											<a href="#"><h4>محبوبترین کالاها</h4></a>
+										</div><!-- section-box-title end -->
+										<div class="section-box-content">
+											<div class="product-items owl-carousel">
+											    <div class="item installment">
+											    	<a href="#">
+												    	<img src="images/products/fav-1.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>کیبورد گیمینگ</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item sale">
+											    	<a href="#">
+												    	<img src="images/products/fav-2.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>ماشین لباسشویی LG</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-3.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>هدست گیمینگ</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item sale">
+											    	<a href="#">
+												    	<img src="images/products/fav-4.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>اجاق گاز بوتان</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item sale">
+											    	<a href="#">
+												    	<img src="images/products/fav-5.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>میز تلوزیون چوبی</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item">
+											    	<a href="#">
+												    	<img src="images/products/fav-6.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>اسپیکر بلوتوثی</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											    <div class="item installment">
+											    	<a href="#">
+												    	<img src="images/products/fav-7.jpg" alt="" />
+												    	<div class="item-details">
+												    		<h6>دستگاه XBOX 360</h6>
+												    		<div class="price-box center-aligned">
+													        	<strong class="site-color"><span>۱۵۰,۰۰۰</span> تومان</strong>
+													        	<strong class="red-color off-price"><span>۲۳۰,۰۰۰</span> تومان</strong>
+												        	</div><!-- price-box end -->
+												    	</div><!-- item-details end -->
+											    	</a>
+											    </div><!-- item end -->
+
+											</div><!-- product-items end -->
+										</div><!-- section-box-content end -->
+									</div><!-- section-box end -->
+
+									<div class="section-box">
+										<div class="section-box-title">
+											<a href="#"><h4>آخرین اخبار</h4></a>
+										</div><!-- section-box-title end -->
+										<div class="section-box-content">
+											<div class="news-listing section-wrapper has-4-4-4-column has-small-padding">
+												<div class="section">
+													<a class="news-box" href="#">
+														<div class="news-image">
+															<img src="images/news/news-1.jpg" alt="" />
+														</div><!-- news-image end -->
+														<div class="news-content">
+															<strong>اپل تیمی از پژوهشگران فعال در حوزه تحلیل داده را استخدام کرد.</strong>
+														</div><!-- news-content end -->
+														<div class="post-stats">
+															<span>تکنولوژی</span>
+															<span>۹۶/۱۱/۲۷</span>
+														</div><!-- post-stats end -->
+													</a><!-- news-box end -->
+												</div><!-- section end -->
+
+												<div class="section">
+													<a class="news-box" href="#">
+														<div class="news-image">
+															<img src="images/news/news-2.jpg" alt="" />
+														</div><!-- news-image end -->
+														<div class="news-content">
+															<strong>گوشی‌های هوشمند منعطف ال جی به‌ زودی روانه بازار می‌شوند.</strong>
+														</div><!-- news-content end -->
+														<div class="post-stats">
+															<span>تکنولوژی</span>
+															<span>۹۶/۱۱/۲۵</span>
+														</div><!-- post-stats end -->
+													</a><!-- news-box end -->
+												</div><!-- section end -->
+
+												<div class="section">
+													<a class="news-box" href="#">
+														<div class="news-image">
+															<img src="images/news/news-3.jpg" alt="" />
+														</div><!-- news-image end -->
+														<div class="news-content">
+															<strong>حافظه ۴ ترابایتی سامسونگ با قیمت ۱۹۰۰ دلار رؤیت شد .</strong>
+														</div><!-- news-content end -->
+														<div class="post-stats">
+															<span>اتکا</span>
+															<span>۹۶/۱۲/۰۲</span>
+														</div><!-- post-stats end -->
+													</a><!-- news-box end -->
+												</div><!-- section end -->
+											</div><!-- news-listing end -->
+										</div><!-- section-box-content end -->
+									</div><!-- section-box end -->
+
 								</div><!-- main-section end -->
 							</div><!-- section end -->
 						</div><!-- section-wrapper end -->
