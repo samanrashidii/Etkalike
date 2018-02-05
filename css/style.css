@@ -365,13 +365,13 @@
 
 .footer-box{
 	float: right;
-	width:18%;
+	width:15%;
 	color:#fafafa;
 	min-height: 220px;
 }
 
 .footer-box:nth-child(1){width:45%;}
-.footer-box:nth-child(2){width:37%;}
+.footer-box:nth-child(2){width:40%;}
 
 .sitemap{
 	float: right;
@@ -416,12 +416,13 @@
 
 .tel-number:hover{color:#3079AB;}
 
+.symbols{direction: ltr;}
 .symbols img{
 	display: block;
     width: 100px;
     height: 100px !important;
     padding: 4px;
-    margin: 7px auto 0 auto !important;
+    margin: 7px 0 0 0 !important;
     cursor: pointer;
     background: #ffffff;
     border-radius: 4px;
@@ -431,7 +432,7 @@
 
 .copyright{
 	font-size: 12px;
-	margin-top:18px !important;
+	margin-top:19px !important;
 }
 
 /*   Added Styles by Back-end   */
