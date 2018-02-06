@@ -442,6 +442,9 @@ label.error{
 	background-color: #ffffff;
 	border:1px solid #e7e7e7;
 	border-radius: 3px;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
 }
 
 .checkbox-holder input[type="checkbox"] + label::after{
@@ -761,6 +764,7 @@ a.close:hover{background-color: #22577c;}
 .inline-block-display{display: inline-block !important;}
 .block-display{display: block !important;}
 .none-display{display: none !important;}
+.no-display{display: none;}
 .table-display{
 	display: table !important;
 	width: 100%;

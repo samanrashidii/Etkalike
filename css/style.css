@@ -437,7 +437,7 @@ a.site-color:hover{color:#22577c !important;}
 	margin-top:19px !important;
 }
 
-.forgot-password{
+.forgot-password-bttn{
 	float: left;
 	display: inline-block;
 	margin-top:3px;
@@ -446,7 +446,7 @@ a.site-color:hover{color:#22577c !important;}
 .form-wrapper h4 svg{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 25px;
+	font-size: 27px;
 	margin:2px 0 0 5px;
 }
 
