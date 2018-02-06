@@ -67,6 +67,9 @@ a.site-color:hover{color:#22577c !important;}
 	border:none;
 	border-radius: 3px 0 0 3px;
 	z-index: 10;
+	-webkit-transform: none !important;
+	-moz-transform: none !important;
+	transform: none !important;
 }
 
 .search-overlay{
@@ -440,13 +443,13 @@ a.site-color:hover{color:#22577c !important;}
 .forgot-password-bttn{
 	float: left;
 	display: inline-block;
-	margin-top:3px;
+	margin-top:4px;
 }
 
 .form-wrapper h4 svg{
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 27px;
+	font-size: 25px;
 	margin:2px 0 0 5px;
 }
 

@@ -22,65 +22,105 @@ $('.forgot-password-bttn').on('click', function(){
 	$('.forgot-password-box').fadeIn().siblings().hide();
 });
 
-// Form Validations
-
-$('form').validate({
+$('.login_form').validate({
   rules: {
-    nickname: {
+    login_username: {
       required: true,
       minlength: 5
     },
-    email_address: {
-      required: true,
-      minlength: 5,
-      email:true
-    },
-    password: {
+    login_password: {
       required: true,
       minlength: 8
-    },
-    confirm_password: {
-      required: true,
-      minlength : 8,
-      equalTo : "#password"
-    },
-    mobile: {
-      required: true,
-      minlength: 5,
-      number:true
     }
   },
   messages: {
-    nickname: "Please Enter Your Nickname",
-    email_address: "Please Enter Your Email Address",
-    password: "Please Enter Your Password",
-    confirm_password: "Please Confirm Your Password",
-    mobile: "Please Enter Your Mobile Number"
+    login_username: "لطفا نام کاربری و یا آدرس ایمیل خود را وارد کنید",
+    login_password: "لطفا کلمه عبور خود را وارد کنید",
   },
   errorPlacement: function(error, element) {
     error.insertAfter(element);
   },
   submitHandler: function (form) {
-    if($('.samanira_secure').val() == '') {
       $.ajax({
         type: "POST",
-        url: "mail.php",
+        url: " ",
         data: $(form).serialize(),
         success: function () {
-            $('.contact_form :input').prop('disabled', true);
-            $('.message.success').addClass('active'); 
-            setTimeout(function(){
-              $('.message.success').removeClass('active');
-            },5000);
+            
         }
       });
       return false;
-    } else {
-      $('.contact_form input[type="submit"]').prop('disabled', true);
-      return false;
-    }
   }
+});
 
+$('.register_form').validate({
+  rules: {
+    register_username: {
+      required: true,
+      minlength: 5
+    },
+    register_email: {
+      required: true,
+      minlength: 5,
+      email: true
+    },
+    register_password: {
+      required: true,
+      minlength: 8
+    },
+    register_password_confirm: {
+      required: true,
+      minlength: 8,
+      equalTo : "#register_password"
+    }
+  },
+  messages: {
+    register_username: "لطفا نام کاربری خود را وارد کنید",
+    register_email: "لطفا آدرس ایمیل خود را وارد کنید",
+    register_password: "لطفا کلمه عبور خود را وارد کنید",
+    register_password_confirm: "کلمه عبور با فیلد بالا مطابقت ندارد",
+  },
+  errorPlacement: function(error, element) {
+    error.insertAfter(element);
+  },
+  submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: " ",
+        data: $(form).serialize(),
+        success: function () {
+            
+        }
+      });
+      return false;
+  }
+});
+
+$('.forgot_password_form').validate({
+  rules: {
+    forgot_password_email_address: {
+      required: true,
+      minlength: 5,
+      email: true
+    }
+  },
+  messages: {
+    forgot_password_email_address: "لطفا آدرس ایمیل خود را وارد کنید",
+  },
+  errorPlacement: function(error, element) {
+    error.insertAfter(element);
+  },
+  submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: " ",
+        data: $(form).serialize(),
+        success: function () {
+            
+        }
+      });
+      return false;
+  }
 });
 
 $('.newsletter_form').validate({
@@ -92,7 +132,7 @@ $('.newsletter_form').validate({
     }
   },
   messages: {
-    newsletter_email_address: "Please Enter Your Email Address",
+    newsletter_email_address: "لطفا آدرس ایمیل خود را وارد کنید",
   },
   errorPlacement: function(error, element) {
     error.insertAfter(element);
@@ -100,7 +140,7 @@ $('.newsletter_form').validate({
   submitHandler: function (form) {
       $.ajax({
         type: "POST",
-        url: "mail.php",
+        url: " ",
         data: $(form).serialize(),
         success: function () {
             
@@ -108,7 +148,6 @@ $('.newsletter_form').validate({
       });
       return false;
   }
-
 });
 
 });
