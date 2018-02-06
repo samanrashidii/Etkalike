@@ -8,6 +8,20 @@ $('.search input').on('focus', function(){
 	$('.search-overlay').removeClass('active');
 });
 
+// Login / Register
+
+$('.register-bttn').on('click', function(){
+	$('.register-box').fadeIn().siblings().hide();
+});
+
+$('.login-bttn').on('click', function(){
+	$('.login-box').fadeIn().siblings().hide();
+});
+
+$('.forgot-password-bttn').on('click', function(){
+	$('.forgot-password-box').fadeIn().siblings().hide();
+});
+
 // Form Validations
 
 $('form').validate({
