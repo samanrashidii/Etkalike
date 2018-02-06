@@ -167,10 +167,11 @@ fieldset{
 }
 
 legend{
+	display: block;
 	font-size: 33px;
 	color:#3e474f;
-	text-align: center;
 	padding:0 15px;
+	margin:auto;
 }
 
 input,
@@ -236,12 +237,13 @@ label{
 input[type="submit"]{
 	display: block;
     width: 100%;
-	font-size: 16px;
+	font-size: 14px;
 	color:#ffffff;
 	text-align: center;
 	padding:0 15px;
 	cursor: pointer;
 	background-color: #3079AB;
+	border:none;
 	border-radius: 3px;
     -webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
@@ -331,7 +333,6 @@ label.error{
 .field-holder{
 	position: relative;
 	width: 100%;
-	overflow: hidden;
 	margin:15px 0;
 }
 
@@ -434,20 +435,20 @@ label.error{
 .checkbox-holder input[type="checkbox"] + label::before{
 	content: '';
 	position: absolute;
-	top: 3px;
+	top: 2px;
 	right:2px;
-	width: 20px;
-	height: 20px;
+	width: 22px;
+	height: 22px;
 	background-color: #ffffff;
 	border:1px solid #e7e7e7;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 .checkbox-holder input[type="checkbox"] + label::after{
 	content: url('../images/assets/tick-white.png');
 	position: absolute;
-	top: 5px;
-	right: 6px;
+	top: 6px;
+	right: 7px;
 	width:11px;
 	height: 11px;
 	opacity: 0;
@@ -456,7 +457,10 @@ label.error{
 	transition:all .2s ease-in-out;
 }
 
-.checkbox-holder input[type="checkbox"]:checked + label::before{background-color: #3079AB;}
+.checkbox-holder input[type="checkbox"]:checked + label::before{
+	background-color: #3079AB;
+	border-color:#3079AB;
+}
 .checkbox-holder input[type="checkbox"]:checked + label::after{opacity: 1;}
 
 .radio-holder input[type="radio"] + label::before{
@@ -500,7 +504,7 @@ label.error{
 .button-holder{
 	width: 100%;
 	overflow: hidden;
-	margin-top:15px;
+	margin-top:10px;
 }
 
 .button-holder a,
@@ -659,17 +663,17 @@ a.remove{
 
 a.close{
 	position: absolute;
-	top:-14px;
-	left:-14px;
+	top:7px;
+	right:7px;
 	display: block;
-	width: 34px;
-	height: 34px;
-	background: url('../images/assets/close-small.png') no-repeat center #000000;
-	border-radius: 100%;
+	width: 24px;
+	height: 24px;
+	background: url('../images/assets/close-small.png') no-repeat center #3079AB;
+	border-radius: 3px;
 	z-index: 10;
 }
 
-a.close:hover{background-color: #3079AB;}
+a.close:hover{background-color: #22577c;}
 
 /********************
 ****** #FRAMES ******
@@ -867,11 +871,11 @@ a.close:hover{background-color: #3079AB;}
 .no-float{float: none !important;}
 
 .no-border{border:none !important;}
-.has-border{border: 1px solid #f1f1f1;}
-.has-top-border{border-top: 1px solid #f1f1f1;}
-.has-right-border{border-right: 1px solid #f1f1f1;}
-.has-bottom-border{border-bottom: 1px solid #f1f1f1;}
-.has-left-border{border-left: 1px solid #f1f1f1;}
+.has-border{border: 1px solid #e7e7e7;}
+.has-top-border{border-top: 1px solid #e1e1e1;}
+.has-right-border{border-right: 1px solid #e1e1e1;}
+.has-bottom-border{border-bottom: 1px solid #e1e1e1;}
+.has-left-border{border-left: 1px solid #e1e1e1;}
 
 .no-border-radius{border-radius: 0 !important;}
 .has-border-radius{border-radius: 4px !important;}
@@ -1085,8 +1089,8 @@ a.close:hover{background-color: #3079AB;}
 	overflow-y:auto;
 	visibility: hidden;
 	opacity: 0;
-	background: rgba(76,76,76, .55);
-	z-index: 9999999;
+	background-color: rgba(0,0,0, .7);
+	z-index: 99999999;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
@@ -1111,7 +1115,7 @@ a.close:hover{background-color: #3079AB;}
 
 .inner-overlay-box{
 	position: relative;
-	max-width: 400px;
+	max-width: 480px;
 	padding:30px;
 	margin:auto;
 	background-color: #ffffff;

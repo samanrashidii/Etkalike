@@ -47,6 +47,41 @@
 	<body>
 		<div id="wrapper">
 
+			<div class="overlay active" id="login-register-box">
+				<div class="inner-overlay">
+					<div class="overlay-box">
+						<div class="inner-overlay-box">
+							<a class="close overlay-close" href="javascript:void(0)"></a>
+							<div class="form-wrapper">
+								<div class="login-box">
+									<h4 class="center-aligned has-bottom-margin"><i class="fas fa-sign-in-alt"></i> ورود به اتکالاین</h4>
+									<form action="#" method="POST" name="login_form" class="login_form" accept-charset="UTF-8">
+										<div class="field-holder">
+											<input type="text" name="login_username" class="reverse-input" placeholder="نام کاربری یا آدرس ایمیل" />
+										</div><!-- field-holder end -->
+										<div class="field-holder">
+											<input type="password" name="login_password" class="reverse-input" placeholder="کلمه عبور" />
+										</div><!-- field-holder end -->
+										<div class="field-holder">
+											<div class="checkbox-holder">
+												<input type="checkbox" name="remember_me" id="remember_me" value="" />
+												<label for="remember_me">مرا به خاطر بسپار</label>
+												<a class="forgot-password site-color" href="javascript:void(0)">کلمه عبور را فراموش کرده اید؟</a>
+											</div><!-- checkbox-holder end -->
+										</div><!-- field-holder end -->
+										<input type="submit" value="ورود به وب سایت" />
+									</form>
+									<div class="has-top-margin has-top-padding has-top-border">
+										<h6 class="center-aligned">در اتکالاین عضو نیستید؟</h6>
+										<a class="register-bttn bttn site block-display has-top-margin" href="javascript:void(0)">ثبت نام در اتکالاین</a>
+									</div><!-- has-top-margin end -->
+								</div><!-- login-box end -->
+							</div><!-- form-wrapper end -->
+						</div><!-- inner-overlay-box end -->
+					</div><!-- overlay-box end -->
+				</div><!-- inner-overlay end -->
+			</div><!-- overlay end -->
+
 			<header class="header">
 
 				<div class="top-header">
@@ -61,12 +96,12 @@
 
 						<div class="login-status">
 							<div class="login-register">
-								<a class="bttn" href="javascript:void(0)">ورود / عضویت</a>
+								<a class="bttn overlay-bttn" href="#login-register-box">ورود / عضویت</a>
 							</div><!-- login-register end -->
 						</div><!-- login-status end -->
 
 						<div class="search">
-							<form action="#" method="POST" name="main_search" accept-charset="UTF-8">
+							<form action="#" method="POST" name="main_search" class="main_search" accept-charset="UTF-8">
 								<input type="search" placeholder="محصول یا برند مورد نظرتان را جستجو کنید ..." />
 								<input type="submit" value=" " />
 							</form>
