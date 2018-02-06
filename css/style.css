@@ -11,6 +11,8 @@
 	margin-left: -1px;
 }
 
+a.site-color:hover{color:#22577c !important;}
+
 .cart a{
 	position: relative;
 	display: block;
@@ -183,14 +185,14 @@
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 22px;
-	margin:15px 5px;
+	margin:10px 5px;
 }
 
 .countdown-box-wrapper{
 	position: absolute;
-	bottom:0;
-	left:-10px;
-	width: calc(100% + 20px);
+	bottom:-9px;
+	left:0;
+	width: 100%;
 	overflow:hidden;
 	z-index: 999;
 	border-radius: 0 0 4px 4px;
@@ -433,6 +435,19 @@
 .copyright{
 	font-size: 12px;
 	margin-top:19px !important;
+}
+
+.forgot-password{
+	float: left;
+	display: inline-block;
+	margin-top:3px;
+}
+
+.form-wrapper h4 svg{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 25px;
+	margin:2px 0 0 5px;
 }
 
 /*   Added Styles by Back-end   */

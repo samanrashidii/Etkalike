@@ -312,7 +312,7 @@
 .ms-partialview-template {
 	direction: ltr;
 	overflow: hidden;
-	min-height: 570px;
+	min-height: 500px;
 	text-align: center;
 }
 .ms-partialview-template .ms-view {
@@ -330,8 +330,8 @@
 	direction: rtl;
 	color:#ffffff;
 	text-align: center;
-	padding:20px;
-	margin-top: 40px;
+	padding:15px;
+	margin-top: 30px;
 	background-color: #3e474f;
 }
 
