@@ -78,17 +78,14 @@ $('a.close:not(.overlay-close)').on('click', function(){
 $('.overlay-bttn').on('click', function(){
   var bttnID = $(this).attr('href');
   $(bttnID).toggleClass('active');
-  $('body').addClass('hidden-overflow');
 });
 
 $('.overlay-close').on('click', function(){
   $(this).parents('.overlay').removeClass('active');
-  $('body').removeClass('hidden-overflow');
 });
 
 $('.overlay').on('click', function(){
   $(this).removeClass('active');
-  $('body').removeClass('hidden-overflow');
 });
 
 $('.inner-overlay-box').on('click', function(e){
