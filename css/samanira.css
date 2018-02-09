@@ -1401,44 +1401,49 @@ a.close:hover{background-color: #22577c;}
 
 .pagination ul li a{
 	display: block;
-	width: 38px;
-    height: 38px;
-	line-height: 37px;
-    font-size: 16px;
+	width: 35px;
+    height: 35px;
+	line-height: 36px;
+    font-size: 14px;
     color:#4b5658;
 	background-color: #ffffff;
-	border:1px solid #4b5658;
+	border:1px solid #a1a1a1;
 	border-radius: 4px;
 }
 
 .pagination ul li.active a{
 	color:#ffffff;
-	background-color: #4b5658;
+	background-color: #5cb860;
+	border-color:#5cb860;
 }
 
 .pagination ul li.etc a{
-	width: 25px;
 	color: #4b5658;
+	cursor:initial;
 	background-color: transparent;
 	border-color: transparent;
 }
 
 .pagination ul li.prev a,
 .pagination ul li.next a{
-	min-width: 88px;
+	min-width: 55px;
+	line-height: 34px;
+	font-size: 12px;
 	color: #ffffff;
-	background-color: #111111;
+	background-color: #3079AB;
+	border-color:#3079AB;
 }
 
 .pagination ul li:not(.active):not(.etc):not(.prev):not(.next) a:hover{
-	color: #3079AB;
+	color: #ffffff;
+	background-color: #3079AB;
 	border-color: #3079AB;
 }
 
 .pagination ul li.prev a:hover,
 .pagination ul li.next a:hover{
-	background-color: #3079AB;
-	border-color: #3079AB;
+	background-color: #22577c;
+	border-color: #22577c;
 }
 
 .pagination ul li.prev,
@@ -1449,7 +1454,7 @@ a.close:hover{background-color: #22577c;}
 .breadcrumb{
 	position: relative;
 	width: 100%;
-	margin-bottom: 45px;
+	margin-bottom: 35px;
 }
 
 .breadcrumb ul{
@@ -1812,12 +1817,12 @@ a.close:hover{background-color: #22577c;}
 }
 
 .has-10-2-column > .section{
-	width: 80%;
+	width: 76%;
 	margin-right: 2%;
 }
 
 .has-10-2-column > .section:nth-child(2n+1){
-	width: 18%;
+	width: 22%;
 	margin-right: 0;
 }
 
