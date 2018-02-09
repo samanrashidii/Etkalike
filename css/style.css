@@ -191,6 +191,8 @@ a.site-color:hover{color:#22577c !important;}
 	margin:10px 5px;
 }
 
+.price-box span{direction: ltr;}
+
 .countdown-box-wrapper{
 	position: absolute;
 	bottom:-9px;
@@ -500,6 +502,44 @@ a.site-color:hover{color:#22577c !important;}
 	color:#ffffff;
 	background-color: #3079AB;
 }
+
+.filter-box{
+	overflow: hidden;
+	margin-bottom: 15px;
+	background-color: #efefef;
+	border-radius: 5px;
+}
+
+.filter-title{
+	display: block;
+	font-size: 14px;
+	color:#ffffff;
+	padding:8px 10px 6px 10px;
+	background: url('../images/assets/plus-white.png') no-repeat 10px center #3e474f;
+}
+.filter-title.active{
+	color:#eb7728;
+	background-image: url('../images/assets/minus-orange.png');
+}
+
+.filter-inner-box{padding:15px;}
+
+.price-range{padding:20px 30px;}
+
+.filter-items .checkbox-holder{margin:2px 0;}
+.filter-items .checkbox-holder input[type="checkbox"] + label{
+	font-size: 12px;
+	padding-right: 27px;
+}
+
+.filter-items .checkbox-holder input[type="checkbox"] + label::before{
+	top: 4px;
+	right:2px;
+	width: 18px;
+	height: 18px;
+}
+
+.filter-items .checkbox-holder input[type="checkbox"] + label::after{right: 5px;}
 
 /*   Added Styles by Back-end   */
 
