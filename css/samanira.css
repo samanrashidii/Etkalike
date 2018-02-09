@@ -653,9 +653,11 @@ input[type="submit"]:active{
 /* -- _Switch -- */
 
 .switch{
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
 	width: 58px;
 	height: 32px;
+	margin-right: 5px;
 	background: url('../images/icons/switch.png') no-repeat center;
 }
 

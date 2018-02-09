@@ -324,8 +324,6 @@ a.site-color:hover{color:#22577c !important;}
 
 .item-details .off-price{font-size: 11px !important;}
 
-.item-details .price-box{height: 40px;}
-
 .item-details .price-box strong{
 	display: block;
 	font-size: 13px;
@@ -336,7 +334,7 @@ a.site-color:hover{color:#22577c !important;}
 	display: block;
 	overflow:hidden;
 	background-color: #ffffff;
-	border:1px dashed #3e474f;
+	border:1px solid #3e474f;
 	border-radius: 4px;
 }
 
@@ -451,6 +449,24 @@ a.site-color:hover{color:#22577c !important;}
 	vertical-align: middle;
 	font-size: 25px;
 	margin:2px 0 0 5px;
+}
+
+.top-filters ul li{float: right;}
+
+.top-filters ul li a{
+	display: block;
+	padding:6px 10px;
+	border:1px solid #3e474f;
+}
+
+.top-filters ul li:first-child a{border-radius: 0 4px 4px 0;}
+.top-filters ul li:last-child a{border-radius: 4px 0 0 4px;}
+.top-filters ul li:not(:last-child) a{border-left: none;}
+.top-filters ul li a:hover{background-color: #f2f2f2;}
+
+.top-filters ul li.active a{
+	color:#ffffff;
+	background-color: #3079AB;
 }
 
 /*   Added Styles by Back-end   */
