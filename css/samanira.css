@@ -1339,8 +1339,9 @@ a.close:hover{background-color: #22577c;}
 /* -- _Star Rating -- */
 
 .star-box{
+	direction: ltr;
 	width: 100%;
-	margin-top:5px;
+	margin-bottom:10px;
 }
 
 .star-box span{

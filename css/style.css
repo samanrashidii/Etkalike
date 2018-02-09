@@ -260,20 +260,20 @@ a.site-color:hover{color:#22577c !important;}
 	color:#3e474f;
 	text-align: center;
 	background-color: #ffffff;
-	-webkit-box-shadow:0 0 4px #3e474f;
-	-moz-box-shadow:0 0 4px #3e474f;
-	box-shadow:0 0 4px #3e474f;
+	-webkit-box-shadow: 0 0 15px #cacaca;
+	-moz-box-shadow: 0 0 15px #cacaca;
+	box-shadow: 0 0 15px #cacaca;
 	border-radius: 4px;
 }
 
 .product-items a:hover{
-	color:#3079AB;
-	-webkit-box-shadow:0 0 7px #000000;
-	-moz-box-shadow:0 0 7px #000000;
-	box-shadow:0 0 7px #000000;
+	-webkit-box-shadow:0 0 15px #a1a1a1;
+	-moz-box-shadow:0 0 15px #a1a1a1;
+	box-shadow:0 0 15px #a1a1a1;
 }
 
-.installment a::before{
+.installment a::before,
+.product-box.installment::before{
 	content:'نقد و اقساط';
 	position: absolute;
 	top:-2px;
@@ -282,12 +282,14 @@ a.site-color:hover{color:#22577c !important;}
 	height: 76px;
 	font-size: 11px;
 	color:#232323;
+	text-align: center;
 	padding-top:37px;
 	background: url('../images/icons/ribbon-yellow.png') no-repeat center;
 	z-index: 100;
 }
 
-.sale a::before{
+.sale a::before,
+.product-box.sale::before{
 	content:'تخفیف';
 	position: absolute;
 	top:-2px;
@@ -296,6 +298,7 @@ a.site-color:hover{color:#22577c !important;}
 	height: 78px;
 	font-size: 11px;
 	color:#ffffff;
+	text-align: center;
 	padding-top:45px;
 	background: url('../images/icons/ribbon-green.png') no-repeat center;
 	z-index: 100;
@@ -329,6 +332,32 @@ a.site-color:hover{color:#22577c !important;}
 	font-size: 13px;
 	margin:3px 0px;
 }
+
+.product-box{
+	position: relative;
+	display: block;
+	height: 370px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 15px #cfcfcf;
+	-moz-box-shadow: 0 0 15px #cfcfcf;
+	box-shadow: 0 0 15px #cfcfcf;
+}
+
+.product-box:hover{
+	-webkit-box-shadow: 0 0 15px #a5a5a5;
+	-moz-box-shadow: 0 0 15px #a5a5a5;
+	box-shadow: 0 0 15px #a5a5a5;
+}
+
+.product-box .item-details{
+	background-color: transparent;
+	border-top:none;
+}
+
+.product-box .item-details .price-box strong{font-size: 15px;}
+.product-box .item-details .off-price{font-size: 13px !important;}
 
 .news-box{
 	display: block;
@@ -455,13 +484,16 @@ a.site-color:hover{color:#22577c !important;}
 
 .top-filters ul li a{
 	display: block;
-	padding:6px 10px;
-	border:1px solid #3e474f;
+	padding:6.5px 10px;
+	background-color: #efefef;
+	border-left:1px solid #cfcfcf;
 }
 
-.top-filters ul li:first-child a{border-radius: 0 4px 4px 0;}
-.top-filters ul li:last-child a{border-radius: 4px 0 0 4px;}
-.top-filters ul li:not(:last-child) a{border-left: none;}
+.top-filters ul li:first-child a{border-radius: 0 15px 15px 0;}
+.top-filters ul li:last-child a{
+	border-radius: 15px 0 0 15px;
+	border-left: none;
+}
 .top-filters ul li a:hover{background-color: #f2f2f2;}
 
 .top-filters ul li.active a{
