@@ -340,7 +340,7 @@ a.site-color:hover{color:#22577c !important;}
 	display: block;
 	height: 370px;
 	overflow: hidden;
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 	border-radius: 4px;
 	-webkit-box-shadow: 0 0 15px #cfcfcf;
 	-moz-box-shadow: 0 0 15px #cfcfcf;
@@ -540,6 +540,211 @@ a.site-color:hover{color:#22577c !important;}
 }
 
 .filter-items .checkbox-holder input[type="checkbox"] + label::after{right: 5px;}
+
+.product-section{
+	padding:10px 0;
+	border-bottom:1px solid #e7e7e7;
+}
+.product-section:last-child{border-bottom: none;}
+
+.minor-info{
+	display: block;
+	font-size: 13px;
+	color:#b2b2b2;
+	margin-top:7px;
+}
+
+.product-details .star-box{
+	display: inline-block;
+	width: auto;
+	margin:3px 0 0 0;
+}
+
+.product-info li{margin:12px 0;}
+.product-info li strong{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.product-info li span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 45px;
+}
+
+.product-info strong.available{
+	color:#5cb860;
+	padding:1px 25px 1px 0;
+	background: url('../images/icons/success.png') no-repeat right top;
+}
+
+.product-info strong.not-available{
+	color:#e15258;
+	padding:1px 25px 1px 0;
+	background: url('../images/icons/error.png') no-repeat right top;
+}
+
+.color-pallet input{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	width: 25px;
+	height: 25px;
+	padding:0;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	border:1px solid #010101 !important;
+	border-radius: 3px;
+}
+
+.color-pallet input.active{
+	-webkit-box-shadow: 0 0 4px #010101;
+	-moz-box-shadow: 0 0 4px #010101;
+	box-shadow: 0 0 4px #010101;
+}
+
+.product-price{
+	display: block;
+	font-family: 'Iran-Medium';
+	font-size: 33px;
+	color:#3079AB;
+	margin-top:15px;
+}
+
+.product-last-price{
+	display: block;
+	font-size: 15px;
+	color:#585858;
+	text-decoration: line-through;
+}
+
+.quantity{
+	position: relative;
+	width: 160px;
+	margin:auto;
+}
+
+.quantity input[type=number]::-webkit-inner-spin-button,
+.quantity input[type=number]::-webkit-outer-spin-button{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.quantity input[type=number]{-moz-appearance: textfield;}
+
+.quantity input{
+	font-size: 18px;
+	color:#000000;
+	text-align: center;
+	padding:6px 50px 0 50px;
+}
+
+.quantity-button{
+	position: absolute;
+	top:1px;
+	right: 0;
+	width: 50px;
+	height: calc(100% - 2px);
+	line-height: 55px;
+	font-size: 22px;
+	color: #585858;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #e7e7e7;
+	border-radius: 0 2px 2px 0;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.quantity-button.quantity-down{
+	right:auto;
+	left: 0;
+	border-left: none;
+	border-right: 1px solid #e7e7e7;
+	border-radius: 2px 0 0 2px;
+}
+
+.quantity-button:hover{
+	color:#ffffff;
+	background-color:#3079AB;
+}
+
+a.shipping-details{
+	display: inline-block;
+	font-size: 15px;
+	color:#3079AB;
+	padding-right: 55px;
+	margin-top:50px;
+	background: url('../images/icons/delivery.png') no-repeat 97% center;
+}
+
+a.shipping-details span{border-bottom:1px solid #3079AB;}
+
+a.shipping-details:hover{
+	color:#000000;
+	background-position-x:100%;
+}
+a.shipping-details:hover span{border-bottom-color: #000000;}
+
+.product-gallery{
+	position: relative;
+	padding-bottom: 90px;
+}
+
+#main-image-wrapper img{
+	border:1px solid #3e474f;
+	border-radius: 3px;
+}
+
+#gallery{
+	position: absolute;
+	bottom:0;
+	right: 0;
+}
+
+#gallery a{
+	display: inline-block;
+	width: 75px !important;
+	height: 75px !important;
+	overflow: hidden;
+	margin-left: 3px;
+	border:1px solid #010101;
+	border-radius: 3px;
+}
+
+#gallery a.active{
+	-webkit-box-shadow: 0 0 9px #010101;
+	-moz-box-shadow: 0 0 9px #010101;
+	box-shadow: 0 0 9px #010101;
+}
+
+.share-on-socials{margin:15px 0;}
+
+.share-on-socials a{
+	display: inline-block;
+	vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	margin:0 1.5px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #111111;
+	border-radius: 2px;
+}
+.share-on-socials a:hover{background-color: #3079AB;}
+
+a.telegram-share{background-image: url('../images/icons/share-telegram.png');}
+a.facebook-share{background-image: url('../images/icons/share-facebook.png');}
+a.url-share{background-image: url('../images/icons/share-link.png');}
+
 
 /*   Added Styles by Back-end   */
 
