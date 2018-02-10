@@ -23,6 +23,7 @@ Font Side = Iran-Medium;
 Font-Size Main = 13px;
 Color Main = #4b5658;
 Color Side = #3079AB;
+Color Third = #eb7728;
 Transition Duration = .2s;
 Border-Radius = 4px;
 
@@ -1353,15 +1354,58 @@ a.close:hover{background-color: #22577c;}
 }
 
 .star-box span.active{background-image: url('../images/icons/star-active.png');}
+.star-box span.selected{background-image: url('../images/icons/star-active.png') !important;}
 
 .star-box i{
+	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 	font-style: normal;
 	font-size: 13px;
-	padding-top:2px;
-	margin-left: 7px;
+	padding-top:6px;
+	margin-right: 7px;
+	cursor: pointer;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
 }
+
+.your-rating{
+	position: absolute;
+	top:-120px;
+	left:17px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	width: 27px;
+	height: 120px;
+	text-align: center;
+	padding-bottom:8px;
+	visibility: hidden;
+	background-color: #3e474f;
+	border-radius: 4px;
+}
+
+.your-rating::after{
+	content:'';
+	position: absolute;
+	bottom:-4px;
+	left:8px;
+	width: 10px;
+	height: 10px;
+	background-color: #3e474f;
+	border-radius: 1px;
+	transform:rotate(45deg);
+}
+
+.your-rating span{
+	width: 25px;
+	height: 15px;
+	margin:3px 0;
+}
+
+.star-box i:hover .your-rating{visibility: visible;}
 
 /* -- _Quotes -- */
 
@@ -1591,8 +1635,6 @@ a.close:hover{background-color: #22577c;}
 
 .table.scrollable{overflow-x:auto;}
 .table.scrollable table{min-width: 760px;}
-
-.table tr{border-bottom: 1px solid #e7e7e7;}
 
 .table td,
 .table th{

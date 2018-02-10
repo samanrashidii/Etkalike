@@ -54,6 +54,64 @@ $( function() {
   $('#max_price').val(lastValue);
 });
 
+// Quantity
+
+$('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+$('.quantity').each(function() {
+  var spinner = $(this);
+  var inputNum = spinner.find('input');
+  var btnUp = spinner.find('.quantity-up');
+  var btnDown = spinner.find('.quantity-down');
+  var inputMin = inputNum.attr('min');
+  var inputMax = inputNum.attr('max');
+
+  btnUp.on('click', function() {
+    var oldValue = parseFloat(inputNum.val());
+    if (oldValue >= inputMax) {
+      var newVal = oldValue;
+    } else {
+      var newVal = oldValue + 1;
+    }
+    inputNum.val(newVal);
+    inputNum.trigger("change");
+  });
+
+  btnDown.on('click', function() {
+    var oldValue = parseFloat(inputNum.val());
+    if (oldValue <= inputMin) {
+      var newVal = oldValue;
+    } else {
+      var newVal = oldValue - 1;
+    }
+    inputNum.val(newVal);
+    inputNum.trigger("change");
+  });
+
+});
+
+// Star Rating
+
+$('.your-rating span').on('mouseenter', function(){
+  if(!$(this).parents('.your-rating').hasClass('selected')){
+    $(this).prevAll().addClass('active');
+    $(this).addClass('active').nextAll().removeClass('active');
+  }
+}).on('click', function(){
+  $(this).addClass('selected').nextAll().removeClass('selected');
+  $(this).prevAll().addClass('selected');
+  $('.your_rating_number').val($('.your-rating span.selected').index(this)+1);
+});
+
+$('.your-rating').on('mouseleave', function(){
+  $(this).children('span').removeClass('active');
+});
+
+// Color Pallet
+
+$('.color-pallet input').on('change', function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
 // Form Validations
 
 $('.login_form').validate({
