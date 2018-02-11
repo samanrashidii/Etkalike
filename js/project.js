@@ -112,6 +112,10 @@ $('.color-pallet input').on('change', function(){
   $(this).addClass('active').siblings().removeClass('active');
 });
 
+// Comment Like / Dislike
+
+
+
 // Form Validations
 
 $('.login_form').validate({

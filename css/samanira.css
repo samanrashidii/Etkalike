@@ -1638,12 +1638,15 @@ a.close:hover{background-color: #22577c;}
 
 .table td,
 .table th{
-	text-align: center;
-	padding:20px 15px;
+	padding:10px 15px;
+	border:1px solid #b5b5b5;
 }
 
-.table td:first-child,
-.table th:first-child{text-align: right;}
+.table tr td:first-child{
+	color:#ffffff;
+	background-color: #3e474f;
+	border-color:#4a5158;
+}
 
 .table .table-anchor{
 	font-size: 16px;
