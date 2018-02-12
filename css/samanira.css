@@ -220,7 +220,7 @@ input{
 textarea{
 	display: block;
 	width: 100%;
-	height: 100px;
+	height: 120px;
 	padding:15px;
 	resize:none;
 	border:1px solid #d4d9dd;
@@ -387,10 +387,15 @@ label.error::before{
 
 .textarea-word-tracker span{
 	position: absolute;
-	bottom:15px;
-	right:15px;
+	bottom:3px;
+	left:5px;
 	display: inline-block;
-	font-size: 15px;
+	font-size: 12px;
+}
+
+.textarea-word-tracker span::after{
+	content:'حرف باقی مانده';
+	margin-right: 5px;
 }
 
 .samanira_secure{
@@ -1631,14 +1636,18 @@ a.close:hover{background-color: #22577c;}
 
 /* -- _Main Styles -- */
 
-.table{width: 100%;}
+.table{
+	width: 100%;
+	overflow: hidden;
+	border-radius: 3px;
+}
 
 .table.scrollable{overflow-x:auto;}
 .table.scrollable table{min-width: 760px;}
 
 .table td,
 .table th{
-	padding:10px 15px;
+	padding:10px 12px;
 	border:1px solid #b5b5b5;
 }
 

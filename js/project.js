@@ -114,7 +114,13 @@ $('.color-pallet input').on('change', function(){
 
 // Comment Like / Dislike
 
-
+$('.cbutton').on('click', function(){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+  } else{
+    $(this).addClass('active').siblings().removeClass('active');
+  }
+});
 
 // Form Validations
 
@@ -229,6 +235,32 @@ $('.newsletter_form').validate({
   },
   messages: {
     newsletter_email_address: "لطفا آدرس ایمیل خود را وارد کنید",
+  },
+  errorPlacement: function(error, element) {
+    error.insertAfter(element);
+  },
+  submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: " ",
+        data: $(form).serialize(),
+        success: function () {
+            
+        }
+      });
+      return false;
+  }
+});
+
+$('.write_review_form').validate({
+  rules: {
+    write_review: {
+      required: true,
+      minlength: 50,
+    }
+  },
+  messages: {
+    write_review: "حداقل کاراکتر برای ارسال نظر باید ۵۰ حرف باشد",
   },
   errorPlacement: function(error, element) {
     error.insertAfter(element);
