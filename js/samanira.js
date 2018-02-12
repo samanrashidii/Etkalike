@@ -17,7 +17,7 @@ $('.current-year').html(thisYear);
 var charLeft;
 
 $('.textarea-word-tracker textarea').on('keyup load', function () {
-  charLeft = 250 - $(this).val().length;
+  charLeft = 300 - $(this).val().length;
   if (charLeft < 0) {
     charLeft = 0;
   }
@@ -26,7 +26,7 @@ $('.textarea-word-tracker textarea').on('keyup load', function () {
 
 $(window).load( function() {
   $('.textarea-word-tracker textarea').each( function () {
-    charLeft = 250 - $(this).val().length;
+    charLeft = 300 - $(this).val().length;
     $(this).siblings('span').text(charLeft);    
   });
 });
