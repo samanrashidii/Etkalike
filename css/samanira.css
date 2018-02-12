@@ -210,8 +210,8 @@ select{
 input{
 	display: block;
 	width: 100%;
-	height: 42px;
-	line-height: 42px;
+	height: 40px;
+	line-height: 40px;
 	padding:0 15px;
 	border:1px solid #d4d9dd;
 	border-radius: 4px;
@@ -616,6 +616,17 @@ label.error::before{
 .bttn.site-2:hover{
 	color:#f55757;
 	background-color: #ffffff;
+}
+
+.bttn.transparent{
+	color:#3e474f;
+	background-color: transparent;
+	border:2px solid #3e474f;
+}
+
+.bttn.transparent.active{
+	color:#ffffff;
+	background-color: #5cb860;
 }
 
 .bttn.has-icon{
@@ -1354,63 +1365,23 @@ a.close:hover{background-color: #22577c;}
 	display: inline-block;
 	vertical-align: middle;
 	width: 16px;
-	height: 14px;
+	height: 15px;
 	background: url('../images/icons/star.png') no-repeat center center;
 }
 
 .star-box span.active{background-image: url('../images/icons/star-active.png');}
 .star-box span.selected{background-image: url('../images/icons/star-active.png') !important;}
+.star-box span.half-active{background-image: url('../images/icons/star-half-active.png');}
 
 .star-box i{
 	position: relative;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: baseline;
 	font-style: normal;
 	font-size: 13px;
-	padding-top:6px;
-	margin-right: 7px;
-	cursor: pointer;
-	-webkit-transition:all .2s ease-in-out;
-	-moz-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
+	color:#ffffff;
+	margin-left: 7px;
 }
-
-.your-rating{
-	position: absolute;
-	top:-120px;
-	left:17px;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column-reverse;
-	flex-direction: column-reverse;
-	width: 27px;
-	height: 120px;
-	text-align: center;
-	padding-bottom:8px;
-	visibility: hidden;
-	background-color: #3e474f;
-	border-radius: 4px;
-}
-
-.your-rating::after{
-	content:'';
-	position: absolute;
-	bottom:-4px;
-	left:8px;
-	width: 10px;
-	height: 10px;
-	background-color: #3e474f;
-	border-radius: 1px;
-	transform:rotate(45deg);
-}
-
-.your-rating span{
-	width: 25px;
-	height: 15px;
-	margin:3px 0;
-}
-
-.star-box i:hover .your-rating{visibility: visible;}
 
 /* -- _Quotes -- */
 

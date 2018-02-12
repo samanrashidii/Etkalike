@@ -106,9 +106,15 @@ $('.your-rating').on('mouseleave', function(){
   $(this).children('span').removeClass('active');
 });
 
-// Color Pallet
+// Color Pallet & Size Options
 
-$('.color-pallet input').on('change', function(){
+$('.color-pallet input, .size-options input').on('change', function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+// Comment Filtering
+
+$('.comment-filters a').on('click', function(){
   $(this).addClass('active').siblings().removeClass('active');
 });
 
@@ -120,6 +126,15 @@ $('.cbutton').on('click', function(){
   } else{
     $(this).addClass('active').siblings().removeClass('active');
   }
+});
+
+// Product Tabs
+
+$('.product-tabs > ul li a').on('click', function(e){
+  var tabID = $(this).attr('href');
+  e.preventDefault();
+  $(this).parent().addClass('active').siblings().removeClass('active');
+  $(tabID).show().siblings().hide();
 });
 
 // Form Validations

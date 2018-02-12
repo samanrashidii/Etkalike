@@ -543,11 +543,6 @@ a.site-color:hover{color:#22577c !important;}
 
 .filter-items .checkbox-holder input[type="checkbox"] + label::after{right: 5px;}
 
-.product-gallery{
-	position: relative;
-	padding-bottom: 90px;
-}
-
 #main-image-wrapper img{
 	-webkit-box-shadow: 0 0 20px #c1c1c1;
 	-moz-box-shadow: 0 0 20px #c1c1c1;
@@ -560,17 +555,14 @@ a.site-color:hover{color:#22577c !important;}
 	border-radius: 4px;
 }
 
-#gallery{
-	position: absolute;
-	bottom:-5px;
-	right: 0;
-}
+#gallery{margin-top:12px;}
 
 #gallery a{
 	display: inline-block;
 	width: 75px !important;
 	height: 75px !important;
 	overflow: hidden;
+	margin-bottom: 3px;
 	margin-left: 7px;
 	border:1px solid #c1c1c1;
 	border-radius: 3px;
@@ -647,6 +639,28 @@ a.site-color:hover{color:#22577c !important;}
 	box-shadow: 0 0 4px #010101;
 }
 
+.size-options input{display: none;}
+.size-options input + label{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	color:#3e474f;
+	padding:3px 10px;
+	margin-left: 2px;
+	cursor: pointer;
+	border:1px solid #3e474f;
+	border-radius: 3px;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+}
+
+.size-options input.active + label{
+	color:#ffffff;
+	background-color: #3079AB;
+	border-color:#3079AB;
+}
+
 .product-price{
 	display: inline-block;
 	font-size: 33px;
@@ -667,19 +681,39 @@ a.site-color:hover{color:#22577c !important;}
 
 .product-last-price{
 	position: absolute;
-    top: 54px;
+    top: 57px;
     right: 60px;
     display: inline-block;
-    font-size: 15px;
+    font-size: 13px;
     color: #e15258;
     text-decoration: line-through;
+    z-index: 10;
+}
+
+.price-difference{
+	position: absolute;
+    top: 57px;
+    left: 10px;
+    display: inline-block;
+    font-size: 12px;
+    color: #5cb860;
+    z-index: 10;
+}
+
+.installment-info{
+	position: absolute;
+    top: 57px;
+    right: 63px;
+    display: inline-block;
+    font-size: 12px;
+    color: #5cb860;
     z-index: 10;
 }
 
 .quantity{
 	position: relative;
 	display: block;
-	width: 126px !important;
+	width: 120px !important;
 	margin:auto;
 }
 
@@ -823,7 +857,6 @@ a.url-share{background-image: url('../images/icons/share-link.png');}
 	z-index: 100;
 }
 
-
 .comment-box .post-stats{
 	direction: ltr;
 	text-align: left;
@@ -835,6 +868,11 @@ a.url-share{background-image: url('../images/icons/share-link.png');}
 
 .comment-box .post-stats span{color:#ffffff;}
 .comment-box .post-stats span::after{margin:0 10px;}
+
+.comment-box .star-box{
+	text-align: right;
+	margin-bottom: -12px;
+}
 
 .comment-content p:first-child{padding-top: 0;}
 
@@ -900,7 +938,89 @@ span.comment{
 	padding-top:0;
 }
 
-.review-box input[type="submit"]{margin-top:10px;}
+.review-box .star-box,
+.review-box input[type="submit"]{margin-top:12px;}
+
+.review-box .star-box span{cursor: pointer;}
+
+.product-stats{
+	position: relative;
+	min-height: 200px;
+	padding:15px 200px 15px 15px;
+	border:2px dashed #3e474f;
+	border-radius: 4px;
+}
+
+.total-stars{
+	position: absolute;
+	top:7px;
+	right: 0;
+	width: 200px;
+	text-align: center;
+	padding:15px;
+}
+
+.product-stats h2{font-size: 60px;}
+.product-stats .star-box{margin:-10px 0 20px 0;}
+.product-stats .star-box span{
+	width: 30px;
+	height: 29px;
+	background: url('../images/icons/star-big.png') no-repeat center center;
+}
+.product-stats .star-box span.active{background: url('../images/icons/star-big-active.png') no-repeat center center;}
+.product-stats .star-box span{background: url('../images/icons/star-big-half-active.png') no-repeat center center;}
+
+.comment-filters a{margin:0 5px;}
+
+.stars-stats li{
+	overflow: hidden;
+	height: 25px;
+	line-height: 25px;
+	margin:7px 0;
+	background-color: #cfcfcf;
+	border-radius: 4px;
+}
+
+.stars-stats li span{
+	display: block;
+	height: 100%;
+	font-size: 11px;
+	padding:0 10px;
+	background-color: #ffda44;
+}
+
+.product-tabs{
+	overflow: hidden;
+	border:1px solid #3e474f;
+	border-radius:5px;
+}
+
+.product-tabs > ul{
+	overflow: hidden;
+	border-bottom: 1px solid #3e474f;
+}
+
+.product-tabs > ul li{
+	float: right;
+	width: 50%;
+}
+
+.product-tabs > ul li a{
+	display: block;
+	font-size: 20px;
+	color:#3e474f;
+	text-align: center;
+	padding:10px;
+}
+
+.product-tabs > ul li.active a{
+	color:#ffffff;
+	background-color: #3079AB;
+}
+
+.product-talks{padding:40px;}
+
+#questions{display: none;}
 
 
 /*   Added Styles by Back-end   */
