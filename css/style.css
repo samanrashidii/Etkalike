@@ -255,7 +255,8 @@ a.site-color:hover{color:#22577c !important;}
 
 .ads img{border-radius: 4px;}
 
-.product-items a{
+.product-items a,
+.similiar-products a{
 	position: relative;
 	display: block;
 	overflow:hidden;
@@ -268,7 +269,8 @@ a.site-color:hover{color:#22577c !important;}
 	border-radius: 4px;
 }
 
-.product-items a:hover{
+.product-items a:hover,
+.similiar-products a:hover{
 	-webkit-box-shadow:0 0 15px #a1a1a1;
 	-moz-box-shadow:0 0 15px #a1a1a1;
 	box-shadow:0 0 15px #a1a1a1;
