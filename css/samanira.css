@@ -235,6 +235,8 @@ label{
 	padding:15px 0;
 }
 
+label a{color:#3079AB;}
+
 input[type="submit"]{
 	display: block;
     width: 100%;

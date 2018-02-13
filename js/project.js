@@ -137,6 +137,16 @@ $('.product-tabs > ul li a').on('click', function(e){
   $(tabID).show().siblings().hide();
 });
 
+// Question & Answer
+
+$('a.reply').on('click', function(){
+  $(this).parents('.comment-box').next().find('.answer-to-question').slideToggle().siblings().hide();
+});
+
+$('a.view-answers').on('click', function(){
+  $(this).parents('.comment-box').next().find('.other-answers').slideToggle().siblings().hide();
+});
+
 // Form Validations
 
 $('.login_form').validate({
