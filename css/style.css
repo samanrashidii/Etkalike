@@ -594,6 +594,23 @@ a.site-color:hover{color:#22577c !important;}
 	margin:3px 0 0 0;
 }
 
+.product-things{
+	font-size: 17px;
+	color:#7a7a7a;
+	margin-top:10px;
+}
+
+.product-things span:nth-child(1) a:hover,
+.product-things span:nth-child(1) a.active{color:#e15258;}
+.product-things span:nth-child(2) a:hover{color:#eb7728;}
+
+.product-things span:not(:last-child)::after{
+	content:'|';
+	display: inline-block;
+	vertical-align: middle;
+	margin:0 15px;
+}
+
 .product-info li{margin:12px 0;}
 .product-info li strong{
 	display: inline-block;
@@ -846,7 +863,6 @@ a.url-share{background-image: url('../images/icons/share-link.png');}
 }
 
 .comment-content{
-	position: relative;
 	width: 100%;
 	min-height: 120px;
 	line-height: 2;
@@ -854,7 +870,6 @@ a.url-share{background-image: url('../images/icons/share-link.png');}
 	padding:10px 15px;
 	background-color: #fefefe;
 	border-radius: 0 0 5px 5px;
-	z-index: 100;
 }
 
 .comment-box .post-stats{
@@ -923,14 +938,18 @@ span.comment{
 .like-icon.active{background-image: url('../images/icons/thumbs-up.png') !important;}
 .dislike-icon.active{background-image: url('../images/icons/thumbs-down.png') !important;}
 
-.review-box{
+.review-box,
+.QtoA-box{
 	position: relative;
 	padding:50px 15px 15px 15px;
 	background-color: #3e474f;
 	border-radius: 4px;
 }
 
-.review-box p{
+.QtoA-box{border-radius: 0;}
+
+.review-box p,
+.QtoA-box p{
 	position: absolute;
 	left:15px;
 	top:19px;
@@ -939,7 +958,12 @@ span.comment{
 }
 
 .review-box .star-box,
-.review-box input[type="submit"]{margin-top:12px;}
+.review-box input[type="submit"],
+.QtoA-box input[type="submit"], 
+.question-box input[type="submit"]{margin-top:12px;}
+
+.QtoA-box label{color:#ffffff !important;}
+.QtoA-box .field-holder{margin-top:0;}
 
 .review-box .star-box span{cursor: pointer;}
 
@@ -970,7 +994,12 @@ span.comment{
 .product-stats .star-box span.active{background: url('../images/icons/star-big-active.png') no-repeat center center;}
 .product-stats .star-box span{background: url('../images/icons/star-big-half-active.png') no-repeat center center;}
 
-.comment-filters a{margin:0 5px;}
+.comment-filters a{
+	min-width: 110px;
+    font-size: 12px;
+	padding: 7px;
+	margin: 0 3px;
+}
 
 .stars-stats li{
 	overflow: hidden;
@@ -1021,7 +1050,49 @@ span.comment{
 .product-talks{padding:40px;}
 
 #questions{display: none;}
+#questions h5 svg{margin-left: 5px;}
 
+.comment-box.best-comment{border:1px solid #000000;}
+
+.comment-box.best-comment .comment-box-info{
+	padding-right: 55px;
+	background: url('../images/icons/diamond.png') no-repeat 99% -2px #7ea500;
+	border-bottom: 2px solid #364500;
+}
+
+.comment-box.best-comment .comment-box-info span.reviewer{right: 60px;}
+.comment-box.best-comment .comment-box-like-dislike .cbutton{border-color:#000000;}
+
+.comment-box.best-comment .comment-content{background: #d7e6a5;}
+
+.questions-wrapper .comment-box{margin:25px 0 0 0;}
+.questions-wrapper .comment-content{padding-bottom: 22px;}
+
+.question-buttons{
+	position: absolute;
+	bottom:7px;
+	left:5px;
+	text-align: left;
+}
+
+.question-buttons a{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+	margin:0 7px;
+}
+
+.comment-box-items > div{display: none;}
+
+.other-answers{
+	padding:20px 60px 20px 20px;
+	border:2px solid #3e474f;
+	border-top:none;
+	border-radius: 0 0 4px 4px;
+}
+
+.other-answers .comment-box{margin:0 0 15px 0;}
+.other-answers .comment-box:last-child{margin-bottom: 0;}
 
 /*   Added Styles by Back-end   */
 
