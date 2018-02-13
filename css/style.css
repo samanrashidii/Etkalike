@@ -544,9 +544,9 @@ a.site-color:hover{color:#22577c !important;}
 .filter-items .checkbox-holder input[type="checkbox"] + label::after{right: 5px;}
 
 #main-image-wrapper img{
-	-webkit-box-shadow: 0 0 20px #c1c1c1;
-	-moz-box-shadow: 0 0 20px #c1c1c1;
-	box-shadow: 0 0 20px #c1c1c1;
+	-webkit-box-shadow: 0 0 20px #eae9e9;
+	-moz-box-shadow: 0 0 20px #eae9e9;
+	box-shadow: 0 0 20px #eae9e9;
 	border-radius: 4px;
 }
 
@@ -570,9 +570,9 @@ a.site-color:hover{color:#22577c !important;}
 
 #gallery a.active{
 	border-color:#010101;
-	-webkit-box-shadow: 0 0 9px #5a5a5a;
-	-moz-box-shadow: 0 0 9px #5a5a5a;
-	box-shadow: 0 0 9px #5a5a5a;
+	-webkit-box-shadow: 0 0 9px #7a7a7a;
+	-moz-box-shadow: 0 0 9px #7a7a7a;
+	box-shadow: 0 0 9px #7a7a7a;
 }
 
 .product-section{
@@ -1093,6 +1093,17 @@ span.comment{
 
 .other-answers .comment-box{margin:0 0 15px 0;}
 .other-answers .comment-box:last-child{margin-bottom: 0;}
+
+.related-blogs .news-box{
+	max-width: 240px; 
+	margin: auto;
+}
+
+.similiar-products,
+.related-blogs{
+	border:1px solid #3e474f;
+	border-radius: 4px;
+}
 
 /*   Added Styles by Back-end   */
 

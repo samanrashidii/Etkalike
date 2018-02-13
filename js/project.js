@@ -22,6 +22,56 @@ $('.forgot-password-bttn').on('click', function(){
 	$('.forgot-password-box').fadeIn().siblings().hide();
 });
 
+// Proucts Carousel
+
+$('.similiar-products').owlCarousel({
+  autoWidth:true,
+  autoplay:true,
+  autoplayTimeout: 5000,
+  autoplaySpeed: 700,
+  loop:false,
+  items:6,
+  margin:19,
+  rewind : true,
+  nav:true,
+  responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+
+// Related Blogs
+
+$('.related-blogs').owlCarousel({
+  autoWidth:true,
+  autoplay:true,
+  autoplayTimeout: 4000,
+  items:4,
+  autoplaySpeed: 500,
+  center:true,
+  loop:true,
+  margin:14,
+  nav:true,
+  responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
 // Filter Boxes
 
 $('.filter-title').on('click', function(){
