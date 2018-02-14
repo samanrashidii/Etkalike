@@ -133,6 +133,56 @@
 				</div><!-- inner-overlay end -->
 			</div><!-- overlay end -->
 
+			<!-- installment Overlay -->
+
+			<div class="overlay" id="installment-box">
+				<div class="inner-overlay">
+					<div class="overlay-box">
+						<div class="inner-overlay-box">
+							<a class="close overlay-close" href="javascript:void(0)"></a>
+							<div class="form-wrapper">
+								<h4 class="center-aligned has-bottom-margin"><i class="fas fa-money-bill-alt"></i> نحوه پرداخت اقساط</h4>
+								<form action="#" method="POST" name="installment_form" class="installment_form" accept-charset="utf-8">
+									<div class="field-holder">
+										<label for="installment_number">تعداد اقساط : </label>
+										<select name="installment_number" id="installment_number" class="ui-selectmenu">
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+										</select>
+									</div><!-- field-holder end -->
+									<div class="field-holder">
+										<label for="prepayment">پیش پرداخت : </label>
+										<input type="tel" name="prepayment" id="prepayment" class="number-field" value="30000" />
+									</div><!-- field-holder end -->
+									<div class="field-holder">
+										<div class="table installable">
+											<table>
+												<tr>
+													<td class="column-40">مبلغ هر قسط</td>
+													<td class="column-60"><span>52,736</span> تومان</td>
+												</tr>
+												<tr>
+													<td>جمع اقساط</td>
+													<td><span>105,472</span> تومان</td>
+												</tr>
+												<tr>
+													<td>قیمت نهایی کالا</td>
+													<td>131,472 تومان</td>
+												</tr>
+											</table>
+										</div><!-- table end -->
+									</div><!-- field-holder end -->
+									<input type="submit" value="افزودن به سبد خرید اقساطی" />
+								</form>
+							</div><!-- form-wrapper end -->
+						</div><!-- inner-overlay-box end -->
+					</div><!-- overlay-box end -->
+				</div><!-- inner-overlay end -->
+			</div><!-- overlay end -->
+
 			<header class="header">
 
 				<div class="top-header">
@@ -407,7 +457,7 @@
 												<span class="installment-info">با حکمت کارت به راحتی خرید کنید</span>
 											</div><!-- price-holder end -->
 											<div class="button-holder has-top-margin">
-												<a class="bttn site" href="#">خرید اقساطی با حکمت کارت</a>
+												<a class="bttn site installment-bttn overlay-bttn" href="#installment-box">خرید اقساطی با حکمت کارت</a>
 												<input type="submit" value="خرید نقدی" />
 											</div><!-- button-holder end -->
 										</div><!-- product-section end -->
