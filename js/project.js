@@ -115,6 +115,12 @@ $('.quantity').each(function() {
   var inputMin = inputNum.attr('min');
   var inputMax = inputNum.attr('max');
 
+  inputNum.on('blur', function(){
+    if($(this).val().length == 0){
+      $(this).val('1');
+    }
+  });
+
   btnUp.on('click', function() {
     var oldValue = parseFloat(inputNum.val());
     if (oldValue >= inputMax) {
