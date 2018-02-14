@@ -1107,6 +1107,23 @@ span.comment{
 	border-radius: 4px;
 }
 
+.ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+	background-color: #3079AB;
+	border-color: #3079AB;
+}
+
+.ui-selectmenu-button[aria-expanded="true"]{border-color:#3079AB;}
+
+.installable{
+	font-size: 12px;
+	padding-top:9px;
+}
+
+.installable table{
+	overflow: hidden;
+	border-radius: 3px;
+}
+
 /*   Added Styles by Back-end   */
 
 
