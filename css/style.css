@@ -746,7 +746,7 @@ a.site-color:hover{color:#22577c !important;}
 
 .quantity input{
 	height: 32px;
-	font-size: 15px;
+	font-size: 14px;
 	color:#000000;
 	text-align: center;
 	padding:4px 35px 0 35px;
@@ -1122,6 +1122,151 @@ span.comment{
 .installable table{
 	overflow: hidden;
 	border-radius: 3px;
+}
+
+.table.normal-cart::before{
+	content:'جزئیات سبد کالای آنلاین';
+	position: absolute;
+	top:-32px;
+	right: 0;
+	width: 170px;
+	color:#ffffff;
+	text-align: center;
+	padding:7px 12px;
+	background-color: #3e474f;
+	border-radius: 3px 3px 0 0;
+}
+
+.table.installment-cart::before{
+	content:'جزئیات سبد کالای اقساطی';
+	position: absolute;
+	top:-32px;
+	right: 0;
+	width: 170px;
+	color:#ffffff;
+	text-align: center;
+	padding:7px 12px;
+	background-color: #eb7728;
+	border-radius: 3px 3px 0 0;
+}
+
+.table.checkout{overflow: visible;}
+.table.checkout:not(:last-child){margin-bottom: 50px;}
+
+.table.checkout table{
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+.table.checkout td:first-child{
+	color:#4a5158;
+	background-color: transparent;
+	border-color: #cfcfcf;
+}
+
+.table.checkout td,
+.table.checkout th{
+	font-size: 12px;
+	text-align: center;
+	padding:7px;
+	border-color:#cfcfcf;
+}
+
+.table.checkout th{padding:10px;}
+
+.checkout-box{
+	padding: 26px 20px 20px 20px;
+	background-color: #f3f3f3;
+	border-radius: 0 0 4px 4px;
+}
+
+.checkout-inner-box{
+	width: 100%;
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ececec;
+	border-radius: 4px;
+}
+
+.checkout-inner-box.has-edit-icon{position: relative;}
+
+.order-details-table{font-family: 'Iran-Medium';}
+
+.order-details-table span{
+	display: inline-block;
+	font-family: 'Iran';
+	color: #808080;
+	margin-top: 6px;
+}
+
+.promotion-row td{color: #67b83f;}
+
+.remove-item{
+	display: inline-block;
+	width: 13px;
+	height: 16px;
+	margin-top:4px;
+	background: url('../images/icons/delete.png') no-repeat center;
+}
+
+.invoice-checkout{
+	margin-bottom: 7px;
+	border:1px solid #cfcfcf;
+	border-radius: 3px;
+}
+
+.coupon-row td{
+	color:#111111;
+	background-color: #f3f8f1;
+	border-top:1px solid #cfcfcf;
+	border-bottom:1px solid #cfcfcf;
+}
+.coupon-row td{color:#67b83f;}
+
+.invoice-checkout table td{
+	font-size: 12px;
+	padding:10px;
+}
+
+input.keep-on{
+	padding:0 50px;
+	margin-bottom: 5px;
+	background-image: url('../images/assets/arrow-left-long.png');
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+
+a.go-back{
+	display: block;
+	padding-right: 50px;
+	padding-left: 50px;
+	background-image: url('../images/assets/arrow-right-long.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+.order-image{
+	float: right;
+	margin-left: 12px;
+	border:1px solid #e7e7e7;
+	border-radius: 2px;
+}
+
+.order-image img{
+	width: 50px !important;
+	height: 50px !important;
+}
+
+.order-details{
+	float: right;
+	text-align: right;
+}
+.order-details h6{font-size: 12px;}
+.order-details span{
+	display: block;
+	font-size: 12px;
+	color:#6a6a6a;
+	padding-top:4px;
 }
 
 /*   Added Styles by Back-end   */
