@@ -1310,10 +1310,7 @@ a.go-back{
 	height: 50px !important;
 }
 
-.order-details{
-	float: right;
-	text-align: right;
-}
+.order-details{text-align: right;}
 .order-details h6{font-size: 12px;}
 .order-details span{
 	display: block;
