@@ -278,171 +278,140 @@
 							</ul>
 						</div><!-- breadcrumb end -->
 						
-						<form action="#" method="POST" name="cart_form" class="cart_form" accept-charset="UTF-8">
-							<div class="cart-page section-wrapper has-2-10-column has-xxlarge-top-margin">
-								<div class="section">
-									<div class="table checkout normal-cart responsive middle-vertical relative-position" afterContent="جزئیات سبد کالای آنلاین">
-										<table>
-											<thead>
-												<tr>
-													<th>محصولات</th>
-													<th>قیمت واحد</th>
-													<th>تعداد</th>
-													<th>جمع قیمت</th>
-													<th></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<div class="order-image">
-															<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
-														</div><!-- order-image end -->
-														<div class="order-details">
-															<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
-															<span>رنگ: مشکی</span>
-														</div><!-- order-details end -->
-													</td>
-													<td>۱,۶۰۰,۰۰۰ تومان</td>
-													<td>
-														<div class="quantity">
-															<input type="number" min="1" max="2000" step="1" value="1" />
-														</div><!-- quantity end -->
-													</td>
-													<td>۱,۶۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
-												</tr>
-												<tr>
-													<td>
-														<div class="order-image">
-															<a href="#"><img src="images/products/item-2.jpg" alt="" /></a>
-														</div><!-- order-image end -->
-														<div class="order-details">
-															<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
-															<span>رنگ: خاکستری</span>
-														</div><!-- order-details end -->
-													</td>
-													<td>۱,۶۰۰,۰۰۰ تومان</td>
-													<td>
-														<div class="quantity">
-															<input type="number" min="1" max="2000" step="1" value="2" />
-														</div><!-- quantity end -->
-													</td>
-													<td>۳,۲۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
-												</tr>
-											</tbody>
-										</table>
-									</div><!-- table end -->
+						<form action="#" method="POST" name="checkout_form" class="checkout_form" accept-charset="UTF-8">
+							<div class="checkout-page has-top-margin">
+								<div class="checkout-box">
+									<h4>بازبینی سفارش</h4>
+									<div class="checkout-inner-box has-clear-fix">
+										<div class="table checkout normal-cart responsive middle-vertical relative-position" afterContent="سبد کالای آنلاین">
+											<table>
+												<thead>
+													<tr>
+														<th>محصولات</th>
+														<th>قیمت واحد</th>
+														<th>تعداد</th>
+														<th>جمع قیمت</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<div class="order-image">
+																<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+															</div><!-- order-image end -->
+															<div class="order-details">
+																<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																<span>رنگ: مشکی</span>
+															</div><!-- order-details end -->
+														</td>
+														<td>۱,۶۰۰,۰۰۰ تومان</td>
+														<td>۱</div><!-- quantity end -->
+														</td>
+														<td>۱,۶۰۰,۰۰۰ تومان</td>
+														<td><a class="edit" href="javascript:void(0)"></a></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="order-image">
+																<a href="#"><img src="images/products/item-2.jpg" alt="" /></a>
+															</div><!-- order-image end -->
+															<div class="order-details">
+																<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																<span>رنگ: خاکستری</span>
+															</div><!-- order-details end -->
+														</td>
+														<td>۱,۶۰۰,۰۰۰ تومان</td>
+														<td>۲</div><!-- quantity end -->
+														</td>
+														<td>۳,۲۰۰,۰۰۰ تومان</td>
+														<td><a class="edit" href="javascript:void(0)"></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div><!-- table end -->
 
-									<div class="table checkout installment-cart responsive middle-vertical relative-position" afterContent="جزئیات سبد کالای اقساطی">
-										<table>
-											<thead>
+										<div class="table checkout installment-cart responsive middle-vertical relative-position" afterContent="سبد کالای اقساطی">
+											<table>
+												<thead>
+													<tr>
+														<th>محصولات</th>
+														<th>پیش پرداخت</th>
+														<th>قسط</th>
+														<th>تعداد اقساط</th>
+														<th>جمع اقساط</th>
+														<th>تعداد</th>
+														<th>قیمت نهایی کالا</th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<div class="order-image">
+																<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+															</div><!-- order-image end -->
+															<div class="order-details">
+																<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																<span>رنگ: مشکی</span>
+															</div><!-- order-details end -->
+														</td>
+														<td>۶۰۰,۰۰۰ تومان</td>
+														<td>۲۰۰,۰۰۰ تومان</td>
+														<td>۳</td>
+														<td>۱,۶۰۰,۰۰۰ تومان</td>
+														<td>۱</td>
+														<td>۱,۶۰۰,۰۰۰ تومان</td>
+														<td><a class="edit" href="javascript:void(0)"></a></td>
+													</tr>
+													<tr>
+														<td>
+															<div class="order-image">
+																<a href="#"><img src="images/products/item-2.jpg" alt="" /></a>
+															</div><!-- order-image end -->
+															<div class="order-details">
+																<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																<span>رنگ: خاکستری</span>
+															</div><!-- order-details end -->
+														</td>
+														<td>۶۰۰,۰۰۰ تومان</td>
+														<td>۲۰۰,۰۰۰ تومان</td>
+														<td>۳</td>
+														<td>۳,۲۰۰,۰۰۰ تومان</td>
+														<td>۲</td>
+														<td>۳,۲۰۰,۰۰۰ تومان</td>
+														<td><a class="edit" href="javascript:void(0)"></a></td>
+													</tr>
+												</tbody>
+											</table>
+										</div><!-- table end -->
+										<div class="invoice-checkout">
+											<table>
 												<tr>
-													<th>محصولات</th>
-													<th>پیش پرداخت</th>
-													<th>قسط</th>
-													<th>تعداد اقساط</th>
-													<th>جمع اقساط</th>
-													<th>تعداد</th>
-													<th>قیمت نهایی کالا</th>
-													<th></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<div class="order-image">
-															<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
-														</div><!-- order-image end -->
-														<div class="order-details">
-															<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
-															<span>رنگ: مشکی</span>
-														</div><!-- order-details end -->
-													</td>
-													<td>۶۰۰,۰۰۰ تومان</td>
-													<td>۲۰۰,۰۰۰ تومان</td>
-													<td>۳</td>
-													<td>۱,۶۰۰,۰۰۰ تومان</td>
-													<td>
-														<div class="quantity">
-															<input type="number" min="1" max="2000" step="1" value="1" />
-														</div><!-- quantity end -->
-													</td>
-													<td>۱,۶۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
+													<td class="column-80">جمع قیمت</td>
+													<td class="column-20">۴,۸۰۰,۰۰۰</td>
 												</tr>
 												<tr>
-													<td>
-														<div class="order-image">
-															<a href="#"><img src="images/products/item-2.jpg" alt="" /></a>
-														</div><!-- order-image end -->
-														<div class="order-details">
-															<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
-															<span>رنگ: خاکستری</span>
-														</div><!-- order-details end -->
-													</td>
-													<td>۶۰۰,۰۰۰ تومان</td>
-													<td>۲۰۰,۰۰۰ تومان</td>
-													<td>۳</td>
-													<td>۳,۲۰۰,۰۰۰ تومان</td>
-													<td>
-														<div class="quantity">
-															<input type="number" min="1" max="2000" step="1" value="2" />
-														</div><!-- quantity end -->
-													</td>
-													<td>۳,۲۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
+													<td>هزینه ارسال</td>
+													<td>۸۰,۰۰۰</td>
 												</tr>
-											</tbody>
-										</table>
-									</div><!-- table end -->
-								</div><!-- section end -->
-								<div class="section">
-									<div class="invoice-checkout">
-										<table>
-											<tr>
-												<td class="column-80">جمع قیمت</td>
-												<td class="column-20">۴,۸۰۰,۰۰۰</td>
-											</tr>
-											<tr>
-												<td>هزینه ارسال</td>
-												<td>۸۰,۰۰۰</td>
-											</tr>
-											<tr class="add-coupon">
-												<td colspan="2">
-													<div class="field-holder no-margin">
-														<input type="text" name="coupon_input" placeholder="کد تخفیف خود را وارد کنید" />
-														<a class="check-coupon" href="javascript:void(0)"><i class="fas fa-sync"></i></a>
-													</div><!-- field-holder end -->
-												</td>
-											</tr>
-											<tr class="coupon-row">
-												<td>کوپن</td>
-												<td><span>- ۴۵۰,۰۰۰</span></td>
-											</tr>
-											<tr class="off-row">
-												<td>تخفیف</td>
-												<td><span>- ۵۰,۰۰۰</span></td>
-											</tr>
-											<tr>
-												<td>جمع کل</td>
-												<td>۴,۳۵۰,۰۰۰</td>
-											</tr>
-										</table>
-									</div><!-- invoice-checkout end -->
-									<div class="cart-note">
-										<strong>
-											<i class="fas fa-truck"></i>
-											<span>۵۰,۰۰۰ تومان</span> بیشتر خرید کنید تا سفارش شما رایگان ارسال شود.
-										</strong>
-									</div><!-- cart-note end -->
-									<div class="checkout-buttons">
-										<input class="keep-on" type="submit" value="تکمیل خرید" />
-										<a class="bttn site go-back" href="#">ادامه خرید</a>
-									</div><!-- checkout-buttons end -->
-								</div><!-- section end -->
-							</div><!-- cart-page end -->
+												<tr class="coupon-row">
+													<td>کوپن</td>
+													<td><span>- ۴۵۰,۰۰۰</span></td>
+												</tr>
+												<tr class="off-row">
+													<td>تخفیف</td>
+													<td><span>- ۵۰,۰۰۰</span></td>
+												</tr>
+												<tr>
+													<td>جمع کل</td>
+													<td>۴,۳۵۰,۰۰۰</td>
+												</tr>
+											</table>
+										</div><!-- invoice-checkout end -->
+									</div><!-- checkout-inner-box end -->
+								</div><!-- checkout-box end -->
+							</div><!-- checkout-page end -->
 						</form>
 					</div><!-- frame end -->
 				</div><!-- content end -->
@@ -505,5 +474,17 @@
 			</footer><!-- footer end -->
 			
 		</div><!-- wrapper end -->
+<script>
+// Sticky Item
+if($(window).width() > 1050){
+	jQuery(document).ready(function($){
+	    $('.checkout-box > h4').sticky({
+	        parent: '.checkout-box',
+	        top: 10,
+	        bottom: 10
+	    });
+	});
+}
+</script>
 	</body>
 </html>
