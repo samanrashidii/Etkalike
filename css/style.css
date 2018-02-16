@@ -1216,16 +1216,69 @@ span.comment{
 }
 
 .coupon-row td{
-	color:#111111;
-	background-color: #f3f8f1;
-	border-top:1px solid #cfcfcf;
-	border-bottom:1px solid #cfcfcf;
+	color:#67b83f;
+	background-color: #e9fce8;
 }
-.coupon-row td{color:#67b83f;}
+
+.off-row td{
+	color:#e56b5a;
+	background-color: #fff4f4;
+}
+
+.coupon-row span,
+.off-row span{
+	display: inline-block;
+	direction: ltr;
+	text-align: left;
+}
+
+.add-coupon input{
+	font-size: 12px;
+	height: 30px;
+	line-height: 33px;
+	padding:0 10px 0 35px;
+}
+
+.add-coupon ::-webkit-input-placeholder{font-size:11px;}
+.add-coupon :-moz-placeholder{font-size:11px;}
+.add-coupon ::-moz-placeholder{font-size:11px;}
+.add-coupon :-ms-input-placeholder{  font-size:11px;}
+
+.check-coupon{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color:#ffffff;
+	text-align: center;
+	background-color:#3079AB;
+	border-radius: 3px 0 0 3px;
+	z-index: 10;
+}
+.check-coupon:hover{background-color: #22577c;}
+
+.cart-note{
+	line-height: 1.7;
+	font-size: 12px;
+	color:#ffffff;
+	padding:10px;
+	margin-bottom: 7px;
+	background-color: #3e474f;
+	border-radius: 3px;
+}
+
+.cart-note svg{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 3px;
+}
+.cart-note span{color:#5cb860;}
 
 .invoice-checkout table td{
 	font-size: 12px;
-	padding:10px;
+	padding:9px;
 }
 
 input.keep-on{
