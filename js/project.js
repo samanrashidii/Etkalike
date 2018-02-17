@@ -210,6 +210,12 @@ $('.timing-table td.available label').on('click', function(){
   $(this).parents('td').addClass('active')
 });
 
+// Shipping
+
+$('.shipping-box').on('click', function(){
+  $(this).addClass('active').find('input').prop('checked', true).parents('.half-box').siblings().find('.shipping-box').removeClass('active').find('input').prop('checked', false);
+});
+
 // Form Validations
 
 $('.login_form').validate({

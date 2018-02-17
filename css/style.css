@@ -1248,12 +1248,14 @@ span.comment{
 
 .invoice-checkout table td:last-child{text-align: left;}
 
-.checkout-page .invoice-checkout{
+.checkout-page .invoice-checkout,
+.get-receipt{
 	float: left;
 	width: 100%;
 	max-width: 400px;
 	margin-top:-20px;
 }
+.get-receipt{margin-top:0;}
 
 .coupon-row td{
 	color:#67b83f;
@@ -1410,11 +1412,85 @@ a.go-back{
 .timing-table td.not-available label{
 	color:#ffffff;
 	cursor: not-allowed;
-	background-color: #ed8c90;
+	background-color: #f17479;
 }
 
 .timing-table td.available label:hover{background-color: #f7f7f7;}
-.timing-table td.available.active label{background-color: #a2dca5;}
+.timing-table td.available.active label{background-color: #91d895;}
+
+.shipping-box{
+	position: relative;
+	height: 240px;
+	text-align: center;
+	padding:25px 10px 0 10px;
+	cursor: pointer;
+	border:1px solid #3e474f;
+}
+
+.shipping-options .half-box:nth-child(2n) .shipping-box{border-radius: 4px 0 0 4px;}
+.shipping-options .half-box:nth-child(2n+1) .shipping-box{
+	border-left: none;
+	border-radius: 0 4px 4px 0;
+}
+
+.shipping-box input{display: none;}
+
+.shipping-box > svg{
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.shipping-box h6{font-size: 22px;}
+.shipping-box ul{margin-top:15px;}
+.shipping-box li{margin:5px 0;}
+.shipping-box li svg{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.shipping-price{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width: 100%;
+	text-align: center;
+	padding:7px;
+	background-color: #e7e7e7;
+}
+
+.shipping-box .fa-check-square{
+    display: none;
+    vertical-align: top;
+    font-size: 45px;
+    color:#3079AB !important;
+    margin-top: -2px;
+}
+
+.shipping-box.active{background-color: #d1ecd3;}
+.shipping-box.active .fa-check-square{display: inline-block;}
+.shipping-box.active > svg,
+.shipping-box.active h6{color:#3da742;}
+.shipping-box.active .shipping-price{
+	color:#ffffff;
+	background-color: #3da742;
+}
+
+.checkout-page .button-holder a{
+	min-height: 95px;
+	font-size: 17px;
+	padding:17px 15px;
+}
+.checkout-page .button-holder a svg{font-size: 24px;}
+.checkout-page .button-holder a span{
+	display: block;
+	font-size: 11px;
+	color:#f9f9f9;
+	text-align: center;
+	margin-top:5px;
+}
+
+.message-box p{line-height:2;}
+.message-box p strong{color:#5cb860;}
 
 /*   Added Styles by Back-end   */
 
