@@ -1236,6 +1236,7 @@ span.comment{
 	display: inline-block;
 	width: 17px;
 	height: 17px;
+	margin-top:3px;
 	background: url('../images/icons/edit.png') no-repeat center;
 }
 
@@ -1358,13 +1359,26 @@ a.go-back{
 	padding-top:4px;
 }
 
+.address-box{
+	padding:10px;
+	margin-top:10px;
+	background-color: #3e474f;
+	border-radius: 4px;
+}
+
+.address-box ul li{
+	display: inline-block;
+	color:#5cb860;
+	margin:7px 10px;
+}
+
+.address-box ul li strong{color:#fafafa;}
+
 .new-address-box{
 	padding:20px;
 	background-color: #f0f0f0;
 	border-radius: 4px;
 }
-
-.new-address label{color:#373737;}
 
 .new-address .field-holder{margin:5px 0;}
 
@@ -1374,9 +1388,33 @@ a.go-back{
 	line-height: 37px;
 }
 .new-address textarea{
-	height: 70px;
+	height: 90px;
 	padding:12px;
 }
+
+.timing-table td{
+	vertical-align: middle;
+	font-size: 12px;
+	text-align: center;
+}
+
+.timing-table td:not(:first-child){padding:0;}
+
+.timing-table td input{display: none;}
+.timing-table td label{
+	display: block;
+	padding:20px 10px;
+	cursor: pointer;
+}
+
+.timing-table td.not-available label{
+	color:#ffffff;
+	cursor: not-allowed;
+	background-color: #ed8c90;
+}
+
+.timing-table td.available label:hover{background-color: #f7f7f7;}
+.timing-table td.available.active label{background-color: #a2dca5;}
 
 /*   Added Styles by Back-end   */
 

@@ -203,6 +203,13 @@ $('a.view-answers').on('click', function(){
   $(this).parents('.comment-box').next().find('.other-answers').slideToggle().siblings().hide();
 });
 
+// Timing Table
+
+$('.timing-table td.available label').on('click', function(){
+  $(this).parents('.timing-table').find('td.active').removeClass('active');
+  $(this).parents('td').addClass('active')
+});
+
 // Form Validations
 
 $('.login_form').validate({
