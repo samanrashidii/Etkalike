@@ -1176,19 +1176,20 @@ span.comment{
 
 .checkout-box{
 	position: relative;
-	padding: 20px 20px 20px 150px;
+	padding: 20px 20px 20px 155px;
 }
 
 .checkout-box > h4{
 	position: absolute;
-	top:20px;
+	top:auto;
 	left:0;
-	width: 130px !important;
+	width: 140px !important;
+	height: 32px !important;
 	font-family: 'Iran';
-	font-size: 14px;
+	font-size: 13px;
 	color:#ffffff;
 	text-align: center;
-	padding:7px 10px;
+	padding:7px 5px;
 	background-color: #3079AB;
 	border-radius: 3px;
 }
@@ -1357,8 +1358,24 @@ a.go-back{
 	padding-top:4px;
 }
 
-.checkout-box-title{
+.new-address-box{
+	padding:20px;
+	background-color: #f0f0f0;
+	border-radius: 4px;
+}
 
+.new-address label{color:#373737;}
+
+.new-address .field-holder{margin:5px 0;}
+
+.new-address input,
+.new-address .ui-selectmenu-button{
+	height: 34px;
+	line-height: 37px;
+}
+.new-address textarea{
+	height: 70px;
+	padding:12px;
 }
 
 /*   Added Styles by Back-end   */
