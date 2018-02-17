@@ -614,13 +614,10 @@ label.error::before{
 
 .bttn.site-2{
 	color:#ffffff;
-	background-color: #f55757;
+	background-color: #e15258;
 }
 
-.bttn.site-2:hover{
-	color:#f55757;
-	background-color: #ffffff;
-}
+.bttn.site-2:hover{background-color: #c8444a;}
 
 .bttn.transparent{
 	color:#3e474f;

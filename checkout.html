@@ -280,7 +280,7 @@
 						</div><!-- breadcrumb end -->
 						
 						<form action="#" method="POST" name="checkout_form" class="checkout_form" accept-charset="UTF-8">
-							<div class="checkout-page has-top-margin">
+							<div class="checkout-page has-large-y-margin">
 								<div class="checkout-box">
 									<h4>بازبینی سفارش</h4>
 									<div class="checkout-inner-box has-clear-fix">
@@ -411,6 +411,11 @@
 												</tr>
 											</table>
 										</div><!-- invoice-checkout end -->
+										<div class="clear-fix"></div><!-- lear-fix end -->
+										<div class="checkbox-holder get-receipt">
+											<input type="checkbox" name="get_receipt" id="get_receipt" value="" />
+											<label for="get_receipt">به همراه این سفارش فاکتور کاغذی ارسال شود؟</label>
+										</div><!-- checkbox-holder end -->
 									</div><!-- checkout-inner-box end -->
 								</div><!-- checkout-box end -->
 
@@ -420,7 +425,7 @@
 										<div class="from-address-book">
 											<div class="radio-holder has-small-bottom-margin">
 												<input type="radio" name="choose_address_type" id="address_option_1" value="" checked/>
-												<label for="address_option_1">انتخاب از دفترچه آدرس :</label>
+												<label for="address_option_1">ارسال به آدرس های ذخیره شده :</label>
 											</div><!-- radio-holder end -->
 											<select name="choose_address" class="ui-selectmenu">
 												<option value="">سامان رشیدی -- تهران،‌ خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</option>
@@ -441,7 +446,7 @@
 										<div class="new-address has-top-margin">
 											<div class="radio-holder has-small-bottom-margin">
 												<input type="radio" name="choose_address_type" id="address_option_2" value="" />
-												<label for="address_option_2">ارسال به آدرس جدید  </label>
+												<label for="address_option_2">ارسال به آدرس جدید : </label>
 											</div><!-- radio-holder end -->
 											<div class="new-address-box">
 												<div class="section-wrapper has-6-6-column">
@@ -504,7 +509,6 @@
 								<div class="checkout-box">
 									<h4>اطلاعات تکمیلی سفارش</h4>
 									<div class="checkout-inner-box has-clear-fix">
-										<h6 class="has-medium-bottom-margin">زمان ارسال سفارش : </h6>
 										<div class="timing-table table">
 											<table>
 												<tr>
@@ -514,19 +518,19 @@
 													</td>
 													<td class="not-available">
 														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ۹ - ۱۲</label>
+														<label for="t1">بازه ساعتی ۹ - ۱۲</label>
 													</td>
 													<td class="not-available">
 														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ۱۲ - ۱۵</label>
+														<label for="t1">بازه ساعتی ۱۲ - ۱۵</label>
 													</td>
 													<td class="available active">
 														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ۱۵ - ۱۸</label>
+														<label for="t1">بازه ساعتی ۱۵ - ۱۸</label>
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ۱۸ - ۲۱</label>
+														<label for="t1">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 												<tr>
@@ -536,19 +540,19 @@
 													</td>
 													<td class="not-available">
 														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ۹ - ۱۲</label>
+														<label for="t1">بازه ساعتی ۹ - ۱۲</label>
 													</td>
 													<td class="not-available">
 														<input type="radio" name="choose_time" id="t2" value="" />
-														<label for="t2">بازه ۱۲ - ۱۵</label>
+														<label for="t2">بازه ساعتی ۱۲ - ۱۵</label>
 													</td>
 													<td class="not-available">
 														<input type="radio" name="choose_time" id="t3" value="" />
-														<label for="t3">بازه ۱۵ - ۱۸</label>
+														<label for="t3">بازه ساعتی ۱۵ - ۱۸</label>
 													</td>
 													<td class="not-available">
 														<input type="radio" name="choose_time" id="t4" value="" />
-														<label for="t4">بازه ۱۸ - ۲۱</label>
+														<label for="t4">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 												<tr>
@@ -558,19 +562,19 @@
 													</td>
 													<td class="not-available">
 														<input type="radio" name="choose_time" id="t6" value="" />
-														<label for="t6">بازه ۹ - ۱۲</label>
+														<label for="t6">بازه ساعتی ۹ - ۱۲</label>
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t7" value="" />
-														<label for="t7">بازه ۱۲ - ۱۵</label>
+														<label for="t7">بازه ساعتی ۱۲ - ۱۵</label>
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t8" value="" />
-														<label for="t8">بازه ۱۵ - ۱۸</label>
+														<label for="t8">بازه ساعتی ۱۵ - ۱۸</label>
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t9" value="" />
-														<label for="t9">بازه ۱۸ - ۲۱</label>
+														<label for="t9">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 												<tr>
@@ -580,26 +584,104 @@
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t10" value="" />
-														<label for="t10">بازه ۹ - ۱۲</label>
+														<label for="t10">بازه ساعتی ۹ - ۱۲</label>
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t11" value="" />
-														<label for="t11">بازه ۱۲ - ۱۵</label>
+														<label for="t11">بازه ساعتی ۱۲ - ۱۵</label>
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t12" value="" />
-														<label for="t12">بازه ۱۵ - ۱۸</label>
+														<label for="t12">بازه ساعتی ۱۵ - ۱۸</label>
 													</td>
 													<td class="available">
 														<input type="radio" name="choose_time" id="t13" value="" />
-														<label for="t13">بازه ۱۸ - ۲۱</label>
+														<label for="t13">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 											</table>
 										</div><!-- timing-table end -->
+
+										<div class="shipping-options has-top-margin has-clear-fix">
+											<div class="half-box">
+												<div class="shipping-box active">
+													<input type="radio" name="choose_shipping" value="1" />
+													<i class="fas fa-check-square"></i>
+													<i class="fas fa-truck"></i>
+
+													<h6>تحویل اکسپرس اتکا</h6>
+													<ul>
+														<li><i class="fas fa-clock"></i> زمان تحویل سفارشات تهران همان روز</li>
+														<li><i class="fas fa-clock"></i> زمان تحویل سفارشات شهرستان ۲۴ ساعت</li>
+													</ul>
+													<div class="shipping-price">
+														هزینه ارسال :‌ <strong>۹۰۰۰ تومان</strong>
+													</div><!-- shippinh-price end -->
+												</div><!-- shipping-box end -->
+											</div><!-- half-box end -->
+											<div class="half-box">
+												<div class="shipping-box">
+													<input type="radio" name="choose_shipping" value="2" />
+													<i class="fas fa-check-square"></i>
+													<i class="fas fa-truck"></i>
+													<h6>تحویل عادی اتکا</h6>
+													<div class="shipping-price">
+														هزینه ارسال :‌ <strong>۴۵۰۰ تومان</strong>
+													</div><!-- shippinh-price end -->
+												</div><!-- shipping-box end -->
+											</div><!-- half-box end -->
+										</div><!-- shipping-options -->
+										<div class="button-holder has-vlarge-top-margin has-top-padding has-top-border">
+											<a class="bttn overlay-bttn" href="#Onlinepay">
+												<i class="far fa-credit-card"></i> پرداخت اینترنتی
+												<span>درگاه پرداخت آنلاین (پرداخت از طریق کلیه کارت های عضو شتاب)</span>
+											</a>
+											<a class="bttn site overlay-bttn" href="#Cash">
+												<i class="fas fa-money-bill-alt"></i> پرداخت در محل
+												<span>شما می توانید وجه سفارش خود را بصورت نقدی یا با استفاده از کارت بانکی خود در محل دریافت کالا پرداخت نمایید</span>
+											</a>
+										</div><!-- button-holder end -->
 									</div><!-- checkout-inner-box end -->
 								</div><!-- checkout-box end -->
 							</div><!-- checkout-page end -->
+
+							<div class="overlay" id="Onlinepay">
+								<div class="inner-overlay">
+									<div class="overlay-box">
+										<div class="inner-overlay-box">
+											<a class="close overlay-close" href="javascript:void(0)"></a>
+											<div class="message-box">
+												<img src="images/icons/checkout.png" alt="تکمیل سبد خرید" />
+												<p>این سفارش به <strong>سامان رشیدی</strong> به آدرس <strong>تهران، خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</strong> در روز <strong>یکشنبه</strong> در بین بازه ساعتی <strong>۱۵ - ۱۸</strong> تحویل می گردد. همچنین ارسال کالا توسط <strong>تحویل اکسپرس اتکا</strong> و با هزینه <strong>۹۰۰۰ تومان</strong> انجام می شود.</p>
+												<p>پرداخت این خرید به صورت <strong>اینترنتی</strong> انجام می کردد.</p>
+												<div class="has-medium-top-margin">
+													<input type="submit" value="تایید خرید و پرداخت اینترنتی" />
+													<a class="bttn site-2 block-display has-xxsmall-top-margin overlay-close" href="javascript:void(0)">انصراف</a>
+												</div><!-- has-small-top-margin end -->
+											</div><!-- message-box end -->
+										</div><!-- inner-overlay-box end -->
+									</div><!-- overlay-box end -->
+								</div><!-- inner-overlay end -->
+							</div><!-- Onlinepay end -->
+
+							<div class="overlay" id="Cash">
+								<div class="inner-overlay">
+									<div class="overlay-box">
+										<div class="inner-overlay-box">
+											<a class="close overlay-close" href="javascript:void(0)"></a>
+											<div class="message-box">
+												<img src="images/icons/checkout.png" alt="تکمیل سبد خرید" />
+												<p>این سفارش به <strong>سامان رشیدی</strong> به آدرس <strong>تهران، خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</strong> در روز <strong>یکشنبه</strong> در بین بازه ساعتی <strong>۱۵ - ۱۸</strong> تحویل می گردد. همچنین ارسال کالا توسط <strong>تحویل اکسپرس اتکا</strong> و با هزینه <strong>۹۰۰۰ تومان</strong> انجام می شود.</p>
+												<p>پرداخت این خرید به صورت <strong>پرداخت در محل</strong> انجام می کردد.</p>
+												<div class="has-medium-top-margin">
+													<input type="submit" value="تایید خرید و ثبت سفارش" />
+													<a class="bttn site-2 block-display has-xxsmall-top-margin overlay-close" href="javascript:void(0)">انصراف</a>
+												</div><!-- has-small-top-margin end -->
+											</div><!-- message-box end -->
+										</div><!-- inner-overlay-box end -->
+									</div><!-- overlay-box end -->
+								</div><!-- inner-overlay end -->
+							</div><!-- Cash end -->
 						</form>
 					</div><!-- frame end -->
 				</div><!-- content end -->
@@ -666,11 +748,13 @@
 // Sticky Item
 if($(window).width() > 1050){
 	jQuery(document).ready(function($){
-	    $('.checkout-box > h4').sticky({
-	        parent: '.checkout-box',
-	        top: 10,
-	        bottom: 10
-	    });
+		$('img').load(function(){
+		    $('.checkout-box > h4').sticky({
+		        parent: '.checkout-box',
+		        top: 10,
+		        bottom: 0
+		    });
+		});
 	});
 }
 </script>
