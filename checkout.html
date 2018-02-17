@@ -418,45 +418,62 @@
 									<h4>مشخصات تحویل گیرنده</h4>
 									<div class="checkout-inner-box has-clear-fix">
 										<div class="from-address-book">
-											<strong class="block-display has-small-bottom-margin">انتخاب از دفترچه آدرس : </strong>
+											<div class="radio-holder has-small-bottom-margin">
+												<input type="radio" name="choose_address_type" id="address_option_1" value="" checked/>
+												<label for="address_option_1">انتخاب از دفترچه آدرس :</label>
+											</div><!-- radio-holder end -->
 											<select name="choose_address" class="ui-selectmenu">
 												<option value="">سامان رشیدی -- تهران،‌ خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</option>
 												<option value="">علیرضا رشیدی -- اصفهان،‌ خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</option>
 												<option value="">مسعود رشیدی -- شیراز،‌ خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</option>
 											</select>
+											<div class="address-box">
+												<ul>
+													<li>نام و نام خانوادگی تحویل گیرنده :‌ <strong>سامان رشیدی</strong></li>
+													<li>شماره موبایل :‌ <strong>+989128996990</strong></li>
+													<li>کد پستی :‌ <strong>1976141351</strong></li>
+													<li>استان :‌ <strong>تهران</strong></li>
+													<li>شهر :‌ <strong>تهران</strong></li>
+													<li>آدرس : <strong>خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</strong></li>
+												</ul>
+											</div><!-- address-box end -->
 										</div><!-- from-address-book end -->
 										<div class="new-address has-top-margin">
-											<strong class="block-display has-small-bottom-margin">ارسال به آدرس جدید : </strong>
+											<div class="radio-holder has-small-bottom-margin">
+												<input type="radio" name="choose_address_type" id="address_option_2" value="" />
+												<label for="address_option_2">ارسال به آدرس جدید  </label>
+											</div><!-- radio-holder end -->
 											<div class="new-address-box">
 												<div class="section-wrapper has-6-6-column">
 													<div class="section">
 														<div class="field-holder">
 															<label for="new_address_firstname">نام کوچک تحویل گیرنده : </label>
-															<input type="text" name="new_address_firstname" id="new_address_firstname" value="سامان" />
+															<input type="text" name="new_address_firstname" id="new_address_firstname" />
 														</div><!-- field-holder end -->
 													</div><!-- section end -->
 													<div class="section">
 															<div class="field-holder">
 																<label for="new_address_lastname">نام خانوادگی تحویل گیرنده : </label>
-																<input type="text" name="new_address_lastname" id="new_address_lastname" value="رشیدی" />
+																<input type="text" name="new_address_lastname" id="new_address_lastname" />
 															</div><!-- field-holder end -->
 													</div><!-- section end -->
 													<div class="section">
 															<div class="field-holder">
 																<label for="new_address_mobile">شماره موبایل تحویل گیرنده : </label>
-																<input type="tel" name="new_address_mobile" id="new_address_mobile" class="reverse-input number-filed" value="09124513105" />
+																<input type="tel" name="new_address_mobile" id="new_address_mobile" class="reverse-input number-filed" />
 															</div><!-- field-holder end -->
 													</div><!-- section end -->
 													<div class="section">
 															<div class="field-holder">
 																<label for="new_address_postal">کد پستی : </label>
-																<input type="tel" name="new_address_postal" id="new_address_postal" class="reverse-input number-filed" value="1235623152" />
+																<input type="tel" name="new_address_postal" id="new_address_postal" class="reverse-input number-filed" />
 															</div><!-- field-holder end -->
 													</div><!-- section end -->
 													<div class="section">
 															<div class="field-holder">
 																<label for="new_address_province">استان : </label>
 																<select name="new_address_province" class="ui-selectmenu">
+																	<option value="">انتخاب استان</option>
 																	<option value="">تهران</option>
 																	<option value="">اصفهان</option>
 																	<option value="">شیراز</option>
@@ -467,6 +484,7 @@
 															<div class="field-holder">
 																<label for="new_address_city">شهر : </label>
 																<select name="new_address_city" class="ui-selectmenu">
+																	<option value="">انتخاب شهر</option>
 																	<option value="">تهران</option>
 																	<option value="">اصفهان</option>
 																	<option value="">شیراز</option>
@@ -474,14 +492,113 @@
 															</div><!-- field-holder end -->
 													</div><!-- section end -->
 												</div><!-- section-wrapper end -->
-												<div class="filed-holder">
+												<div class="field-holder">
 													<label for="new_address_address">آدرس : </label>
-													<textarea name="new_address_address" id="new_address_address">خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</textarea>
-												</div><!-- filed-holder end -->
+													<textarea name="new_address_address" id="new_address_address"></textarea>
+												</div><!-- field-holder end -->
 											</div><!-- new-address-box end -->
 										</div><!-- new-address end -->
 									</div><!-- checkout-inner-box end -->
-								</div>
+								</div><!-- checkout-box end -->
+
+								<div class="checkout-box">
+									<h4>اطلاعات تکمیلی سفارش</h4>
+									<div class="checkout-inner-box has-clear-fix">
+										<h6 class="has-medium-bottom-margin">زمان ارسال سفارش : </h6>
+										<div class="timing-table table">
+											<table>
+												<tr>
+													<td>
+														<div>یکشنبه</div>
+														<div>۹۶/۱۲/۱۲</div>
+													</td>
+													<td class="not-available">
+														<input type="radio" name="choose_time" id="t1" value="" />
+														<label for="t1">بازه ۹ - ۱۲</label>
+													</td>
+													<td class="not-available">
+														<input type="radio" name="choose_time" id="t1" value="" />
+														<label for="t1">بازه ۱۲ - ۱۵</label>
+													</td>
+													<td class="available active">
+														<input type="radio" name="choose_time" id="t1" value="" />
+														<label for="t1">بازه ۱۵ - ۱۸</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t1" value="" />
+														<label for="t1">بازه ۱۸ - ۲۱</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div>دوشنبه</div>
+														<div>۹۶/۱۲/۱۳</div>
+													</td>
+													<td class="not-available">
+														<input type="radio" name="choose_time" id="t1" value="" />
+														<label for="t1">بازه ۹ - ۱۲</label>
+													</td>
+													<td class="not-available">
+														<input type="radio" name="choose_time" id="t2" value="" />
+														<label for="t2">بازه ۱۲ - ۱۵</label>
+													</td>
+													<td class="not-available">
+														<input type="radio" name="choose_time" id="t3" value="" />
+														<label for="t3">بازه ۱۵ - ۱۸</label>
+													</td>
+													<td class="not-available">
+														<input type="radio" name="choose_time" id="t4" value="" />
+														<label for="t4">بازه ۱۸ - ۲۱</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div>سه شنبه</div>
+														<div>۹۶/۱۲/۱۴</div>
+													</td>
+													<td class="not-available">
+														<input type="radio" name="choose_time" id="t6" value="" />
+														<label for="t6">بازه ۹ - ۱۲</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t7" value="" />
+														<label for="t7">بازه ۱۲ - ۱۵</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t8" value="" />
+														<label for="t8">بازه ۱۵ - ۱۸</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t9" value="" />
+														<label for="t9">بازه ۱۸ - ۲۱</label>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div>چهارشنبه</div>
+														<div>۹۶/۱۲/۱۵</div>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t10" value="" />
+														<label for="t10">بازه ۹ - ۱۲</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t11" value="" />
+														<label for="t11">بازه ۱۲ - ۱۵</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t12" value="" />
+														<label for="t12">بازه ۱۵ - ۱۸</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t13" value="" />
+														<label for="t13">بازه ۱۸ - ۲۱</label>
+													</td>
+												</tr>
+											</table>
+										</div><!-- timing-table end -->
+									</div><!-- checkout-inner-box end -->
+								</div><!-- checkout-box end -->
 							</div><!-- checkout-page end -->
 						</form>
 					</div><!-- frame end -->
