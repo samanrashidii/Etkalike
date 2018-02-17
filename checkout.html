@@ -274,7 +274,8 @@
 						<div class="breadcrumb">
 							<ul>
 								<li><a href="#">فروشگاه اتکالاین</a></li>
-								<li>سبد خرید</li>
+								<li><a href="#">سبد خرید</a></li>
+								<li>بررسی نهایی</li>
 							</ul>
 						</div><!-- breadcrumb end -->
 						
@@ -385,6 +386,7 @@
 												</tbody>
 											</table>
 										</div><!-- table end -->
+
 										<div class="invoice-checkout">
 											<table>
 												<tr>
@@ -411,6 +413,75 @@
 										</div><!-- invoice-checkout end -->
 									</div><!-- checkout-inner-box end -->
 								</div><!-- checkout-box end -->
+
+								<div class="checkout-box">
+									<h4>مشخصات تحویل گیرنده</h4>
+									<div class="checkout-inner-box has-clear-fix">
+										<div class="from-address-book">
+											<strong class="block-display has-small-bottom-margin">انتخاب از دفترچه آدرس : </strong>
+											<select name="choose_address" class="ui-selectmenu">
+												<option value="">سامان رشیدی -- تهران،‌ خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</option>
+												<option value="">علیرضا رشیدی -- اصفهان،‌ خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</option>
+												<option value="">مسعود رشیدی -- شیراز،‌ خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</option>
+											</select>
+										</div><!-- from-address-book end -->
+										<div class="new-address has-top-margin">
+											<strong class="block-display has-small-bottom-margin">ارسال به آدرس جدید : </strong>
+											<div class="new-address-box">
+												<div class="section-wrapper has-6-6-column">
+													<div class="section">
+														<div class="field-holder">
+															<label for="new_address_firstname">نام کوچک تحویل گیرنده : </label>
+															<input type="text" name="new_address_firstname" id="new_address_firstname" value="سامان" />
+														</div><!-- field-holder end -->
+													</div><!-- section end -->
+													<div class="section">
+															<div class="field-holder">
+																<label for="new_address_lastname">نام خانوادگی تحویل گیرنده : </label>
+																<input type="text" name="new_address_lastname" id="new_address_lastname" value="رشیدی" />
+															</div><!-- field-holder end -->
+													</div><!-- section end -->
+													<div class="section">
+															<div class="field-holder">
+																<label for="new_address_mobile">شماره موبایل تحویل گیرنده : </label>
+																<input type="tel" name="new_address_mobile" id="new_address_mobile" class="reverse-input number-filed" value="09124513105" />
+															</div><!-- field-holder end -->
+													</div><!-- section end -->
+													<div class="section">
+															<div class="field-holder">
+																<label for="new_address_postal">کد پستی : </label>
+																<input type="tel" name="new_address_postal" id="new_address_postal" class="reverse-input number-filed" value="1235623152" />
+															</div><!-- field-holder end -->
+													</div><!-- section end -->
+													<div class="section">
+															<div class="field-holder">
+																<label for="new_address_province">استان : </label>
+																<select name="new_address_province" class="ui-selectmenu">
+																	<option value="">تهران</option>
+																	<option value="">اصفهان</option>
+																	<option value="">شیراز</option>
+																</select>
+															</div><!-- field-holder end -->
+													</div><!-- section end -->
+													<div class="section">
+															<div class="field-holder">
+																<label for="new_address_city">شهر : </label>
+																<select name="new_address_city" class="ui-selectmenu">
+																	<option value="">تهران</option>
+																	<option value="">اصفهان</option>
+																	<option value="">شیراز</option>
+																</select>
+															</div><!-- field-holder end -->
+													</div><!-- section end -->
+												</div><!-- section-wrapper end -->
+												<div class="filed-holder">
+													<label for="new_address_address">آدرس : </label>
+													<textarea name="new_address_address" id="new_address_address">خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</textarea>
+												</div><!-- filed-holder end -->
+											</div><!-- new-address-box end -->
+										</div><!-- new-address end -->
+									</div><!-- checkout-inner-box end -->
+								</div>
 							</div><!-- checkout-page end -->
 						</form>
 					</div><!-- frame end -->
