@@ -1239,6 +1239,7 @@ span.comment{
 	margin-top:3px;
 	background: url('../images/icons/edit.png') no-repeat center;
 }
+.edit.white{background-image: url('../images/icons/edit-white.png');}
 
 .invoice-checkout{
 	margin-bottom: 7px;
@@ -1361,20 +1362,35 @@ a.go-back{
 	padding-top:4px;
 }
 
+.from-address-book a.bttn{min-width: 200px;}
+
 .address-box{
-	padding:10px;
+	position: relative;
+	padding:10px 12px 10px 42px;
 	margin-top:10px;
 	background-color: #3e474f;
 	border-radius: 4px;
 }
 
 .address-box ul li{
-	display: inline-block;
 	color:#5cb860;
-	margin:7px 10px;
+	margin:12px 0;
 }
 
 .address-box ul li strong{color:#fafafa;}
+
+.address-box ul li svg{
+	display: inline-block;
+	vertical-align: middle;
+	width:22px !important;
+	text-align: center;
+}
+
+.address-box .edit{
+	position: absolute;
+	bottom:12px;
+	left:12px;
+}
 
 .new-address-box{
 	padding:20px;
@@ -1387,7 +1403,7 @@ a.go-back{
 .new-address input,
 .new-address .ui-selectmenu-button{
 	height: 34px;
-	line-height: 37px;
+	line-height: 35px;
 }
 .new-address textarea{
 	height: 90px;
