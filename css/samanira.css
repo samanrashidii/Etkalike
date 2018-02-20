@@ -730,11 +730,11 @@ a.remove{
 
 a.close{
 	position: absolute;
-	top:7px;
-	right:7px;
+	top:5px;
+	right:5px;
 	display: block;
-	width: 24px;
-	height: 24px;
+	width: 22px;
+	height: 22px;
 	background: url('../images/assets/close-small.png') no-repeat center #3079AB;
 	border-radius: 3px;
 	z-index: 10;
