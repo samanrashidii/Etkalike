@@ -1508,6 +1508,11 @@ a.go-back{
 .message-box p{line-height:2;}
 .message-box p strong{color:#5cb860;}
 
+.static-box{
+	min-height: 420px;
+	padding:30px 0;
+}
+
 /*   Added Styles by Back-end   */
 
 
