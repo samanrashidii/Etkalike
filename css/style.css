@@ -179,6 +179,28 @@ a.site-color:hover{color:#22577c !important;}
 .menu-box li{margin:10px 0;}
 .menu-box li a:hover{text-shadow: 0 0 1px #babfc3;}
 
+.captcha img{
+	display: inline-block;
+	vertical-align: middle;
+	width:150px;
+	margin:10px 0;
+	border:1px solid #3e474f;
+	border-radius: 4px;
+}
+
+.refresh-captcha{
+	display: inline-block;
+	vertical-align: middle;
+	width:30px;
+	height: 30px;
+	line-height: 32px;
+	color:#ffffff;
+	text-align: center;
+	background-color: #3e474f;
+	border-radius: 3px;
+}
+.refresh-captcha:hover{color:#5cb860;}
+
 .off-price{
 	font-size: 14px !important;
 	text-decoration: line-through;
