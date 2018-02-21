@@ -1507,57 +1507,76 @@ a.close:hover{background-color: #22577c;}
 
 /* -- _Text Editors (change the style of all content comes from text editors) -- */
 
+.static-content{
+	padding:30px;
+	background-color: #ffffff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 20px #cacaca;
+	-moz-box-shadow: 0 0 20px #cacaca;
+	box-shadow: 0 0 20px #cacaca;
+}
 
 .static-content h1{
-	font-size: 30px !important;
-	color: #3079AB !important;
+	font-size: 24px !important;
+	color: #4b5658 !important;
 	word-break: break-word !important;
-	margin-top:25px !important;
 }
 
 .static-content h2{
-	font-size: 25px !important;
+	font-size: 21px !important;
 	word-break: break-word !important;
-	margin-top:25px !important;
+	margin-top:20px !important;
 }
 
 .static-content h3{
-	font-size: 20px !important;
+	font-size: 19px !important;
 	word-break: break-word !important;
-	margin-top:25px !important;
+	margin-top:20px !important;
 }
 
 .static-content h4{
-	font-size: 18px !important;
+	font-size: 17px !important;
 	word-break: break-word !important;
-	margin-top:25px !important;
+	margin-top:20px !important;
 }
 
 .static-content h5{
 	font-size: 15px !important;
 	word-break: break-word !important;
-	margin-top:25px !important;
+	margin-top:20px !important;
 }
 
 .static-content h6{
-	font-size: 12px !important;
+	font-size: 14px !important;
 	word-break: break-word !important;
-	margin-top:25px !important;
+	margin-top:20px !important;
 }
 
 .static-content p{
-	font-size: 15px !important;
+	font-size: 13px !important;
 	word-break: break-word !important;
 	padding-top:15px !important;
 }
 
-.static-content p strong{font-family: 'Iran-Medium' !important;}
+.static-content p strong{
+	font-family: 'Iran-Medium' !important;
+	color:#3079AB !important;
+}
+
+.static-content p a{color:#eb7728 !important;}
 
 .static-content blockquote{
 	font-family: 'Iran-Medium' !important;
-	font-size: 18px !important;
-	color: #000000 !important;
+	font-size: 16px !important;
+	color: #3079AB !important;
+	text-align:center !important;
 	margin-top: 25px !important;
+}
+
+.static-content img{
+	display: block !important;
+	margin-top:20px !important;
+	border-radius: 4px;
 }
 
 .static-content h1.dark-color{color: #111111 !important; }
@@ -1565,17 +1584,19 @@ a.close:hover{background-color: #22577c;}
 .static-content ul,
 .static-content ol{margin:15px 0 0 10px;}
 
-.static-content ul li{
-	font-size: 15px;
-	margin-bottom: 10px;
+.static-content ul li,
+.static-content ol li{
+	font-size: 12px;
+	margin-bottom: 7px;
 }
 
 .static-content ul li::before {
     content: '';
     display: inline-block;
+    vertical-align: middle;
     width: 8px;
     height: 8px;
-    margin-left: 10px;
+    margin-left: 7px;
     background-color: #4b5658;
     border-radius: 50%;
 }
@@ -1583,7 +1604,7 @@ a.close:hover{background-color: #22577c;}
 .static-content ol li::before {
     content: attr(list-number);
     display: inline-block;
-    margin-right: 6px;
+    margin-left: 7px;
 }
 
 .static-content .video-player{margin-top:30px !important;}
@@ -1823,22 +1844,22 @@ a.close:hover{background-color: #22577c;}
 /* -- _Has Columns -- */
 
 .has-11-1-column > .section{
-	width: 81.5%;
-	margin-right: 3.5%;
+	width: 79%;
+	margin-right: 3%;
 }
 
 .has-11-1-column > .section:nth-child(2n+1){
-	width: 15%;
+	width: 18%;
 	margin-right: 0;
 }
 
 .has-1-11-column > .section{
-	width: 15%;
-	margin-right: 3.5%;
+	width: 18%;
+	margin-right: 3%;
 }
 
 .has-1-11-column > .section:nth-child(2n+1){
-	width: 81.5%;
+	width: 79%;
 	margin-right: 0;
 }
 

@@ -1537,6 +1537,31 @@ a.go-back{
 
 .error-page a.bttn{padding:10.5px 25px;}
 
+.static-sidebar{
+	-webkit-box-shadow: 0 0 20px #cacaca;
+	-moz-box-shadow: 0 0 20px #cacaca;
+	box-shadow: 0 0 20px #cacaca;
+}
+
+.static-sidebar li a{
+	display: block;
+	color:#b2bbbd;
+	padding:10px 15px;
+	background-color: #3e474f;
+	border-bottom:1px solid #4a5158;
+}
+.static-sidebar li:first-child a{
+	padding-top:12px;
+	border-radius: 4px 4px 0 0;
+}
+.static-sidebar li:last-child a{
+	padding-bottom:12px;
+	border-bottom:none;
+	border-radius: 0 0 4px 4px;
+}
+.static-sidebar li a:hover{color:#ffffff;}
+.static-sidebar li.active a{color:#5cb860 !important;}
+
 /*   Added Styles by Back-end   */
 
 
