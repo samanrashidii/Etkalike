@@ -372,4 +372,41 @@ $('.write_review_form').validate({
   }
 });
 
+$('.contact_form').validate({
+  rules: {
+    contact_name: {
+      required: true,
+      minlength: 5
+    },
+    contact_email: {
+      required: true,
+      minlength: 5,
+      email: true
+    },
+    contact_message: {
+      required: true,
+      minlength: 10
+    }
+  },
+  messages: {
+    contact_name: "لطفا نام و نام خانوادگی خود را وارد کنید",
+    contact_email: "لطفا آدرس ایمیل خود را وارد کنید",
+    contact_message: "لطفا متن پیغام خود را وارد کنید",
+  },
+  errorPlacement: function(error, element) {
+    error.insertAfter(element);
+  },
+  submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: " ",
+        data: $(form).serialize(),
+        success: function () {
+            
+        }
+      });
+      return false;
+  }
+});
+
 });

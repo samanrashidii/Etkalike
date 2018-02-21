@@ -309,8 +309,56 @@
 										<main>
 											<div class="static-shape">
 												<div class="contact-us">
-													
+													<div id="map_canvas"></div><!-- map_canvas end -->
 												</div><!-- contact-us end -->
+												<div class="contact-desc">
+													<h6>تماس با اتکالاین</h6>
+													<p>کاربر گرامی، لطفاً در صورت وجود هرگونه سوال یا ابهامی، پیش از ارسال ایمیل یا تماس تلفنی با اتکالاین، بخش پرسش‏های متداول را ملاحظه فرمایید و در صورتی که پاسخ خود را نیافتید، با ما تماس بگیرید.</p>
+													<h6>رسیدگی به انتقادها</h6>
+													<p>مشتری گرامی، اگر انتقاد یا شکایتی از اتکالاین دارید برای دریافت پاسخ سریع‌تر، لطفا به آدرس <a href="mailto:etkaline@etkastores.ir">etkaline@etkastores.ir</a> ایمیل ارسال کنید .</p>
+													<h6>اتکالاین در روزهای تعطیل</h6>
+													<p>روزهایی که به دلیل تعطیلی اتکالاین هیچ‌گونه پاسخگویی، سرویس‌دهی و خدماتی ندارد، در سال ۱۳۹۶ به شرح زیر است: </p>
+													<ul class="circle-bullet">
+														<li>تاسوعا</li>
+														<li>عاشورا</li>
+														<li>رحلت پیامبر</li>
+														<li>عید نوروز</li>
+														<li>رحلت امام خمینی (ره) </li>
+													</ul>
+													<h6>دفتر مرکزی</h6>
+													<address>استان تهران - شهر تهران – بعد از میدان حسن آباد – طبقه زیر همکف فروشگاه اتکا چمران - فروشگاه اتکالاین</address>
+													<h6>اطلاعات تماس</h6>
+													<ul class="normal-bullet">
+														<li><strong>تلفن :‌ </strong> <a class="site-color" href="tel:+98214856">021 - 4856</a> (پاسخگویی ۲۴ ساعته، ٧ روز هفته)</li>
+														<li>فکس :‌ 021 - 66976807</li>
+													</ul>
+													<h6>مرکز امور مشتریان</h6>
+													<p>لطفاً برای بازگرداندن کالا و ارسال آن به خدمات پس از فروش اتکالاین از طریق پست، تنها از آدرس زیر استفاده کنید:</p>
+													<ul class="normal-bullet">
+														<li>صندوق پستی : 1113655111</li>
+														<li>ایمیل اتکالاین: <a class="site-color" href="mailto:etkaline@etkastores.ir">etkaline@etkastores.ir</a></li>
+													</ul>
+													<h6>ارتباط با ما</h6>
+													<p>شما می توانید از طریق فرم زیر انتقادات و پیشنهادات خود را با ما در میان بگذارید.</p>
+													<form action="#" method="post" name="contact_form" class="contact_form has-medium-top-margin" accept-charset="UTF-8">
+														<div class="section-wrapper has-6-6-column">
+															<div class="section">
+																<div class="field-holder">
+																	<input type="text" name="contact_name" placeholder="نام و نام خانوادگی" />
+																</div><!-- field-holder end -->
+															</div><!-- section end -->
+															<div class="section">
+																<div class="field-holder">
+																	<input type="email" name="contact_email" placeholder="آدرس ایمیل" />
+																</div><!-- field-holder end -->
+															</div><!-- section end -->
+														</div><!-- section-wrapper has-6-6-column end -->
+														<div class="field-holder">
+															<textarea name="contact_message" placeholder="متن پیغام خود را بنویسید ..."></textarea>
+														</div><!-- field-holder end -->
+														<input type="submit" value="ارسال نظر" />
+													</form>
+												</div><!-- contact-desc end -->
 											</div><!-- static-shape end -->
 										</main>
 									</div><!-- section end -->
@@ -378,5 +426,204 @@
 			</footer><!-- footer end -->
 			
 		</div><!-- wrapper end -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script>
+// Custom Google Map
+
+	    var map;
+        var EtkaLine = new google.maps.LatLng(35.730202,51.393163);
+
+        function initialize() {
+
+            var roadAtlasStyles = [
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 13
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#3e474f"
+            },
+            {
+                "lightness": 5
+            },
+            {
+                "weight": 1.1
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#3e474f"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#3079AB"
+            },
+            {
+                "lightness": 5
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#3e474f"
+            },
+            {
+                "lightness": 15
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#3e474f"
+            },
+            {
+                "lightness": 12
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#3e474f"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#3079AB"
+            }
+        ]
+    }
+]
+            var mapOptions = {
+                zoom: 16,
+                center: EtkaLine,
+                scrollwheel: false,
+                mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'usroadatlas']
+                }
+            };
+
+            map = new google.maps.Map(document.getElementById('map_canvas'),
+                mapOptions);
+
+            var mapCanvas = document.getElementById('map_canvas');
+			var myLatlng = new google.maps.LatLng(35.730902,51.393163);
+			var image = 'images/icons/marker.png';
+			var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title:"اتکالاین",
+			icon: image
+		});
+
+			marker.setAnimation(google.maps.Animation.BOUNCE);
+			var styledMapOptions = { };
+
+            var usRoadMapType = new google.maps.StyledMapType(
+                roadAtlasStyles, styledMapOptions);
+
+            map.mapTypes.set('usroadatlas', usRoadMapType);
+            map.setMapTypeId('usroadatlas');
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
 	</body>
 </html>
