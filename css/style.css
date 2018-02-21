@@ -1562,6 +1562,8 @@ a.go-back{
 .static-sidebar li a:hover{color:#ffffff;}
 .static-sidebar li.active a{color:#5cb860 !important;}
 
+.accordion:not(:last-child){margin-bottom: 30px;}
+
 /*   Added Styles by Back-end   */
 
 

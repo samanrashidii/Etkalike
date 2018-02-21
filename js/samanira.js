@@ -123,6 +123,12 @@ if($(window).width() > 980){
   });
 }
 
+// Accordion //
+
+$(function() {
+  $( ".accordion" ).accordion();
+});
+
 // Form Validate //
 
 $('.number-field').numeric();
