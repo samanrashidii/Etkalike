@@ -1507,7 +1507,7 @@ a.close:hover{background-color: #22577c;}
 
 /* -- _Text Editors (change the style of all content comes from text editors) -- */
 
-.static-content{
+.static-shape{
 	padding:30px;
 	background-color: #ffffff;
 	border-radius: 4px;
