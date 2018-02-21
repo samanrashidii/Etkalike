@@ -1532,7 +1532,7 @@ a.go-back{
 
 .static-box{
 	min-height: 420px;
-	padding:30px 0;
+	padding:20px 0;
 }
 
 .error-page a.bttn{padding:10.5px 25px;}
@@ -1563,6 +1563,16 @@ a.go-back{
 .static-sidebar li.active a{color:#5cb860 !important;}
 
 .accordion:not(:last-child){margin-bottom: 30px;}
+
+.contact-desc h6{
+	margin-top:19px;
+	padding-top:20px;
+	border-top: 1px solid #e1e1e1;
+}
+
+.contact-desc h6:first-child{border-top:none;}
+
+.contact_form .section-wrapper .field-holder{margin:5px 0;}
 
 /*   Added Styles by Back-end   */
 
