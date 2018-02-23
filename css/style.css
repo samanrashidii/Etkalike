@@ -1705,6 +1705,7 @@ a.go-back{
 
 .followers-box li{
 	display: inline-block;
+	vertical-align: top;
 	width:126px;
 	margin:10px;
 	-webkit-box-shadow: 0 0 10px #cbcbcb;
@@ -1732,6 +1733,7 @@ a.go-back{
 
 .categories-box li{
 	display: inline-block;
+	vertical-align: top;
 	width:126px;
 	margin:10px;
 }
@@ -1739,6 +1741,7 @@ a.go-back{
 .categories-box a{
 	display: block;
 	padding:10px;
+	border-radius: 4px;
 	-webkit-box-shadow: 0 0 10px #cbcbcb;
 	-moz-box-shadow: 0 0 10px #cbcbcb;
 	box-shadow: 0 0 10px #cbcbcb;
@@ -1759,6 +1762,31 @@ a.go-back{
 .brand-info strong{
 	display: block;
 	margin:10px 0 5px 0;
+}
+
+.fav-products-box li{
+	display: inline-block;
+	vertical-align: top;
+	width:216px;
+	margin:15px;
+}
+
+.fav-products-box img{padding:10px 30px;}
+
+.fav-products-box a{
+	display: block;
+	overflow: hidden;
+	background-color: #ffffff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 15px #cbcbcb;
+	-moz-box-shadow: 0 0 15px #cbcbcb;
+	box-shadow: 0 0 15px #cbcbcb;
+}
+
+.fav-products-box a:hover{
+	-webkit-box-shadow: 0 0 15px #a5a5a5;
+	-moz-box-shadow: 0 0 15px #a5a5a5;
+	box-shadow: 0 0 15px #a5a5a5;
 }
 
 
