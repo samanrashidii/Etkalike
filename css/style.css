@@ -1531,7 +1531,7 @@ a.go-back{
 .message-box p strong{color:#5cb860;}
 
 .static-box{
-	min-height: 420px;
+	min-height: 450px;
 	padding:20px 0;
 }
 
@@ -1573,6 +1573,117 @@ a.go-back{
 .contact-desc h6:first-child{border-top:none;}
 
 .contact_form .section-wrapper .field-holder{margin:5px 0;}
+
+.my-account{
+	position: relative;
+	display: block;
+	width:150px;
+	font-size: 11px;
+	color:#ffffff;
+	padding: 14px 45px 10px 10px;
+	background-color: #3079AB;
+	border-radius: 4px;
+}
+.my-account:hover{background-color: #22577c;}
+
+.my-account img{
+	position: absolute;
+	top:50%;
+	right: 10px;
+	width:30px !important;
+	height: 30px !important;
+	margin-top:-15px;
+	border-radius: 50%;
+	z-index: 10;
+}
+
+.my-page-sidebar li a{
+	display: block;
+	color:#3e474f;
+	padding:12px 7px;
+	border:1px solid #3e474f;
+	border-bottom:none;
+}
+.my-page-sidebar li:first-child a{
+	padding-top:12px;
+	border-radius: 4px 4px 0 0;
+}
+.my-page-sidebar li:last-child a{
+	padding-bottom:12px;
+	border-bottom:1px solid #3e474f;
+	border-radius: 0 0 4px 4px;
+}
+.my-page-sidebar li:not(.active) a:hover{
+	color:#3079AB;
+	padding-right: 10px;
+}
+
+.my-page-sidebar li.active a{
+	color:#ffffff;
+	background-color: #3079AB;
+}
+
+.my-page-sidebar svg{
+	display: inline-block;
+	vertical-align: middle;
+	width:30px !important;
+	font-size: 15px;
+	text-align: right;
+}
+
+.my-page-wrapper{
+	padding:25px;
+	background-color: #ffffff;
+	border:1px solid #3e474f;
+	border-radius: 4px;
+}
+
+.user-box{
+	color:#ffffff;
+	text-align: center;
+	padding:20px;
+	margin-bottom: 5px;
+	background-color: #3e474f;
+	border-radius: 4px;
+}
+
+.user-box img{
+	width:120px !important;
+	height: 120px !important;
+	margin-bottom: 10px;
+	border-radius: 50%;
+}
+
+.my-account-box ul li{margin:14px 0;}
+.my-account-box ul li:first-child{margin-top:0;}
+.my-account-box ul li:last-child{margin-bottom: 0;}
+
+.my-account-box ul li strong{
+	display: inline-block;
+	vertical-align: middle;
+	width:100px;
+	font-family: 'Iran-Medium';
+	font-size: 11px;
+}
+
+.my-account-box ul li span{color:#3079AB;}
+
+.my-account-box ul li img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 80px !important;
+	height: 80px !important;
+	margin:0;
+	border:2px solid #3e474f;
+	border-radius: 4px;
+}
+
+.my-account-box a.edit{
+	position: absolute;
+	top:-12px;
+	left:-10px;
+	z-index: 10;
+}
 
 /*   Added Styles by Back-end   */
 
