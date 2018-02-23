@@ -1623,12 +1623,17 @@ a.go-back{
 	background-color: #3079AB;
 }
 
-.my-page-sidebar svg{
+.my-page-sidebar ul li svg{
 	display: inline-block;
 	vertical-align: middle;
 	width:30px !important;
 	font-size: 15px;
 	text-align: right;
+}
+
+.my-page-sidebar a.bttn{
+	display: block;
+	margin-bottom:5px;
 }
 
 .my-page-wrapper{
@@ -1697,6 +1702,34 @@ a.go-back{
 	left:-10px;
 	z-index: 10;
 }
+
+.followers-box li{
+	display: inline-block;
+	width:126px;
+	margin:10px;
+	-webkit-box-shadow: 0 0 10px #cbcbcb;
+	-moz-box-shadow: 0 0 10px #cbcbcb;
+	box-shadow: 0 0 10px #cbcbcb;
+}
+
+.followers-box li img{border-radius: 4px 4px 0 0;}
+
+.follower-info{
+	color:#ffffff;
+	text-align: center;
+	font-size: 11px;
+	padding:10px 5px;
+	background-color: #3e474f;
+	border-radius: 0 0 4px 4px;
+}
+
+.follower-info strong{
+	display: block;
+	margin-bottom: 5px;
+}
+.followers-box li a{display: block;}
+.followers-box li a:hover{opacity: .9;}
+
 
 /*   Added Styles by Back-end   */
 
