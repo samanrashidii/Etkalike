@@ -414,9 +414,10 @@ label.error::before{
 
 .upload-bttn{
 	display: inline-block;
+	vertical-align: middle;
 	min-width: 120px;
-	height: 51px;
-	line-height: 51px;
+	height: 40px;
+	line-height: 41px;
 	overflow: hidden;
 	text-align: center;
 	cursor: pointer;
@@ -428,18 +429,18 @@ label.error::before{
 .upload-bttn label{
 	position: relative;
 	display: block;
-	font-size: 15px;
+	font-size: 13px;
 	color:#ffffff;
 	padding:0;
 	cursor: pointer;
-	background-color: #4b5658;
+	background-color: #5cb860;
 	z-index: 6;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
 }
 
-.upload-bttn label:hover{background-color: #3079AB;}
+.upload-bttn label:hover{background-color: #48974b;}
 
 .uploaded-photo-box{
 	position: relative;
@@ -456,6 +457,14 @@ label.error::before{
 	-webkit-box-shadow: 0 0 4px #aaaaaa;
 	-moz-box-shadow: 0 0 4px #aaaaaa;
 	box-shadow: 0 0 4px #aaaaaa;
+}
+
+.file-name{
+	direction: ltr;
+	display: inline-block;
+	vertical-align: middle;
+	color:#3e474f;
+	margin-right: 10px;
 }
 
 /* _Radio & _Checkbox */
