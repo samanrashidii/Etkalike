@@ -1658,15 +1658,19 @@ a.go-back{
 .my-account-box ul li:first-child{margin-top:0;}
 .my-account-box ul li:last-child{margin-bottom: 0;}
 
-.my-account-box ul li strong{
+.my-account-box ul li > strong{
 	display: inline-block;
 	vertical-align: middle;
-	width:100px;
+	width:130px;
 	font-family: 'Iran-Medium';
 	font-size: 11px;
 }
 
-.my-account-box ul li span{color:#3079AB;}
+.my-account-box ul li > span{
+	display: inline-block;
+	vertical-align: middle;
+	color:#3079AB;
+}
 
 .my-account-box ul li img{
 	display: inline-block;
@@ -1676,6 +1680,15 @@ a.go-back{
 	margin:0;
 	border:2px solid #3e474f;
 	border-radius: 4px;
+}
+
+.my-account-box input,
+.my-account-box .ui-selectmenu-button{min-width: 220px;}
+
+.my-account-box .radio-holder{
+	display: inline-block;
+	width:auto;
+	margin:0 0 0 10px;
 }
 
 .my-account-box a.edit{

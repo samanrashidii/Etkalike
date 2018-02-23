@@ -305,41 +305,72 @@
 									<main>
 										<div class="my-page-wrapper">
 											<div class="my-account-box relative-position">
-												<a class="edit" href="my-page-edit.html"></a>
-												<ul>
-													<li>
-														<strong>نام کوچک:</strong>
-														<span>سامان</span>
-													</li>
-													<li>
-														<strong>نام خانوادگی :</strong>
-														<span>رشیدی</span>
-													</li>
-													<li>
-														<strong>جنسیت :</strong>
-														<span>مرد</span>
-													</li>
-													<li>
-														<strong>رمز عبور :</strong>
-														<span>*********</span>
-													</li>
-													<li>
-														<strong>آدرس ایمیل :</strong>
-														<span>me@samanrashidi.com</span>
-													</li>
-													<li>
-														<strong>شماره موبایل :</strong>
-														<span>09128996990</span>
-													</li>
-													<li>
-														<strong>شهر :</strong>
-														<span>تهران</span>
-													</li>
-													<li>
-														<strong>عکس پروفایل :</strong>
-														<span><img src="images/avatars/samanrashidi44.png" alt="" /></span>
-													</li>
-												</ul>
+												<form action="#" method="POST" name="edit_profile" class="edit_profile" accept-charset="UTF-8">
+													<ul>
+														<li>
+															<strong>نام کوچک:</strong>
+															<span><input type="text" name="profile_firstname" value="سامان" /></span>
+														</li>
+														<li>
+															<strong>نام خانوادگی :</strong>
+															<span><input type="text" name="profile_lastname" value="رشیدی" /></span>
+														</li>
+														<li>
+															<strong>جنسیت :</strong>
+															<span>
+																<div class="radio-holder">
+																	<input type="radio" name="profile_gender" id="male" value="male" checked/>
+																	<label for="male">مرد</label>
+																</div><!-- radio-holder end -->
+																<div class="radio-holder">
+																	<input type="radio" name="profile_gender" id="female" value="female" />
+																	<label for="female">زن</label>
+																</div><!-- radio-holder end -->
+															</span>
+														</li>
+														<li>
+															<strong>رمز عبور جدید:</strong>
+															<span><input type="password" name="profile_password" /></span>
+														</li>
+														<li>
+															<strong>تکرار رمز عبور جدید:</strong>
+															<span><input type="password" name="profile_password_confirm" /></span>
+														</li>
+														<li>
+															<strong>آدرس ایمیل :</strong>
+															<span>me@samanrashidi.com</span>
+														</li>
+														<li>
+															<strong>شماره موبایل :</strong>
+															<span><input type="tel" name="profile_tel" class="number-field reverse-input" value="09128996990" /></span>
+														</li>
+														<li>
+															<strong>شهر :</strong>
+															<span>
+																<select name="profile_city" class="ui-selectmenu">
+																	<option value="">Tehran</option>
+																	<option value="">Shiraz</option>
+																	<option value="">Isfahan</option>
+																	<option value="">Tabriz</option>
+																	<option value="">Rasht</option>
+																</select>
+															</span>
+														</li>
+														<li>
+															<strong>عکس پروفایل :</strong>
+															<span>
+																<span class="upload-bttn">
+																	<input type="file" name="profile_picture" id="profile_picture" accept="image/*" />
+																	<label for="profile_picture">+ آپلود عکس جدید</label>
+																</span>
+																<span class="file-name">samanrashidi44.png</span>
+															</span>
+														</li>
+														<li>
+															<input class="has-top-margin" type="submit" value="ذخیره تغییرات" />
+														</li>
+													</ul>
+												</form>
 											</div><!-- my-account-box end -->
 										</div><!-- my-page-wrapper end -->
 									</main>
