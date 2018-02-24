@@ -290,8 +290,8 @@
 												<strong>Samanrashidi44</strong>
 											</div><!-- user-box end -->
 											<ul>
-												<li class="active"><a href="my-page.html"><i class="fas fa-user"></i>صفحه کاربری</a></li>
-												<li><a href="my-page-order-history.html"><i class="fas fa-folder-open"></i>تاریخچه سفارشات</a></li>
+												<li><a href="my-page.html"><i class="fas fa-user"></i>صفحه کاربری</a></li>
+												<li class="active"><a href="my-page-order-history.html"><i class="fas fa-folder-open"></i>تاریخچه سفارشات</a></li>
 												<li><a href="my-page-address-book.html"><i class="fas fa-address-book"></i>دفترچه آدرس</a></li>
 												<li><a href="my-page-fav-products.html"><i class="fas fa-heart"></i>محصولات مورد پسند</a></li>
 												<li><a href="my-page-fav-categories.html"><i class="fas fa-street-view"></i>فروشگاه های مورد پسند</a></li>
@@ -304,77 +304,246 @@
 								<div class="section">
 									<main>
 										<div class="my-page-wrapper">
-											<div class="my-account-box relative-position">
-												<form action="#" method="POST" name="edit_profile" class="edit_profile" accept-charset="UTF-8">
-													<ul>
-														<li>
-															<strong>نام کوچک:</strong>
-															<span><input type="text" name="profile_firstname" value="سامان" /></span>
-														</li>
-														<li>
-															<strong>نام خانوادگی :</strong>
-															<span><input type="text" name="profile_lastname" value="رشیدی" /></span>
-														</li>
-														<li>
-															<strong>جنسیت :</strong>
-															<span>
-																<div class="radio-holder">
-																	<input type="radio" name="profile_gender" id="male" value="male" checked/>
-																	<label for="male">مرد</label>
-																</div><!-- radio-holder end -->
-																<div class="radio-holder">
-																	<input type="radio" name="profile_gender" id="female" value="female" />
-																	<label for="female">زن</label>
-																</div><!-- radio-holder end -->
-															</span>
-														</li>
-														<li>
-															<strong>رمز عبور جدید:</strong>
-															<span><input type="password" name="profile_password" /></span>
-														</li>
-														<li>
-															<strong>تکرار رمز عبور جدید:</strong>
-															<span><input type="password" name="profile_password_confirm" /></span>
-														</li>
-														<li>
-															<strong>آدرس ایمیل :</strong>
-															<span>me@samanrashidi.com</span>
-														</li>
-														<li>
-															<strong>شماره موبایل :</strong>
-															<span><input type="tel" name="profile_tel" class="number-field reverse-input" value="09128996990" /></span>
-														</li>
-														<li>
-															<strong>شهر :</strong>
-															<span>
-																<select name="profile_city" class="ui-selectmenu">
-																	<option value="">Tehran</option>
-																	<option value="">Shiraz</option>
-																	<option value="">Isfahan</option>
-																	<option value="">Tabriz</option>
-																	<option value="">Rasht</option>
-																</select>
-															</span>
-														</li>
-														<li>
-															<strong>عکس پروفایل :</strong>
-															<span>
-																<span class="upload-bttn">
-																	<input type="file" name="profile_picture" id="profile_picture" accept="image/*" />
-																	<label for="profile_picture">+ آپلود عکس جدید</label>
-																</span>
-																<span class="file-name">samanrashidi44.png</span>
-															</span>
-														</li>
-														<li>
-															<div class="button-holder has-top-margin">
-																<input type="submit" value="ذخیره تغییرات" />
-																<a class="bttn site-2" href="my-page.html">انصراف</a>
-															</div><!-- button-holder end -->
-														</li>
-													</ul>
-												</form>
-											</div><!-- my-account-box end -->
+											<div class="order-history">
+												<ul>
+													<li>
+														<ul class="track-order">
+															<li class="active">
+																<span></span>
+																<strong>در انتظار تایید خرید اقساطی</strong>
+															</li>
+															<li class="active">
+																<span></span>
+																<strong>تایید خرید</strong>
+															</li>
+															<li>
+																<span></span>
+																<strong>پردازش انبار</strong>
+															</li>
+															<li>
+																<span></span>
+																<strong>ارسال</strong>
+															</li>
+															<li>
+																<span></span>
+																<strong>تحویل و پرداخت</strong>
+															</li>
+														</ul>
+														<div class="table">
+															<table>
+																<tr>
+																	<th>محصول</th>
+																	<th>تعداد</th>
+																	<th>جمع قیمت</th>
+																	<th>نوع پرداخت</th>
+																	<th>وضعیت</th>
+																	<th>صورتحساب</th>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="order-image">
+																			<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+																		</div><!-- order-image end -->
+																		<div class="order-details">
+																			<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																			<span>رنگ: مشکی</span>
+																		</div><!-- order-details end -->
+																	</td>
+																	<td>۲</td>
+																	<td>۵۵۰,۰۰۰ تومان</td>
+																	<td>نقدی</td>
+																	<td><span class="tag pending-label">در حال پردازش</span></td>
+																	<td><a class="site-color" href="invoice.html" target="_blank">#159132</a></td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="order-image">
+																			<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+																		</div><!-- order-image end -->
+																		<div class="order-details">
+																			<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																			<span>رنگ: مشکی</span>
+																		</div><!-- order-details end -->
+																	</td>
+																	<td>۳</td>
+																	<td>۷۰۰,۰۰۰ تومان</td>
+																	<td>اقساطی</td>
+																	<td>&nbsp;</td>
+																	<td>&nbsp;</td>
+																</tr>
+															</table>
+														</div><!-- table end -->
+													</li>
+													<li>
+														<ul class="track-order">
+															<li>
+																<span></span>
+																<strong>در انتظار تایید خرید اقساطی</strong>
+															</li>
+															<li>
+																<span></span>
+																<strong>تایید خرید</strong>
+															</li>
+															<li>
+																<span></span>
+																<strong>پردازش انبار</strong>
+															</li>
+															<li>
+																<span></span>
+																<strong>ارسال</strong>
+															</li>
+															<li>
+																<span></span>
+																<strong>تحویل و پرداخت</strong>
+															</li>
+														</ul>
+														<div class="table">
+															<table>
+																<tr>
+																	<th>محصول</th>
+																	<th>تعداد</th>
+																	<th>جمع قیمت</th>
+																	<th>نوع پرداخت</th>
+																	<th>وضعیت</th>
+																	<th>صورتحساب</th>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="order-image">
+																			<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+																		</div><!-- order-image end -->
+																		<div class="order-details">
+																			<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																			<span>رنگ: مشکی</span>
+																		</div><!-- order-details end -->
+																	</td>
+																	<td>۲</td>
+																	<td>۵۵۰,۰۰۰ تومان</td>
+																	<td>نقدی</td>
+																	<td>
+																		<span class="tag failed-label">خطا در پرداخت</span>
+																		<div class="has-xxsmall-top-margin">
+																			<a class="green-color" href="#">سعی مجدد</a>
+																		</div><!-- has-small-top-margin end -->
+																	</td>
+																	<td><a class="site-color" href="invoice.html" target="_blank">#159105</a></td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="order-image">
+																			<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+																		</div><!-- order-image end -->
+																		<div class="order-details">
+																			<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																			<span>رنگ: مشکی</span>
+																		</div><!-- order-details end -->
+																	</td>
+																	<td>۳</td>
+																	<td>۷۰۰,۰۰۰ تومان</td>
+																	<td>اقساطی</td>
+																	<td>&nbsp;</td>
+																	<td>&nbsp;</td>
+																</tr>
+															</table>
+														</div><!-- table end -->
+													</li>
+													<li>
+														<ul class="track-order">
+															<li class="active">
+																<span></span>
+																<strong>در انتظار تایید خرید اقساطی</strong>
+															</li>
+															<li class="active">
+																<span></span>
+																<strong>تایید خرید</strong>
+															</li>
+															<li class="active">
+																<span></span>
+																<strong>پردازش انبار</strong>
+															</li>
+															<li class="active">
+																<span></span>
+																<strong>ارسال</strong>
+															</li>
+															<li class="active">
+																<span></span>
+																<strong>تحویل و پرداخت</strong>
+															</li>
+														</ul>
+														<div class="table">
+															<table>
+																<tr>
+																	<th>محصول</th>
+																	<th>تعداد</th>
+																	<th>جمع قیمت</th>
+																	<th>نوع پرداخت</th>
+																	<th>وضعیت</th>
+																	<th>صورتحساب</th>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="order-image">
+																			<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+																		</div><!-- order-image end -->
+																		<div class="order-details">
+																			<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																			<span>رنگ: مشکی</span>
+																		</div><!-- order-details end -->
+																	</td>
+																	<td>۲</td>
+																	<td>۵۵۰,۰۰۰ تومان</td>
+																	<td>نقدی</td>
+																	<td><span class="tag delivered-label">تحویل داده شده</span></td>
+																	<td><a class="site-color" href="invoice.html" target="_blank">#159006</a></td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="order-image">
+																			<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+																		</div><!-- order-image end -->
+																		<div class="order-details">
+																			<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																			<span>رنگ: مشکی</span>
+																		</div><!-- order-details end -->
+																	</td>
+																	<td>۱</td>
+																	<td>۱۵۰,۰۰۰ تومان</td>
+																	<td>نقدی</td>
+																	<td>&nbsp;</td>
+																	<td>&nbsp;</td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="order-image">
+																			<a href="#"><img src="images/products/item-1.jpg" alt="" /></a>
+																		</div><!-- order-image end -->
+																		<div class="order-details">
+																			<h6><a href="#">مایکروویو ال جی سری سولاردام مدل MS94</a></h6>
+																			<span>رنگ: مشکی</span>
+																		</div><!-- order-details end -->
+																	</td>
+																	<td>۳</td>
+																	<td>۷۰۰,۰۰۰ تومان</td>
+																	<td>اقساطی</td>
+																	<td>&nbsp;</td>
+																	<td>&nbsp;</td>
+																</tr>
+															</table>
+														</div><!-- table end -->
+													</li>
+												</ul>
+												<div class="pagination">
+						                            <ul>
+						                                <li class="prev"><a href="javascript:void(0)">قبلی</a></li>
+						                                <li class="active"><a href="javascript:void(0)">۱</a></li>
+						                                <li><a href="javascript:void(0)">۲</a></li>
+						                                <li><a href="javascript:void(0)">۳</a></li>
+						                                <li class="etc"><a href="javascript:void(0)">...</a></li>
+						                                <li><a href="javascript:void(0)">۷</a></li>
+						                                <li class="next"><a href="javascript:void(0)">بعدی</a></li>
+						                            </ul>
+						                        </div><!-- pagination end -->
+											</div><!-- order-history end -->
 										</div><!-- my-page-wrapper end -->
 									</main>
 								</div><!-- section end -->

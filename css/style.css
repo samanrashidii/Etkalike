@@ -1870,6 +1870,83 @@ a.go-back{
 
 .double-check svg{font-size: 60px;}
 
+.order-history > ul > li:not(:last-child){margin-bottom: 20px;}
+.order-history .table{border-radius: 0 0 3px 3px;}
+
+.order-history .table tr:not(:nth-child(2)) td:last-child{border-right:none;}
+.order-history .table tr:not(:nth-child(2)) td:nth-last-child(2){border-left:none;}
+.order-history .table tr:not(:nth-child(2)) td:last-child,
+.order-history .table tr:not(:nth-child(2)) td:nth-last-child(2){
+	border-top:none;
+	border-bottom:none;
+}
+.order-history .table tr:last-child td:last-child,
+.order-history .table tr:last-child td:nth-last-child(2){border-bottom:1px solid #b5b5b5;}
+
+.order-history .table th:not(:first-child),
+.order-history .table td:not(:first-child){text-align: center;}
+.order-history .table th{font-size: 10px;}
+.order-history .table td{
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+.order-history .table tr td:first-child {
+    color: #4b5658;
+    background-color: transparent;
+    border-color: #b5b5b5;
+}
+
+.order-history .table .order-details h6{font-size: 11px;}
+
+.track-order{
+	color:#ffffff;
+	text-align: center;
+	padding:10px;
+	margin-bottom: -1px;
+	background-color: #3e474f;
+	border-radius: 3px 3px 0 0;
+}
+
+.track-order li{
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	padding-top:40px;
+}
+
+.track-order li span{
+	position: absolute;
+	top:3px;
+	left:50%;
+	display: inline-block;
+	width:27px;
+	height: 27px;
+	margin-left: 5px;
+	border:3px solid #ffffff;
+	border-radius: 50%;
+}
+.track-order li:last-child span{margin-left: -13px;}
+
+.track-order li:not(:last-child)::after{
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	width:25px;
+	height: 1px;
+	margin:0 3px;
+	background-color: #ffffff;
+}
+
+.track-order li.active span{
+	background: url('../images/assets/tick-white.png') no-repeat center #5cb860;
+	border-color:#5cb860;
+}
+.track-order li.active strong{color:#5cb860;}
+.track-order li.active::after{background-color: #5cb860;}
+
+
+
 /*   Added Styles by Back-end   */
 
 
