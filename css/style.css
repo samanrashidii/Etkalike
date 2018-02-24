@@ -1849,9 +1849,6 @@ a.go-back{
 	opacity: 0;
 	background-color: #5cb860;
 	border-radius: 50%;
-	-webkit-transition:all .2s ease-in-out;
-	-moz-transition:all .2s ease-in-out;
-	transition:all .2s ease-in-out;
 }
 
 .address-book li.active .address-box{
@@ -1875,13 +1872,11 @@ a.go-back{
 
 .order-history .table tr:not(:nth-child(2)) td:last-child{border-right:none;}
 .order-history .table tr:not(:nth-child(2)) td:nth-last-child(2){border-left:none;}
-.order-history .table tr:not(:nth-child(2)) td:last-child,
-.order-history .table tr:not(:nth-child(2)) td:nth-last-child(2){
+.order-history .table tr:not(:nth-child(2)) td:nth-last-child(-n+2){
 	border-top:none;
 	border-bottom:none;
 }
-.order-history .table tr:last-child td:last-child,
-.order-history .table tr:last-child td:nth-last-child(2){border-bottom:1px solid #b5b5b5;}
+.order-history .table tr:last-child td:nth-last-child(-n+2){border-bottom:1px solid #b5b5b5;}
 
 .order-history .table th:not(:first-child),
 .order-history .table td:not(:first-child){text-align: center;}
