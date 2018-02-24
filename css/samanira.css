@@ -1263,11 +1263,11 @@ a.close:hover{background-color: #22577c;}
 
 .tag{
 	display: inline-block;
-	min-width: 52px;
-	font-size: 12px;
+	min-width: 70px;
+	font-size: 11px;
 	color:#ffffff;
-	text-align: center;
-	padding:4px 10px;
+	text-align: right;
+	padding:5px 10px;
 	background-color: #4b5658;
 	border-radius: 3px;
 	-webkit-transition:all .2s ease-in-out;
@@ -1308,6 +1308,21 @@ a.close:hover{background-color: #22577c;}
 	background-color: #ffffff !important;
 }
 .white-label:hover{background-color: #b7b7b7 !important;}
+
+.pending-label{
+	padding-right: 27px;
+	background: url('../images/icons/process.png') no-repeat 92% center #ef9200 !important;
+}
+
+.delivered-label{
+	padding-right: 46px;
+	background: url('../images/icons/delivery-white.png') no-repeat 92% center #61bd61 !important;
+}
+
+.failed-label{
+	padding-right: 33px;
+	background: url('../images/icons/fail.png') no-repeat 92% center #e56262 !important;
+}
 
 /* -- _Post Stats -- */
 
@@ -1686,7 +1701,7 @@ a.close:hover{background-color: #22577c;}
 
 .table th{
 	font-family: 'Iran-Medium';
-	font-size: 13px;
+	font-size: 12px;
 	color:#111111;
 	padding:9px 15px;
 	background-color: #f0f0f0;
