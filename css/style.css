@@ -4,7 +4,7 @@
 
 .top-header .frame{padding:30px 10px 30px 130px;}
 
-.top-header .frame > div{
+.top-header .frame > div:not(.search-overlay){
 	display: inline-block;
 	vertical-align: top;
 	margin-right: -1px;
