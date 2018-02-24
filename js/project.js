@@ -216,6 +216,12 @@ $('.shipping-box').on('click', function(){
   $(this).addClass('active').find('input').prop('checked', true).parents('.half-box').siblings().find('.shipping-box').removeClass('active').find('input').prop('checked', false);
 });
 
+// Address Book
+
+$('.address-book a.checkmark').on('click', function(){
+  $(this).parents('.address-box').find('input').prop('checked', true).parents('li').addClass('active').siblings().removeClass('active').find('input').prop('checked', false);
+});
+
 // Form Validations
 
 $('.login_form').validate({
