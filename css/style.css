@@ -415,7 +415,32 @@ a.site-color:hover{color:#22577c !important;}
 	z-index: 10;
 }
 
-.magazine h1{font-size: 30px;}
+.magazine-title{
+	position: relative;
+	font-size: 20px;
+	color:#ffffff;
+	text-align: center;
+	padding:10px;
+	margin-bottom: 30px;
+	background-color: #3e474f;
+	border-radius: 4px;
+}
+
+.magazine-title::after{
+	content:'';
+	position: absolute;
+	bottom:-6px;
+	left: 50%;
+	width: 14px;
+	height: 14px;
+	margin-left:-7px;
+	background-color: inherit;
+	border-radius: 2px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 10;
+}
 
 .ads a{display: block;}
 .ads a:hover{opacity: .9;}
