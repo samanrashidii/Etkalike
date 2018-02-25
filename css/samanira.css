@@ -1607,9 +1607,9 @@ a.close:hover{background-color: #22577c;}
 
 .static-content img{
 	display: block !important;
-	margin-top:20px !important;
 	border-radius: 4px;
 }
+.static-content img:not(:first-child){margin-top:20px !important;}
 
 .static-content h1.dark-color{color: #111111 !important; }
 
@@ -2249,7 +2249,7 @@ a.close:hover{background-color: #22577c;}
 		margin-top:15px !important;
 	}
 
-	.static-content img{margin-top:10px !important;}
+	.static-content img:not(:first-child){margin-top:10px !important;}
 
 	.static-content p{
 		font-size: 12px !important;
