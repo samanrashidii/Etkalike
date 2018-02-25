@@ -415,6 +415,8 @@ a.site-color:hover{color:#22577c !important;}
 	z-index: 10;
 }
 
+.magazine h1{font-size: 30px;}
+
 .ads a{display: block;}
 .ads a:hover{opacity: .9;}
 
@@ -1637,6 +1639,7 @@ a.go-back{
 	background-color: #3079AB;
 }
 
+.static-sidebar ul li svg,
 .my-page-sidebar ul li svg{
 	display: inline-block;
 	vertical-align: middle;
@@ -1644,6 +1647,7 @@ a.go-back{
 	font-size: 15px;
 	text-align: right;
 }
+.static-sidebar ul li svg{width: 25px !important;}
 
 .my-page-sidebar a.bttn{
 	display: block;
@@ -1988,7 +1992,40 @@ a.go-back{
 
 .mag-piece:hover .box-layer{opacity: 1;}
 
+.horizontal-box {
+	position: relative;
+    height: 143px;
+    overflow: hidden;
+    padding-right:255px;
+    margin-bottom: 25px;
+    border:1px solid #3e474f;
+    border-radius: 3px;
+}
 
+.horizontal-box-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 255px;
+    height: 100%
+}
+
+.horizontal-box .section-box {
+	height: 100%;
+	padding:15px;
+}
+
+.horizontal-box .post-stats{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	text-align: left;
+	z-index: 10;
+}
+
+.horizontal-box h6 a:hover{color:#3079AB;}
+.horizontal-box img:hover{opacity: .9;} 
 
 /*   Added Styles by Back-end   */
 
