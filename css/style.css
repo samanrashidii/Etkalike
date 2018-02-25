@@ -2027,6 +2027,8 @@ a.go-back{
 .horizontal-box h6 a:hover{color:#3079AB;}
 .horizontal-box img:hover{opacity: .9;} 
 
+.specific-magazine .static-content h1{margin-top:20px !important;}
+
 /*   Added Styles by Back-end   */
 
 
