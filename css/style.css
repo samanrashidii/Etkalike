@@ -707,6 +707,7 @@ a.site-color:hover{color:#22577c !important;}
 	height: 25px;
 	padding:0;
 	cursor: pointer;
+	user-select: none;
 	background-repeat: no-repeat;
 	background-position: center;
 	border:1px solid #010101 !important;
@@ -1492,6 +1493,7 @@ a.go-back{
 	display: block;
 	padding:20px 10px;
 	cursor: pointer;
+	user-select: none;
 }
 
 .timing-table td.not-available label{
@@ -2154,6 +2156,28 @@ a.go-back{
 }
 .share-mag li a:hover{background-color: #ffffff;}
 
+.compare > ul > li{
+	float: right;
+	width:25%;
+	margin-right: 2.5%;
+}
+.compare li.compare-titles{width:20%;}
+.compare li:nth-child(-n + 2){margin-right: 0;}
+
+.compare-item{
+	text-align: center;
+	padding:15px 15px;
+	border:1px dashed #3e474f;
+	border-radius: 4px;
+}
+
+.add-compare{
+	padding:15px 15px;
+	-webkit-box-shadow: 0 0 10px #b5b5b5;
+	-moz-box-shadow: 0 0 10px #b5b5b5;
+	box-shadow: 0 0 10px #b5b5b5;
+	border-radius: 4px;
+}
 
 /*   Added Styles by Back-end   */
 
