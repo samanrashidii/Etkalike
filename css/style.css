@@ -2054,6 +2054,107 @@ a.go-back{
 
 .specific-magazine .static-content h1{margin-top:20px !important;}
 
+.magazine-footer .post-stats{
+	float: right;
+	width:auto;
+	padding:9px 0;
+	margin-top:0;
+	background-color: transparent;
+}
+
+.magazine-footer .post-stats svg{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 7px;
+}
+
+.post-share div{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	padding:7px 10px 3px 10px;
+	margin-right: 3px;
+	cursor: pointer;
+	border:1px solid #3e474f;
+	border-radius: 3px;
+	-webkit-transition:all .2s ease-in-out;
+ 	-moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+}
+.post-share div:hover{background-color: #f1f1f1;}
+
+.post-share svg,
+.post-share span{
+	-webkit-transition:all .2s;
+ 	-moz-transition:all .2s;
+    transition:all .2s;
+}
+
+.post-share div.active span{color:#ffffff;}
+
+.post-share .like-mag.active{
+	background-color: #5cb860;
+	border-color:#5cb860;
+}
+.post-share .like-mag.active svg{color:#e56262;}
+
+.post-share .share-mag.active{
+	background-color: #3e474f;
+	border-color:#3e474f;
+}
+.post-share .share-mag.active > svg{color:#eb7728;}
+
+.share-mag ul{
+	position: absolute;
+	top:-53px;
+	left:0;
+	text-align: center;
+	padding:7px;
+	opacity: 0;
+	visibility: hidden;
+	background-color: #3e474f;
+	border-radius: 3px;
+	-webkit-transition:all .2s ease-in-out;
+ 	-moz-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+}
+
+.share-mag ul::after{
+	content:'';
+	position: absolute;
+	bottom:-4px;
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	margin-left:-5px;
+	background-color: inherit;
+	border-radius: 2px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	z-index: 10;
+}
+
+.share-mag.active ul{
+	top:-47px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.share-mag ul li{display: inline-block;}
+
+.share-mag li a{
+	display: block;
+	width:25px;
+	line-height: 20px;
+	font-size: 15px;
+	padding:4px 5px 0 5px;
+	background-color: #b2bbbd;
+	border-radius: 3px;
+}
+.share-mag li a:hover{background-color: #ffffff;}
+
+
 /*   Added Styles by Back-end   */
 
 
