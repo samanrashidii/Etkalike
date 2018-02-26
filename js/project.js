@@ -222,6 +222,12 @@ $('.address-book a.checkmark').on('click', function(){
   $(this).parents('.address-box').find('input').prop('checked', true).parents('li').addClass('active').siblings().removeClass('active').find('input').prop('checked', false);
 });
 
+// Post Share
+
+$('.post-share div').on('click', function(){
+  $(this).toggleClass('active');
+});
+
 // Form Validations
 
 $('.login_form').validate({
