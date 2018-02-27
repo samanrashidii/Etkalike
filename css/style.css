@@ -2226,10 +2226,31 @@ a.go-back{
 	transform:translateY(1px);
 }
 
-.insurance .insurance_form{
+.insurance_form{
 	padding:40px;
 	border:1px solid #3e474f;
 	border-radius: 4px;
+}
+
+.insurance table td{font-size: 12px;}
+.insurance table th{font-size: 11px;}
+
+.result-items.table table:not(:last-child){margin-bottom: 15px;}
+
+.result-items.table td{
+	vertical-align: middle;
+	text-align: center;
+	padding:7px;
+}
+
+.result-items.table td:first-child{
+	background-color: transparent;
+	border-color: #cfcfcf;
+}
+
+.result-items.table td .radio-holder{
+	width:24px;
+	margin:auto;
 }
 
 /*   Added Styles by Back-end   */
