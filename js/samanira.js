@@ -61,15 +61,9 @@ $('.nav-toggle').on('click', function(){
   $(this).toggleClass('active');
 });
 
-// Remove Button //
-
-$('a.remove').on('click', function(){
-  $(this).parent().remove();
-});
-
 // Close Button //
 
-$('a.close:not(.overlay-close)').on('click', function(){
+$('a.close:not(.overlay-close):not(.message-close)').on('click', function(){
   $(this).parent().hide();
 });
 
@@ -106,14 +100,19 @@ $(window).load(function(){
   });
 });
 
-// Message Popup //
+// Message //
 
-var MessagePopup = function(){
-  $('.message').addClass('active');
-  setTimeout(function(){
-    $('.message').removeClass('active');
-  },5000);
-} 
+$('.message-close').on('click', function(){
+  $(this).parents('.message-box').removeClass('active');
+});
+
+$('.message-box').on('click', function(){
+  $(this).removeClass('active');
+});
+
+$('.message').on('click', function(e){
+  e.stopPropagation();
+});
 
 // Select Menu //
 

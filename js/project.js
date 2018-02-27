@@ -145,6 +145,16 @@ $('.quantity').each(function() {
 
 });
 
+// Select Date
+
+$('#select_date').persianDatepicker({
+  format: 'YYYY/MM/DD',
+  initialValue: false,
+  observer: false,
+  autoClose: true,
+  navigator: {scroll:false}
+});
+
 // Star Rating
 
 $('.your-rating span').on('mouseenter', function(){
@@ -227,6 +237,147 @@ $('.address-book a.checkmark').on('click', function(){
 $('.post-share div').on('click', function(){
   $(this).toggleClass('active');
 });
+
+if($('form').hasClass('insurance_form')){
+
+// Upload Image 1
+
+var imageLoader = document.getElementById('image-input-1');
+imageLoader.addEventListener('change', handleImage, false);
+
+function handleImage(e) {
+    var reader = new FileReader();
+    reader.onload = function (event) {
+        $('#upload-image-1 img').attr('src',event.target.result);
+        $('#upload-image-1').addClass('image-added');
+        $('#upload-image-1 span').hide();
+    }
+    reader.readAsDataURL(e.target.files[0]);
+    
+}
+
+var dropbox;
+dropbox = document.getElementById('upload-image-1');
+dropbox.addEventListener("dragenter", dragenter, false);
+dropbox.addEventListener("dragover", dragover, false);
+dropbox.addEventListener("drop", drop, false);
+
+function dragenter(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function dragover(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function drop(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  //you can check e's properties
+  var dt = e.dataTransfer;
+  var files = dt.files;
+  
+  //this code line fires your 'handleImage' function (imageLoader change event)
+  imageLoader.files = files;
+}
+
+// Upload Image 2
+
+var imageLoader2 = document.getElementById('image-input-2');
+imageLoader2.addEventListener('change', handleImage2, false);
+
+function handleImage2(e) {
+    var reader = new FileReader();
+    reader.onload = function (event) {
+        $('#upload-image-2 img').attr('src',event.target.result);
+        $('#upload-image-2').addClass('image-added');
+        $('#upload-image-2 span').hide();
+    }
+    reader.readAsDataURL(e.target.files[0]);
+    
+}
+
+var dropbox;
+dropbox = document.getElementById('upload-image-2');
+dropbox.addEventListener("dragenter", dragenter, false);
+dropbox.addEventListener("dragover", dragover, false);
+dropbox.addEventListener("drop", drop, false);
+
+function dragenter(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function dragover(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function drop(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  //you can check e's properties
+  var dt = e.dataTransfer;
+  var files = dt.files;
+  
+  //this code line fires your 'handleImage' function (imageLoader change event)
+  imageLoader2.files = files;
+}
+
+// Upload Image 3
+
+var imageLoader2 = document.getElementById('image-input-3');
+imageLoader2.addEventListener('change', handleImage2, false);
+
+function handleImage2(e) {
+    var reader = new FileReader();
+    reader.onload = function (event) {
+        $('#upload-image-3 img').attr('src',event.target.result);
+        $('#upload-image-3').addClass('image-added');
+        $('#upload-image-3 span').hide();
+    }
+    reader.readAsDataURL(e.target.files[0]);
+    
+}
+
+var dropbox;
+dropbox = document.getElementById('upload-image-3');
+dropbox.addEventListener("dragenter", dragenter, false);
+dropbox.addEventListener("dragover", dragover, false);
+dropbox.addEventListener("drop", drop, false);
+
+function dragenter(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function dragover(e) {
+  e.stopPropagation();
+  e.preventDefault();
+}
+
+function drop(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  //you can check e's properties
+  var dt = e.dataTransfer;
+  var files = dt.files;
+  
+  //this code line fires your 'handleImage' function (imageLoader change event)
+  imageLoader2.files = files;
+}
+
+$('.upload-image a.remove').on('click', function(){
+  var getThisID = $(this).siblings('input').attr('id');
+  $(this).siblings('img').attr('src', '');
+  $('#'+getThisID).val('');
+  $(this).parents('.upload-image').removeClass('image-added');
+  $(this).siblings('span').show();
+});
+
+}
 
 // Form Validations
 
