@@ -2158,13 +2158,38 @@ a.go-back{
 
 .compare > ul > li{
 	float: right;
-	width:25%;
+	width:26%;
 	margin-right: 2%;
 }
 .compare li.compare-titles{
-	width:19%;
+	width:16%;
 	margin-right: 0;
 }
+
+.compare-titles ul,
+.compare-description ul{
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+.compare-titles li{
+	color:#ffffff;
+	text-align: right;
+	padding:10px 15px;
+	background-color: #3e474f;
+	border-bottom:1px solid #5b626f;
+}
+
+.compare-description li{
+	color:#48525a;
+	text-align: center;
+	padding:10px 15px;
+	background-color: #e9e9e9;
+	border-bottom:1px solid #cecece;
+}
+
+.compare-titles li:last-child,
+.compare-description li:last-child{border-bottom:none;}
 
 .compare-item{
 	text-align: center;
