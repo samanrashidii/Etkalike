@@ -23,6 +23,7 @@
 		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/slider.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/carousel.css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/persian.datepicker.min.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/media.css" media="screen"/>
 
@@ -34,30 +35,12 @@
 		<script src="js/jquery.sticky.min.js"></script>
 		<script src="js/slider.min.js"></script>
 		<script src="js/offers.js"></script>
+		<script src="js/persian.date.min.js"></script>
+		<script src="js/persian.datepicker.js"></script>
 		<script src="js/jquery.countdown.min.js"></script>
 		<script src="js/carousel.min.js"></script>
 		<script src="js/samanira.js"></script>
 		<script src="js/project.js"></script>
-
-		<style type="text/css">
-			h2{
-				direction: ltr;
-				padding:20px 20px 0 20px;
-			}
-			.pages-list{
-				direction: ltr;
-				list-style-type: disc;
-				padding:20px 0 30px 30px;
-			}
-
-			.pages-list a{
-				display: inline-block;
-				font-size:15px;
-				color:#121212;
-				margin-bottom: 12px;
-			}
-			.pages-list li:last-child a{margin-bottom: 0;}
-		</style>
 
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
@@ -301,38 +284,106 @@
 						<div class="breadcrumb">
 							<ul>
 								<li><a href="#">فروشگاه اتکالاین</a></li>
-								<li>درباره ما</li>
+								<li><a href="#">خرید بیمه</a></li>
+								<li>نمایش نتایج بیمه ها</li>
 							</ul>
 						</div><!-- breadcrumb end -->
 
 						<div class="static-box">
-							<ul class="pages-list">
-								<li><a target="_blank" href="cart.html">Cart</a></li>
-								<li><a target="_blank" href="category.html">Category</a></li>
-								<li><a target="_blank" href="checkout.html">Checkout</a></li>
-								<li><a target="_blank" href="compare.html">Compare</a></li>
-								<li><a target="_blank" href="contact.html">Contact</a></li>
-								<li><a target="_blank" href="error.html">Error</a></li>
-								<li><a target="_blank" href="faq.html">FAQ</a></li>
-								<li><a target="_blank" href="index.html">Home</a></li>
-								<li><a target="_blank" href="insurance.html">Insurance</a></li>
-								<li><a target="_blank" href="insurance-result.html">Insurance Result</a></li>
-								<li><a target="_blank" href="invoice.html">invoice</a></li>
-								<li><a target="_blank" href="magazine.html">Magazine</a></li>
-								<li><a target="_blank" href="magazine-categories.html">Magazine - Categories</a></li>
-								<li><a target="_blank" href="magazine-specific.html">Magazine - Specific</a></li>
-								<li><a target="_blank" href="my-page.html">My Page</a></li>
-								<li><a target="_blank" href="my-page-edit.html">My Page - Edit</a></li>
-								<li><a target="_blank" href="my-page-fav-categories.html">My Page - Favorite Categories</a></li>
-								<li><a target="_blank" href="my-page-fav-products.html">My Page - Favorite Products</a></li>
-								<li><a target="_blank" href="my-page-followers-following.html">My Page - Followers / Following</a></li>
-								<li><a target="_blank" href="my-page-address-book.html">My Page - Address Book</a></li>
-								<li><a target="_blank" href="my-page-order-history.html">My Page - Order History</a></li>
-								<li><a target="_blank" href="products.html">Products</a></li>
-								<li><a target="_blank" href="specific-product.html">Specific Product</a></li>
-								<li><a target="_blank" href="static.html">Static</a></li>
-								<li><a target="_blank" href="thank-you.html">Thank You</a></li>
-							</ul>
+							<div class="insurance frame medium">
+								<form action="#" method="POST" name="insurance_result_form" accept-charset="UTF-8">
+									<div class="section-wrapper has-9-3-column">
+										<div class="section">
+											<div class="table">
+												<table>
+													<tr>
+														<td>دسته بندی</td>
+														<td>اتومبیل</td>
+													</tr>
+													<tr>
+														<td>نوع</td>
+														<td>پژو</td>
+													</tr>
+													<tr>
+														<td>مدل</td>
+														<td>206</td>
+													</tr>
+													<tr>
+														<td>سال ساخن</td>
+														<td>۱۳۹۰</td>
+													</tr>
+													<tr>
+														<td>پوشش مالی بیمه</td>
+														<td>۷ میلیون تومان</td>
+													</tr>
+													<tr>
+														<td>نوع کاربری بیمه</td>
+														<td>سواری</td>
+													</tr>
+													<tr>
+														<td>تخفیف بیمه</td>
+														<td>۶ ماه</td>
+													</tr>
+													<tr>
+														<td>تاریخ سررسید</td>
+														<td>۱۳۹۶/۱۲/۰۳</td>
+													</tr>
+												</table>
+											</div><!-- table end -->
+										</div><!-- section end -->
+										<div class="section">
+											<div class="result-items table">
+												<table>
+													<tr>
+														<th></th>
+														<th>بیمه کننده</th>
+														<th>قیمت</th>
+														<th>قیمت با تخفیف</th>
+													</tr>
+													<tr>
+														<td>
+															<div class="radio-holder">
+																<input type="radio" name="result_items" id="result_1" value="" checked/>
+																<label for="result_1">&nbsp;</label>
+															</div><!-- radio-holder end -->
+														</td>
+														<td>
+															<img src="images/insurance/dana.png" alt="" />
+														</td>
+														<td>۱۵۰,۰۰۰ تومان</td>
+														<td>۲۵۰,۰۰۰ تومان</td>
+													</tr>
+												</table>
+												<table>
+													<tr>
+														<th></th>
+														<th>بیمه کننده</th>
+														<th>قیمت</th>
+														<th>قیمت با تخفیف</th>
+													</tr>
+													<tr>
+														<td>
+															<div class="radio-holder">
+																<input type="radio" name="result_items" id="result_2" value="" />
+																<label for="result_2">&nbsp;</label>
+															</div><!-- radio-holder end -->
+														</td>
+														<td>
+															<img src="images/insurance/iran.png" alt="" />
+														</td>
+														<td>۱۵۰,۰۰۰ تومان</td>
+														<td>۲۵۰,۰۰۰ تومان</td>
+													</tr>
+												</table>
+											</div><!-- result-items end -->
+											<div class="button-holder has-medium-top-margin">
+												<input type="submit" value="تایید و پرداخت" />
+												<a class="bttn site-2" href="#">انصراف</a>
+											</div><!-- button-holder end -->
+										</div><!-- section end -->
+									</div><!-- section-wrapper has-6-6-column end -->
+								</form>
+							</div><!-- insurance end -->
 						</div><!-- static-box end -->
 					</div><!-- frame end -->
 				</div><!-- content end -->
