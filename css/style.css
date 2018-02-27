@@ -2159,10 +2159,12 @@ a.go-back{
 .compare > ul > li{
 	float: right;
 	width:25%;
-	margin-right: 2.5%;
+	margin-right: 2%;
 }
-.compare li.compare-titles{width:20%;}
-.compare li:nth-child(-n + 2){margin-right: 0;}
+.compare li.compare-titles{
+	width:19%;
+	margin-right: 0;
+}
 
 .compare-item{
 	text-align: center;
