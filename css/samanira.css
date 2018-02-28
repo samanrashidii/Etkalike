@@ -674,6 +674,13 @@ label.error::before{
 
 .bttn.site-2:hover{background-color: #c8444a;}
 
+.bttn.site-3{
+	color:#ffffff;
+	background-color: #f39643;
+}
+
+.bttn.site-3:hover{background-color: #eb7728;}
+
 .bttn.transparent{
 	color:#3e474f;
 	background-color: transparent;
@@ -1401,7 +1408,7 @@ a.close:hover{background-color: #22577c;}
 
 /* -- _Message -- */
 
-.message-box{
+.message-holder{
 	position: fixed;
 	top:0;
 	left:0;
@@ -1417,7 +1424,7 @@ a.close:hover{background-color: #22577c;}
 	transition:all .2s ease-in-out;
 }
 
-.message-box.active{
+.message-holder.active{
 	visibility: visible;
 	opacity: 1;
 }
@@ -1445,7 +1452,7 @@ a.close:hover{background-color: #22577c;}
 	z-index: 10;
 }
 
-.message-box span{
+.message-holder span{
 	display: block;
 	font-size: 14px;
 	color:#ffffff;

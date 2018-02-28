@@ -103,10 +103,10 @@ $(window).load(function(){
 // Message //
 
 $('.message-close').on('click', function(){
-  $(this).parents('.message-box').removeClass('active');
+  $(this).parents('.message-holder').removeClass('active');
 });
 
-$('.message-box').on('click', function(){
+$('.message-holder').on('click', function(){
   $(this).removeClass('active');
 });
 
