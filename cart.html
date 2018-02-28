@@ -293,6 +293,23 @@
 						<form action="#" method="POST" name="cart_form" class="cart_form" accept-charset="UTF-8">
 							<div class="cart-page section-wrapper has-2-10-column has-xxlarge-top-margin">
 								<div class="section">
+									<div class="overlay" id="doubleCheck">
+										<div class="inner-overlay">
+											<div class="overlay-box">
+												<div class="inner-overlay-box">
+													<a class="close overlay-close" href="javascript:void(0)"></a>
+													<div class="message-box center-aligned">
+														<img src="images/icons/warning.png" alt="" />
+														<p>آیا مایل به حذف این محصول از سبد خرید خود هستید؟</p>
+														<div class="button-holder has-medium-top-margin">
+															<a class="bttn site" href="javascript:void(0)">بله</a>
+															<a class="bttn site-2 overlay-close" href="javascript:void(0)">خیر</a>
+														</div><!-- has-small-top-margin end -->
+													</div><!-- message-box end -->
+												</div><!-- inner-overlay-box end -->
+											</div><!-- overlay-box end -->
+										</div><!-- inner-overlay end -->
+									</div><!-- doubleCheck end -->
 									<div class="table checkout normal-cart responsive middle-vertical relative-position" afterContent="جزئیات سبد کالای آنلاین">
 										<table>
 											<thead>
@@ -322,7 +339,7 @@
 														</div><!-- quantity end -->
 													</td>
 													<td>۱,۶۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
+													<td><a class="remove-item overlay-bttn" href="#doubleCheck"></a></td>
 												</tr>
 												<tr>
 													<td>
@@ -341,7 +358,7 @@
 														</div><!-- quantity end -->
 													</td>
 													<td>۳,۲۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
+													<td><a class="remove-item overlay-bttn" href="#doubleCheck"></a></td>
 												</tr>
 											</tbody>
 										</table>
@@ -382,7 +399,7 @@
 														</div><!-- quantity end -->
 													</td>
 													<td>۱,۶۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
+													<td><a class="remove-item overlay-bttn" href="#doubleCheck"></a></td>
 												</tr>
 												<tr>
 													<td>
@@ -404,7 +421,7 @@
 														</div><!-- quantity end -->
 													</td>
 													<td>۳,۲۰۰,۰۰۰ تومان</td>
-													<td><a class="remove-item" href="javascript:void(0)"></a></td>
+													<td><a class="remove-item overlay-bttn" href="#doubleCheck"></a></td>
 												</tr>
 											</tbody>
 										</table>
