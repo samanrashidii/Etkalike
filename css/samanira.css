@@ -1411,7 +1411,7 @@ a.close:hover{background-color: #22577c;}
 	visibility: hidden;
 	opacity: 0;
 	background-color: rgba(0,0,0, .7);
-	z-index: 999999;
+	z-index: 99999999;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
