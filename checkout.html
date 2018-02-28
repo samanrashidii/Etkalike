@@ -319,8 +319,7 @@
 															</div><!-- order-details end -->
 														</td>
 														<td>۱,۶۰۰,۰۰۰ تومان</td>
-														<td>۱</div><!-- quantity end -->
-														</td>
+														<td>۱</td>
 														<td>۱,۶۰۰,۰۰۰ تومان</td>
 														<td><a class="edit" href="javascript:void(0)"></a></td>
 													</tr>
@@ -335,8 +334,7 @@
 															</div><!-- order-details end -->
 														</td>
 														<td>۱,۶۰۰,۰۰۰ تومان</td>
-														<td>۲</div><!-- quantity end -->
-														</td>
+														<td>۲</td>
 														<td>۳,۲۰۰,۰۰۰ تومان</td>
 														<td><a class="edit" href="javascript:void(0)"></a></td>
 													</tr>
@@ -491,7 +489,7 @@
 																	<div class="section">
 																			<div class="field-holder">
 																				<label for="new_address_province">استان : </label>
-																				<select name="new_address_province" class="ui-selectmenu">
+																				<select name="new_address_province" id="new_address_province" class="ui-selectmenu">
 																					<option value="">انتخاب استان</option>
 																					<option value="">تهران</option>
 																					<option value="">اصفهان</option>
@@ -502,7 +500,7 @@
 																	<div class="section">
 																			<div class="field-holder">
 																				<label for="new_address_city">شهر : </label>
-																				<select name="new_address_city" class="ui-selectmenu">
+																				<select name="new_address_city" id="new_address_city" class="ui-selectmenu">
 																					<option value="">انتخاب شهر</option>
 																					<option value="">تهران</option>
 																					<option value="">اصفهان</option>
@@ -536,16 +534,16 @@
 														<label for="t1">بازه ساعتی ۹ - ۱۲</label>
 													</td>
 													<td class="not-available">
-														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ساعتی ۱۲ - ۱۵</label>
+														<input type="radio" name="choose_time" id="t2" value="" />
+														<label for="t2">بازه ساعتی ۱۲ - ۱۵</label>
 													</td>
 													<td class="available active">
-														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ساعتی ۱۵ - ۱۸</label>
+														<input type="radio" name="choose_time" id="t3" value="" />
+														<label for="t3">بازه ساعتی ۱۵ - ۱۸</label>
 													</td>
 													<td class="available">
-														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ساعتی ۱۸ - ۲۱</label>
+														<input type="radio" name="choose_time" id="t4" value="" />
+														<label for="t4">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 												<tr>
@@ -554,20 +552,20 @@
 														<div>۹۶/۱۲/۱۳</div>
 													</td>
 													<td class="not-available">
-														<input type="radio" name="choose_time" id="t1" value="" />
-														<label for="t1">بازه ساعتی ۹ - ۱۲</label>
+														<input type="radio" name="choose_time" id="t5" value="" />
+														<label for="t5">بازه ساعتی ۹ - ۱۲</label>
 													</td>
 													<td class="not-available">
-														<input type="radio" name="choose_time" id="t2" value="" />
-														<label for="t2">بازه ساعتی ۱۲ - ۱۵</label>
+														<input type="radio" name="choose_time" id="t6" value="" />
+														<label for="t6">بازه ساعتی ۱۲ - ۱۵</label>
 													</td>
 													<td class="not-available">
-														<input type="radio" name="choose_time" id="t3" value="" />
-														<label for="t3">بازه ساعتی ۱۵ - ۱۸</label>
+														<input type="radio" name="choose_time" id="t7" value="" />
+														<label for="t7">بازه ساعتی ۱۵ - ۱۸</label>
 													</td>
 													<td class="not-available">
-														<input type="radio" name="choose_time" id="t4" value="" />
-														<label for="t4">بازه ساعتی ۱۸ - ۲۱</label>
+														<input type="radio" name="choose_time" id="t8" value="" />
+														<label for="t8">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 												<tr>
@@ -576,20 +574,20 @@
 														<div>۹۶/۱۲/۱۴</div>
 													</td>
 													<td class="not-available">
-														<input type="radio" name="choose_time" id="t6" value="" />
-														<label for="t6">بازه ساعتی ۹ - ۱۲</label>
-													</td>
-													<td class="available">
-														<input type="radio" name="choose_time" id="t7" value="" />
-														<label for="t7">بازه ساعتی ۱۲ - ۱۵</label>
-													</td>
-													<td class="available">
-														<input type="radio" name="choose_time" id="t8" value="" />
-														<label for="t8">بازه ساعتی ۱۵ - ۱۸</label>
-													</td>
-													<td class="available">
 														<input type="radio" name="choose_time" id="t9" value="" />
-														<label for="t9">بازه ساعتی ۱۸ - ۲۱</label>
+														<label for="t9">بازه ساعتی ۹ - ۱۲</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t10" value="" />
+														<label for="t10">بازه ساعتی ۱۲ - ۱۵</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t11" value="" />
+														<label for="t11">بازه ساعتی ۱۵ - ۱۸</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t12" value="" />
+														<label for="t12">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 												<tr>
@@ -598,20 +596,20 @@
 														<div>۹۶/۱۲/۱۵</div>
 													</td>
 													<td class="available">
-														<input type="radio" name="choose_time" id="t10" value="" />
-														<label for="t10">بازه ساعتی ۹ - ۱۲</label>
-													</td>
-													<td class="available">
-														<input type="radio" name="choose_time" id="t11" value="" />
-														<label for="t11">بازه ساعتی ۱۲ - ۱۵</label>
-													</td>
-													<td class="available">
-														<input type="radio" name="choose_time" id="t12" value="" />
-														<label for="t12">بازه ساعتی ۱۵ - ۱۸</label>
-													</td>
-													<td class="available">
 														<input type="radio" name="choose_time" id="t13" value="" />
-														<label for="t13">بازه ساعتی ۱۸ - ۲۱</label>
+														<label for="t13">بازه ساعتی ۹ - ۱۲</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t14" value="" />
+														<label for="t14">بازه ساعتی ۱۲ - ۱۵</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t15" value="" />
+														<label for="t15">بازه ساعتی ۱۵ - ۱۸</label>
+													</td>
+													<td class="available">
+														<input type="radio" name="choose_time" id="t16" value="" />
+														<label for="t16">بازه ساعتی ۱۸ - ۲۱</label>
 													</td>
 												</tr>
 											</table>
