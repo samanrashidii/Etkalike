@@ -2271,6 +2271,21 @@ a.go-back{
 	margin:auto;
 }
 
+.main-section .master-slider{
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.category-navigation ul{padding:10px 20px;}
+.category-navigation li{margin:10px 0;}
+.category-navigation li a{font-size: 12px;}
+.category-navigation li a:hover{color:#3079AB;}
+.category-navigation ul ul{
+	padding:0 10px;
+	margin:15px 0;
+	border-right:1px solid #3e474f;
+}
+
 /*   Added Styles by Back-end   */
 
 
