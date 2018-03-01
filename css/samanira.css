@@ -1894,13 +1894,19 @@ a.close:hover{background-color: #22577c;}
 .section-box.medium-padding{padding:15px;}
 .section-box.small-padding{padding:10px;}
 
-.section-box-title h4{
+.section-box-title h4,
+.section-box-title h5{
 	font-family: 'Iran';
 	font-size: 17px;
 	text-align: center;
 	padding:12px 0 9px 0;
 	background-color: #3e474f;
 	border-radius: 5px 5px 0 0;
+}
+
+.section-box-title h5{
+	font-size: 15px;
+	color:#eb7728;
 }
 
 .section-box-title a{color:#ffffff;}
