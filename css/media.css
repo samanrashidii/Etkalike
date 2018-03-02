@@ -12,11 +12,14 @@
 		margin:10px 0 0 0 !important;
 	}
 
-	input[type="search"]{padding:0 5px 0 45px;}
+	input[type="search"]{padding:0 5px 0 40px;}
 
-	.search input[type="submit"]{width:42px;}
+	.search input[type="submit"]{width:40px;}
 
-	.top-header .frame{padding:10px;}
+	.top-header .frame{
+		text-align: center;
+		padding:10px;
+	}
 
 	.navigation{display: none;}
 
@@ -28,8 +31,8 @@
 	}
 
 	.cart{
-		float: left;
-		margin-top:26px;
+		margin-top:24px;
+		margin-right: 7px !important;
 	}
 
 	.login-status{
@@ -62,16 +65,57 @@
 	.search-result{padding:7px 10px;}
 
 	.ms-partialview-template{min-height: 0;}
-	.ms-partialview-template .ms-slide-info{padding:10px 12px;}
 	.countdown-box-wrapper{border-radius: 0;}
 	.countdown-box{height: 50px;}
+	.countdown-box h6{font-size: 12px;}
 	.countdown-box span{
 		font-size: 18px;
 		padding-top:5px;
 	}
-	.countdown-box h6{font-size: 12px;}
+
+	.ms-partialview-template .ms-slide-info{
+		padding:14px 12px 12px 12px; 
+		margin-top:9px;
+	}
 
 	.price-box strong{font-size: 17px;}
 	.off-price{font-size: 12px !important}
+
+	.countdown-box .button-holder{margin-top:0;}
+	.owl-carousel .owl-stage-outer{padding:21.5px 0px;}
+	.magazine-listing{padding:10px 10px 0 10px !important;}
+	.magazine-box{margin-bottom: 10px;}
+	.footer{padding:20px 0;}
+	.footer-box,
+	.sitemap{
+		float: none !important;
+		width:100% !important;
+		text-align: center;
+		min-height: 0;
+	}
+
+	.footer-box:nth-child(1) {
+	    padding-bottom: 10px;
+	    margin-bottom: 20px;
+	    border-bottom: 1px solid #2f363e;
+	}
+
+	.symbols img{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.symbols img:first-child{height: auto !important;}
+	.footer-contact-info .left-floated,
+	.footer-contact-info .right-floated{
+		display: block;
+		float: none;
+	}
+
+	.copyright {
+	    font-size: 11px;
+	    margin-top: 8px !important;
+	}
+
+	.post-stats{margin-top:0;}
 
 }
