@@ -746,12 +746,17 @@ input[type="submit"]:active{
 /* -- _Nav Toggle -- */
 
 .nav-toggle{
+	position: absolute;
+	top:0;
+	right:0;
 	display: none;
-    width: 30px;
-    height: 19px;
+    width: 43px;
+    height: 40px;
     text-align: center;
-    margin-top:10px;
+    padding:10px 7px 5px 7px;
     cursor: pointer;
+    background-color: #3e474f;
+    border-radius: 3px;
     z-index: 1000;
     -webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
@@ -759,11 +764,11 @@ input[type="submit"]:active{
 }
 
 .nav-toggle span{
-	position: relative;
 	display: block;
-	height: 2px;
+	height: 3px;
 	margin-bottom: 6px;
 	background-color: #ffffff;
+	border-radius: 4px;
 	-webkit-transition:all .2s ease-in-out;
 	-moz-transition:all .2s ease-in-out;
 	transition:all .2s ease-in-out;
@@ -2124,19 +2129,19 @@ a.close:hover{background-color: #22577c;}
 
 						/*            Min 540 Screen End        */
 
-						/*            980 Screen Start        */
+						/*            1000 Screen Start        */
 
-@media only screen and (max-width:980px){
+@media only screen and (max-width:1000px){
 
 	.desktop-only{display: none !important;}
 
 	body{font-size: 12px;}
-	h1{font-size:31px;}
-	h2{font-size:26px;}
-	h3{font-size:22px;}
-	h4{font-size:18px;}
+	h1{font-size:26px;}
+	h2{font-size:22px;}
+	h3{font-size:17px;}
+	h4{font-size:16px;}
 	h5{font-size:15px;}
-	h6{font-size:13px;}
+	h6{font-size:14px;}
 	p{padding-top:10px;}
 
 	legend{
@@ -2238,7 +2243,7 @@ a.close:hover{background-color: #22577c;}
 	.has-4-4-4-column > .section{
 		float: none !important;
 		width: 100% !important;
-		margin:0;
+		margin:0 !important;
 	}
 
 	.has-3-3-3-3-column > .section,
@@ -2360,7 +2365,7 @@ a.close:hover{background-color: #22577c;}
 	
 }
 
-						/*            980 Screen End        */
+						/*            1000 Screen End        */
 
 						/*            740 Screen Start        */
 
@@ -2372,10 +2377,10 @@ a.close:hover{background-color: #22577c;}
 
 	input[type="submit"]{font-size: 13px !important;}
 
-	::-webkit-input-placeholder{font-size:12px;}
-	:-moz-placeholder{font-size:12px;}
-	::-moz-placeholder{font-size:12px;}
-	:-ms-input-placeholder{font-size:12px;}
+	::-webkit-input-placeholder{font-size:11px;}
+	:-moz-placeholder{font-size:11px;}
+	::-moz-placeholder{font-size:11px;}
+	:-ms-input-placeholder{font-size:11px;}
 
 	.has-vlarge-padding{padding:40px !important;}
 	.has-vlarge-top-padding{padding-top:40px !important;}
