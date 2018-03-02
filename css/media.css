@@ -1,69 +1,77 @@
-						/*            1200px Screen Start        */
+						/*            1000px Screen Start        */
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1000px){
 
+	#wrapper{overflow: hidden;}
 
+	.search{
+		display: block !important;
+		min-width: 0 !important;
+		width:100%;
+		padding-right: 53px;
+		margin:10px 0 0 0 !important;
+	}
+
+	input[type="search"]{padding:0 5px 0 45px;}
+
+	.search input[type="submit"]{width:42px;}
+
+	.top-header .frame{padding:10px;}
+
+	.navigation{display: none;}
+
+	.logo{
+		display: inline-block;
+		position: relative;
+		top:auto;
+		margin-bottom: 10px;
+	}
+
+	.cart{
+		float: left;
+		margin-top:26px;
+	}
+
+	.login-status{
+		display: block !important;
+		text-align: center;
+	}
+
+	.my-account{
+		display: block;
+		width:100%;
+		padding:7px 10px 5px 10px;
+	}
+
+	.my-account img{
+		position: relative;
+		top:auto;
+		right:auto;
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin: 0 10px;
+	}
+
+	.login-status a.bttn{
+		width:49% ;
+		margin-top:4px;
+	}
+
+	.login-status a.bttn.overlay-bttn{width:100%;}
+
+	.search-result{padding:7px 10px;}
+
+	.ms-partialview-template{min-height: 0;}
+	.ms-partialview-template .ms-slide-info{padding:10px 12px;}
+	.countdown-box-wrapper{border-radius: 0;}
+	.countdown-box{height: 50px;}
+	.countdown-box span{
+		font-size: 18px;
+		padding-top:5px;
+	}
+	.countdown-box h6{font-size: 12px;}
+
+	.price-box strong{font-size: 17px;}
+	.off-price{font-size: 12px !important}
 
 }
-
-						/*            1200px Screen End        */
-
-						/*            980px Screen Start        */
-
-@media only screen and (max-width:980px){
-
-
-	
-}
-
-						/*            980px Screen End        */
-
-						/*            860px Screen Start        */
-
-@media only screen and (max-width:860px){
-
-
-
-}
-
-						/*            860px Screen End        */
-
-						/*            740px Screen Start        */
-
-@media only screen and (max-width:740px){
-
-
-
-}
-
-						/*            740px Screen End        */	
-
-						/*            640px Screen Start        */
-
-@media only screen and (max-width:640px){
-
-
-
-}
-
-						/*            640px Screen End        */											
-
-						/*            560px Screen Start        */						
-
-@media only screen and (max-width: 560px){
-
-
-
-}
-
-						/*            560px Screen End        */
-
-						/*            400px Screen Start        */
-
-@media only screen and (max-width:400px){
-
-
-
-}
-
-						/*            400px Screen End        */										

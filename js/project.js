@@ -3,9 +3,13 @@ $(document).ready(function(){
 // Search Overlay
 
 $('.search input').on('focus', function(){
+  $(this).parents('.search').addClass('active');
 	$('.search-overlay').addClass('active');
-}).on('blur', function(){
-	$('.search-overlay').removeClass('active');
+});
+
+$('.search-overlay').on('click', function(){
+   $(this).removeClass('active');
+	$('.search').removeClass('active');
 });
 
 // Login - Register
