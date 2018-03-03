@@ -61,22 +61,21 @@ $('.similiar-products').owlCarousel({
   autoplay:true,
   autoplayTimeout: 5000,
   autoplaySpeed: 700,
-  loop:false,
-  items:6,
-  margin:19,
-  rewind : true,
+  loop:true,
+  center: true,
+  margin:10,
   nav:true,
   responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
+      0:{
+          items:3
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
 });
 
 // Related Blogs

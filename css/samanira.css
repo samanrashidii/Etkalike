@@ -2158,10 +2158,7 @@ a.close:hover{background-color: #22577c;}
 		line-height: 36px;
 	}
 
-	textarea{
-		height: 120px;
-		padding:12px;
-	}
+	textarea{padding:12px;}
 
 	.upload-bttn label{font-size: 12px;}
 
@@ -2180,6 +2177,13 @@ a.close:hover{background-color: #22577c;}
 	}
 
 	.fixed-attachment{background-attachment: scroll !important;}
+
+	.checkbox-holder input[type="checkbox"] + label::before{
+		top:4px;
+		width:18px;
+		height: 18px;
+	}
+	.checkbox-holder input[type="checkbox"] + label::after{right:5px;}
   
     .has-large-minus-margin{margin-top: -20px !important;}
     .has-minus-margin{margin-top: -10px !important;}
@@ -2543,6 +2547,7 @@ a.close:hover{background-color: #22577c;}
 
 	.message{padding:10px;}
 
+	.post-stats span{font-size: 12px !important;}
 	.post-stats span::after{margin:0 5px;}
 
 	#map_canvas{height: 250px;}
