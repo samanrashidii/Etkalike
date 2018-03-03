@@ -175,7 +175,6 @@
 	.countdown-box .button-holder{margin-top:0;}
 	.owl-carousel .owl-stage-outer{padding:21.5px 0px;}
 	.magazine-listing{padding:10px 10px 0 10px !important;}
-	.magazine-box{margin-bottom: 10px;}
 	.footer{padding:20px 0;}
 	.footer-box,
 	.sitemap{
@@ -183,6 +182,11 @@
 		width:100% !important;
 		text-align: center;
 		min-height: 0;
+	}
+
+	.magazine-box{
+		max-width: 400px;
+		margin:0 auto 10px auto;
 	}
 
 	.footer-box:nth-child(1) {
@@ -238,6 +242,36 @@
 	.my-account-box a.edit{
 		top:-17px;
 		left:-6px;
+	}
+
+	.address-book .address-box{
+		padding:65px 10px 5px 10px;
+		margin-top:0;
+	}
+
+	.address-box-options{
+		width:100%;
+		height: 50px;
+		border-left:none;
+		border-bottom:1px solid #5b626f;
+		border-radius: 4px 4px 0 0;
+	}
+
+	.address-box .address-box-options a{
+		float: right;
+		width:33.33333333333%;
+		height: 100%;
+		border-bottom:none;
+		border-left: 1px solid #5b626f;
+	}
+	.address-box .address-box-options a:last-child{border-left:none;}
+
+	.new-address-box{padding:12px;}
+
+	.from-address-book a.bttn,
+	.address-book a.bttn{
+		display: block;
+		min-width: 0;
 	}
 
 }
