@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+// Responsive Start
+
+if($(window).width() < 1000){
+  $('.megamenu').siblings('a').append('<span class="megamenu-bttn"></span>');
+  $(document).on('click', '.megamenu-bttn', function(){
+    $(this).parents('li').find('.megamenu').toggle();
+  });
+}
+
+// Responsive End  
+
 // Search Overlay
 
 $('.search input').on('focus', function(){

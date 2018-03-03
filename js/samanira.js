@@ -58,13 +58,13 @@ $('.switch').on('click', function(){
 // Nav Toggle //
 
 $('.nav-toggle').on('click', function(){
-  $(this).toggleClass('active');
+  $('.navigation').addClass('active');
+  $('body').addClass('hidden-overflow');
 });
 
-// Close Button //
-
-$('a.close:not(.overlay-close):not(.message-close)').on('click', function(){
-  $(this).parent().hide();
+$('.navigation a.close').on('click', function(){
+  $(this).parents('.navigation').removeClass('active');
+  $('body').removeClass('hidden-overflow');
 });
 
 // Overlay //

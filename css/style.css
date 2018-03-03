@@ -220,7 +220,6 @@ a.site-color:hover{color:#22577c !important;}
 	color:#3079AB;
 	padding:7px 15px;
 	margin-bottom: 20px;
-	border-radius: 4px;
 }
 
 .menu-box li{margin:10px 0;}
@@ -1789,6 +1788,7 @@ a.go-back{
 }
 
 .my-account-box input,
+.my-account-box select,
 .my-account-box .ui-selectmenu-button{min-width: 220px;}
 
 .my-account-box .radio-holder{

@@ -199,10 +199,10 @@ select{
 	font-size: 13px;
 	color:#4b5658;
 	text-align: center;
-	padding:0 15px;
+	padding:0 15px 0 25px;
 	outline: none;
-	background: url('../images/assets/arrow-bottom.png') no-repeat 95% center #ffffff;
-	border:1px solid #4b5658;
+	background: url('../images/assets/arrow-bottom-black.png') no-repeat 10px center #ffffff;
+	border:1px solid #d4d9dd;
 	border-radius: 4px;
 	-webkit-appearance:none;
 }
@@ -2162,6 +2162,8 @@ a.close:hover{background-color: #22577c;}
 		padding:12px;
 	}
 
+	.upload-bttn label{font-size: 12px;}
+
 	.field-holder{margin:8px 0;}
 
 	.bttn{
@@ -2582,9 +2584,6 @@ a.close:hover{background-color: #22577c;}
 
 	.tablet-desktop-only{display: none !important;}
 
-	select,
-	input[type="search"]{background-position-x:97%;}
-
 	.half-half-box{
 		float: none !important;
 		width: 100% !important;
@@ -2611,6 +2610,13 @@ a.close:hover{background-color: #22577c;}
 
 	.checkbox-holder input[type="checkbox"] + label,
 	.radio-holder input[type="radio"] + label{padding-right: 28px;}
+
+	.button-holder a, .button-holder input{
+		float: none;
+		min-width: 0 !important;
+		width:100%;
+		margin:7px 0 0 0 !important;
+	}
 
 }
 
