@@ -21,7 +21,42 @@
 		padding:10px;
 	}
 
-	.navigation{display: none;}
+	.navigation{
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height: 100%;
+		padding-top:40px;
+		background-color: #3e474f;
+		z-index: 9999999999;
+	}
+
+	.navigation > ul > li{
+		display: block;
+		margin:0;
+		border-bottom:1px solid #2f363e;
+	}
+	.navigation > ul > li:first-child{border-top:1px solid #2f363e;}
+	.navigation > ul > li > a{padding:15px 0;}
+
+	.navigation a.close{
+		top:10px;
+		left:auto;
+		right:10px;
+		display: block;
+		border-radius: 2px;
+	}
+
+	.navigation .menu-title{
+		position: absolute;
+		top:12px;
+		left:15px;
+		display: block;
+		font-size: 13px;
+		color:#5cb860;
+		z-index: 10;
+	}
 
 	.logo{
 		display: inline-block;
