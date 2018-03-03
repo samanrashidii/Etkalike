@@ -2167,7 +2167,7 @@ a.close:hover{background-color: #22577c;}
 	.bttn{
 		min-width: 100px;
 		font-size: 12px;
-		padding:6px;
+		padding:8px 6px;
 	}
 
 	.bttn.large{
@@ -2192,7 +2192,7 @@ a.close:hover{background-color: #22577c;}
 	.font-size-xsmall{font-size: 10px;}
 	.font-size-xxsmall{font-size: 9px;}
 
-	.content{padding:20px 0;}
+	.content{padding:15px 0;}
 
 	.card-box{margin-bottom: 15px;}
 
@@ -2470,37 +2470,37 @@ a.close:hover{background-color: #22577c;}
 	.has-xlarge-x-margin{margin:0 30px !important;}
 	.has-xlarge-y-margin{margin:30px 0 !important;}
 
-	.has-large-margin{margin:25px !important;}
-	.has-large-top-margin{margin-top:25px !important;}
-	.has-large-bottom-margin{margin-bottom:25px !important;}
-	.has-large-left-margin{margin-left:25px !important;}
-	.has-large-right-margin{margin-right:25px !important;}
-	.has-large-x-margin{margin:0 25px !important;}
-	.has-large-y-margin{margin:25px 0 !important;}
+	.has-large-margin{margin:22px !important;}
+	.has-large-top-margin{margin-top:22px !important;}
+	.has-large-bottom-margin{margin-bottom:22px !important;}
+	.has-large-left-margin{margin-left:22px !important;}
+	.has-large-right-margin{margin-right:22px !important;}
+	.has-large-x-margin{margin:0 22px !important;}
+	.has-large-y-margin{margin:22px 0 !important;}
 
-	.has-margin{margin:20px !important;}
-	.has-top-margin{margin-top:20px !important;}
-	.has-bottom-margin{margin-bottom:20px !important;}
-	.has-left-margin{margin-left:20px !important;}
-	.has-right-margin{margin-right:20px !important;}
-	.has-x-margin{margin:0 20px !important;}
-	.has-y-margin{margin:20px 0 !important;}
+	.has-margin{margin:15px !important;}
+	.has-top-margin{margin-top:15px !important;}
+	.has-bottom-margin{margin-bottom:15px !important;}
+	.has-left-margin{margin-left:15px !important;}
+	.has-right-margin{margin-right:15px !important;}
+	.has-x-margin{margin:0 15px !important;}
+	.has-y-margin{margin:15px 0 !important;}
 
-	.has-medium-margin{margin:15px !important;}
-	.has-medium-top-margin{margin-top:15px !important;}
-	.has-medium-bottom-margin{margin-bottom:15px !important;}
-	.has-medium-left-margin{margin-left:15px !important;}
-	.has-medium-right-margin{margin-right:15px !important;}
-	.has-medium-x-margin{margin:0 15px !important;}
-	.has-medium-y-margin{margin:15px 0 !important;}
+	.has-medium-margin{margin:12px !important;}
+	.has-medium-top-margin{margin-top:12px !important;}
+	.has-medium-bottom-margin{margin-bottom:12px !important;}
+	.has-medium-left-margin{margin-left:12px !important;}
+	.has-medium-right-margin{margin-right:12px !important;}
+	.has-medium-x-margin{margin:0 12px !important;}
+	.has-medium-y-margin{margin:12px 0 !important;}
 
-	.has-small-margin{margin:10px !important;}
-	.has-small-top-margin{margin-top:10px !important;}
-	.has-small-bottom-margin{margin-bottom:10px !important;}
-	.has-small-left-margin{margin-left:10px !important;}
-	.has-small-right-margin{margin-right:10px !important;}
-	.has-small-x-margin{margin:0 10px !important;}
-	.has-small-y-margin{margin:10px 0 !important;}
+	.has-small-margin{margin:9px !important;}
+	.has-small-top-margin{margin-top:9px !important;}
+	.has-small-bottom-margin{margin-bottom:9px !important;}
+	.has-small-left-margin{margin-left:9px !important;}
+	.has-small-right-margin{margin-right:9px !important;}
+	.has-small-x-margin{margin:0 9px !important;}
+	.has-small-y-margin{margin:9px 0 !important;}
 
 	.has-xsmall-margin{margin:7px !important;}
 	.has-xsmall-top-margin{margin-top:7px !important;}

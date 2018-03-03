@@ -139,6 +139,9 @@ a.site-color:hover{color:#22577c !important;}
 
 .bottom-header{background-color: #3e474f;}
 
+.navigation a.close,
+.navigation .menu-title{display: none;}
+
 .navigation > ul > li{
 	display: inline-block;
 	margin: 0 15px;
