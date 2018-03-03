@@ -274,4 +274,9 @@
 		min-width: 0;
 	}
 
+	.categories-box,
+	.fav-products-box{text-align: center;}
+	.categories-box li{margin:5px 3px;}
+	.fav-products-box li{margin:10px;}
+
 }
