@@ -344,6 +344,45 @@
 		margin:0 1.5px 1px 1.5px;
 	}
 
+	.magazine .magazine-box{margin-bottom: 20px;}
+
+	.box-layer{opacity: 1;}
+
+	.magazine-footer .post-stats,
+	.magazine-footer .post-share{
+		float: none;
+		width:100%;
+		text-align: center;
+	}
+
+	.magazine-title{
+		font-size: 17px;
+		padding:8px;
+		margin-bottom: 25px;
+	}
+
+	.magazine-categories,
+	.horizontal-box .post-stats{text-align: center;}
+
+	.horizontal-box{
+		display: inline-block;
+		vertical-align: top;
+		max-width: 350px;
+		height: auto;
+		padding: 0 0 45px 0;
+		margin: 0 3px 20px 3px;
+	}
+
+	.horizontal-box-image{
+		position: relative;
+		width:auto;
+	}
+
+	.horizontal-box .section-box{
+		position: static;
+		margin-bottom: 0;
+	}
+
 }
 
 						/*            620px Screen Start        */
@@ -467,5 +506,13 @@
 	}
 
 	.QtoA-box{border-radius: 4px;}
+
+	.price-holder,
+	.product-price{display: block !important;}
+
+	.horizontal-box{
+		display: block;
+		margin:0 auto 20px auto;
+	}
 
 }
