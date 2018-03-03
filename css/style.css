@@ -2337,6 +2337,16 @@ a.go-back{
 	margin-right: 0;
 }
 
+.static-box .has-11-1-column > .section:nth-child(2n+1){
+	float:left;
+	margin-right: 3%;
+}
+
+.static-box .has-11-1-column > .section{
+	float: right;
+	margin-right: 0;
+}
+
 /*   Added Styles by Back-end   */
 
 

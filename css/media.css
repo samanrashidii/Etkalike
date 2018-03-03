@@ -280,6 +280,9 @@
 	.followers-box li{margin:5px 3px;}
 	.fav-products-box li{margin:10px;}
 
+	.static-shape{padding:15px;}
+	.static-sidebar{margin-top:15px;}
+
 }
 
 						/*            620px Screen Start        */
@@ -308,6 +311,11 @@
 	}
 
 	.track-order li{font-size: 11px;}
+
+	.forgot-password-bttn{
+		font-size: 11px;
+		margin-top:6px;
+	}
 
 
 }
