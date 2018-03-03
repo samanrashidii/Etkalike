@@ -1759,7 +1759,7 @@ a.close:hover{background-color: #22577c;}
 }
 
 .table.scrollable{overflow-x:auto;}
-.table.scrollable table{min-width: 760px;}
+.table.scrollable table{min-width: 640px;}
 
 .table td,
 .table th{
@@ -2529,12 +2529,6 @@ a.close:hover{background-color: #22577c;}
 		margin:4px 1px;
 	}
 
-	.tag{
-		min-width: 40px;
-		font-size: 12px;
-		padding:2px 5px;
-	}
-
 	.circle-bullet li::before{
 		width: 7px;
 		height: 7px;
@@ -2567,15 +2561,6 @@ a.close:hover{background-color: #22577c;}
 		margin-right: 0;
 	}
 
-	.pagination{margin:20px 0;}
-
-	.pagination ul li a{
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
-		font-size: 13px;
-	}
-
 }
 
 						/*            640 Screen End        */											
@@ -2601,7 +2586,22 @@ a.close:hover{background-color: #22577c;}
 	.rspv.has-6-6-column > .card-box,
 	.rspv.has-4-4-4-column > .card-box{margin-bottom: 15px !important;}
 
-	.pagination ul{width: 100% !important;}
+	.pagination{margin:25px 0 10px 0;}
+	.pagination ul li a{
+		width:27px;
+		height: 27px;
+		line-height: 29px;
+		font-size: 12px;
+	}
+	.pagination ul li.prev,
+	.pagination ul li.next{margin:0 2px;}
+	.pagination ul li.prev a,
+	.pagination ul li.next a {
+	    min-width: 50px;
+	    line-height: 25px;
+	    font-size: 11px;
+	    color: #ffffff;
+	}
 
 	.breadcrumb{margin-bottom: 20px;}
 
@@ -2631,11 +2631,6 @@ a.close:hover{background-color: #22577c;}
 
 @media only screen and (max-width:400px){
 
-	.pagination ul li a{
-		width: 30px;
-		height: 30px;
-		line-height: 27px;
-	}
 
 }
 

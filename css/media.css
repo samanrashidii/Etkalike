@@ -225,7 +225,7 @@
 	}
 
 	.my-page-wrapper{
-		padding:15px;
+		padding:12px;
 		margin-top:15px;
 	}
 	.my-account-box ul li > strong{width:90px;}
@@ -276,7 +276,38 @@
 
 	.categories-box,
 	.fav-products-box{text-align: center;}
-	.categories-box li{margin:5px 3px;}
+	.categories-box li,
+	.followers-box li{margin:5px 3px;}
 	.fav-products-box li{margin:10px;}
+
+}
+
+						/*            620px Screen Start        */
+
+@media only screen and (max-width: 620px){
+
+	.track-order li{
+		display: block;
+		padding: 30px 0 40px 0;
+	}
+	.track-order li:last-child{padding-bottom: 5px;}
+
+	.track-order li span{
+		width:20px;
+		height: 20px;
+		margin-left: -10px !important;
+	}
+
+	.track-order li:not(:last-child)::after{
+		position: absolute;
+		bottom:5px;
+		left:50%;
+		width:1px;
+		height: 25px;
+		margin:3px 0;
+	}
+
+	.track-order li{font-size: 11px;}
+
 
 }
