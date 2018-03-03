@@ -738,6 +738,7 @@ input[type="submit"]:active{
 	width: 58px;
 	height: 32px;
 	margin-right: 5px;
+	user-select: none;
 	background: url('../images/icons/switch.png') no-repeat center;
 }
 

@@ -3,9 +3,26 @@ $(document).ready(function(){
 // Responsive Start
 
 if($(window).width() < 1000){
+
+  // Megamenu
   $('.megamenu').siblings('a').append('<span class="megamenu-bttn"></span>');
   $(document).on('click', '.megamenu-bttn', function(){
     $(this).parents('li').find('.megamenu').toggle();
+  });
+
+  // Filter Products
+
+  if($('.product-filters').length > 0){
+    $('.body').append('<span class="filter-bttn">فیلتر محصولات</span>');
+  }
+  $(document).on('click', '.filter-bttn', function(){
+    $('.product-filters').addClass('active');
+    $('body').addClass('hidden-overflow');
+  });
+
+  $('.product-filters a.close').on('click', function(){
+    $('.product-filters').removeClass('active');
+    $('body').removeClass('hidden-overflow');
   });
 }
 

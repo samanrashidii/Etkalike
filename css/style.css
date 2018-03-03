@@ -620,6 +620,7 @@ a.site-color:hover{color:#22577c !important;}
 	background-color: #efefef;
 	border-radius: 5px;
 }
+.filter-box:last-child{margin-bottom: 0;}
 
 .filter-title{
 	display: block;
@@ -651,6 +652,15 @@ a.site-color:hover{color:#22577c !important;}
 }
 
 .filter-items .checkbox-holder input[type="checkbox"] + label::after{right: 5px;}
+
+.product-filters a.close,
+.product-filters .menu-title{display: none;}
+
+.product-filters a.close{
+	top:12px;
+	right:12px;
+	border-radius: 3px;
+}
 
 #main-image-wrapper img{
 	-webkit-box-shadow: 0 0 20px #eae9e9;
