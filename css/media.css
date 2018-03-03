@@ -225,7 +225,19 @@
 		margin-top:15px;
 	}
 	.my-account-box ul li > strong{width:90px;}
-
 	.my-page-sidebar li a{padding:10px 5px;}
+	.my-account-box ul li{margin:10px 0;}
+
+	.my-account-box ul li > strong{
+		display: block;
+		width:auto;
+		margin: 10px 0;
+	}
+	.my-account-box ul li > span{display: block;}
+
+	.my-account-box a.edit{
+		top:-17px;
+		left:-6px;
+	}
 
 }

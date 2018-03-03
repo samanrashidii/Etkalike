@@ -1788,6 +1788,7 @@ a.go-back{
 }
 
 .my-account-box input,
+.my-account-box select,
 .my-account-box .ui-selectmenu-button{min-width: 220px;}
 
 .my-account-box .radio-holder{
