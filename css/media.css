@@ -601,4 +601,7 @@
 		width: calc(100% - 20px) !important;
 	}
 
+	.ui-accordion .ui-accordion-header,
+	.ui-accordion .ui-accordion-content p{font-size: 12px;}
+
 }
