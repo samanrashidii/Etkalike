@@ -383,6 +383,12 @@
 		margin-bottom: 0;
 	}
 
+	.insurance_form{padding:20px;}
+
+	.result-items{margin-top:20px;}
+
+	.insurance-table tr td:first-child{width:20% !important;}
+
 }
 
 						/*            620px Screen Start        */
@@ -513,6 +519,16 @@
 	.horizontal-box{
 		display: block;
 		margin:0 auto 20px auto;
+	}
+
+	.insurance-table table td{font-size:11px;}
+	.insurance-table tr td:first-child{width:40% !important;}
+	.result-items.table th:nth-child(2){width: 60%;}
+	.result-items.table td .radio-holder {
+		display: inline-block;
+	    width: 24px;
+	    overflow: hidden;
+	    margin: 10px auto 0 auto;
 	}
 
 }

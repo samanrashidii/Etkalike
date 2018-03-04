@@ -1417,6 +1417,7 @@ a.close:hover{background-color: #22577c;}
 	display: block;
 	width: 100%;
 	height: 100%;
+	padding:10px;
 	visibility: hidden;
 	opacity: 0;
 	background-color: rgba(0,0,0, .7);
@@ -2545,7 +2546,10 @@ a.close:hover{background-color: #22577c;}
 
 	.tick-bullet li{font-size: 13px;}
 
-	.message{padding:10px;}
+	.message a.close{
+		top:5px;
+		right:5px;
+	}
 
 	.post-stats span{font-size: 12px !important;}
 	.post-stats span::after{margin:0 5px;}
