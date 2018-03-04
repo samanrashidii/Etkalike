@@ -13,9 +13,9 @@ if($(window).width() < 1000){
   // Filter Products
 
   if($('.product-filters').length > 0){
-    $('.body').append('<span class="filter-bttn">فیلتر محصولات</span>');
+    $('.body').append('<a class="filter-bttn" href="javsacript:void(0)">فیلتر محصولات</a>');
   }
-  $(document).on('click', '.filter-bttn', function(){
+  $(document).on('click', 'a.filter-bttn', function(){
     $('.product-filters').addClass('active');
     $('body').addClass('hidden-overflow');
   });
