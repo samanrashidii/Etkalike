@@ -389,6 +389,17 @@
 
 	.insurance-table tr td:first-child{width:20% !important;}
 
+	.main-category{padding:0 15px;}
+
+	.main-category a{
+		display: block;
+		margin-top:17px !important;
+	}
+
+	.quantity{display: inline-block;}
+
+	.cart-page{margin-top:60px !important;}
+
 }
 
 						/*            620px Screen Start        */
@@ -530,5 +541,9 @@
 	    overflow: hidden;
 	    margin: 10px auto 0 auto;
 	}
+
+	.order-details h6,
+	.order-details span{font-size: 10px;}
+
 
 }
