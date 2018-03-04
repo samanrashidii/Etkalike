@@ -397,8 +397,12 @@
 	}
 
 	.quantity{display: inline-block;}
-
 	.cart-page{margin-top:60px !important;}
+	.shipping-box{border-radius: 4px !important;}
+	.shipping-options .half-box:nth-child(2n+1) .shipping-box{
+		margin-bottom: 10px;
+		border-left:1px solid #3e474f;
+	}
 
 }
 
@@ -553,17 +557,48 @@
 	.compare-titles li{text-align: center;}
 
 	.compare > ul{
-		width:1260px;
+		width:1180px;
 		white-space: nowrap;
 	}
 
 	.compare > ul > li{
-		width:300px !important;
+		width:280px !important;
 		margin:0 0 20px 20px !important;
 	}
 	.compare > ul > li:last-child{margin-left: 0 !important;}
 	.compare-results{margin-top:0 !important;}
 	.compare-page .frame{overflow-x: auto;}
+	.compare-item{white-space: normal;}
+	.compare li.compare-titles{width: 150px !important;}
+	
+	.checkout-page{margin-top:60px !important;}
 
+	.checkout-box{
+		padding:0;
+		margin-bottom: 30px;
+	}
+
+	.checkout-box > h4{
+		position: relative;
+	    top: auto; 
+	    left: auto;
+	    width: 100% !important;
+	    height: 35px !important;
+	    line-height: 21px;
+	    margin-bottom: 55px;
+	    z-index: 999;
+	}
+
+	.checkout-box > h4::after{
+		top: auto;
+	    bottom: -4px;
+	    right: 50%;
+	    margin:0 -5px 0 0;
+	}
+
+	.checkout-box > h4.is-top-fixed{
+		left: 10px !important;
+		width: calc(100% - 20px) !important;
+	}
 
 }
