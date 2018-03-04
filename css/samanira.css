@@ -115,6 +115,8 @@ table{
 	border-collapse: collapse;
 }
 
+table th{font-weight: normal;}
+
 iframe{
 	display: block;
 	outline:none;
@@ -2184,7 +2186,10 @@ a.close:hover{background-color: #22577c;}
 		width:18px;
 		height: 18px;
 	}
-	.checkbox-holder input[type="checkbox"] + label::after{right:5px;}
+	.checkbox-holder input[type="checkbox"] + label::after{
+		top:7px;
+		right:5px;
+	}
   
     .has-large-minus-margin{margin-top: -20px !important;}
     .has-minus-margin{margin-top: -10px !important;}
@@ -2384,7 +2389,9 @@ a.close:hover{background-color: #22577c;}
 
 	.overlay input,
 	.overlay textarea,
-	.overlay select{font-size: 16px !important;}
+	.overlay select,
+	.search input,
+	.newsletter_form input[type="email"]{font-size: 16px !important;}
 
 	input[type="submit"]{font-size: 13px !important;}
 

@@ -12,7 +12,7 @@
 		margin:10px 0 0 0 !important;
 	}
 
-	input[type="search"]{padding:0 5px 0 40px;}
+	input[type="search"]{padding:0 5px 0 47px;}
 
 	.search input[type="submit"]{width:40px;}
 
@@ -276,7 +276,8 @@
 	}
 
 	.categories-box,
-	.fav-products-box{text-align: center;}
+	.fav-products-box,
+	.followers-box{text-align: center;}
 	.categories-box li,
 	.followers-box li{margin:5px 3px;}
 	.fav-products-box li{margin:10px;}
@@ -559,6 +560,7 @@
 	.compare > ul{
 		width:1180px;
 		white-space: nowrap;
+		margin-top:10px;
 	}
 
 	.compare > ul > li{

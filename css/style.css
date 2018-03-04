@@ -863,11 +863,11 @@ a.site-color:hover{color:#22577c !important;}
 .quantity input[type=number]{-moz-appearance: textfield;}
 
 .quantity input{
-	height: 32px;
-	font-size: 14px;
+	height: 31px;
+	font-size: 14px !important;
 	color:#000000;
 	text-align: center;
-	padding:4px 35px 0 35px;
+	padding:0 35px;
 }
 
 .quantity-button{
