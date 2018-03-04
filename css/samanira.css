@@ -2380,7 +2380,11 @@ a.close:hover{background-color: #22577c;}
 
 	input,
 	textarea,
-	select{font-size: 16px !important;}
+	select{font-size: 12px !important;}
+
+	.overlay input,
+	.overlay textarea,
+	.overlay select{font-size: 16px !important;}
 
 	input[type="submit"]{font-size: 13px !important;}
 

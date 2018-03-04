@@ -769,17 +769,15 @@
 		</div><!-- wrapper end -->
 <script>
 // Sticky Item
-if($(window).width() > 1050){
-	jQuery(document).ready(function($){
-		$('img').load(function(){
-		    $('.checkout-box > h4').sticky({
-		        parent: '.checkout-box',
-		        top: 10,
-		        bottom: 0
-		    });
-		});
+jQuery(document).ready(function($){
+	$('img').load(function(){
+	    $('.checkout-box > h4').sticky({
+	        parent: '.checkout-box',
+	        top: 10,
+	        bottom: 0
+	    });
 	});
-}
+});
 </script>
 	</body>
 </html>
