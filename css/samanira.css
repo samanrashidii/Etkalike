@@ -2172,8 +2172,8 @@ a.close:hover{background-color: #22577c;}
 	}
 
 	.bttn.large{
-		min-width: 150px;
-		font-size: 13px;
+		min-width: 140px;
+		font-size: 11px;
 		padding:10px;
 	}
 
