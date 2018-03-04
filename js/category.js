@@ -19,47 +19,23 @@ slider.control('bullets' ,{autohide:false });
 // Proucts Carousel
 
 $('.product-items').owlCarousel({
-	autoWidth:true,
-	autoplay:true,
-	autoplayTimeout: 5000,
-	autoplaySpeed: 700,
-    loop:false,
-    margin:23,
-    rewind : true,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-});
-
-// Brands Carousel
-
-$('.brand-items').owlCarousel({
-	autoWidth:true,
-	autoplay:true,
-	autoplayTimeout: 4000,
-	autoplaySpeed: 500,
-	center:true,
+  autoWidth:true,
+  autoplay:true,
+  autoplayTimeout: 5000,
+  autoplaySpeed: 700,
     loop:true,
-    margin:20,
+    center: true,
+    margin:10,
     nav:true,
     responsive:{
         0:{
             items:3
         },
         600:{
-            items:5
+            items:3
         },
         1000:{
-            items:7
+            items:5
         }
     }
 });

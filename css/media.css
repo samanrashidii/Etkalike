@@ -545,5 +545,25 @@
 	.order-details h6,
 	.order-details span{font-size: 10px;}
 
+	.ms-slide-layers h6,
+	.ms-slide-layers h3{font-size: 12px !important;}
+
+	.ms-bullets.ms-dir-h{width:30px !important;}
+
+	.compare-titles li{text-align: center;}
+
+	.compare > ul{
+		width:1260px;
+		white-space: nowrap;
+	}
+
+	.compare > ul > li{
+		width:300px !important;
+		margin:0 0 20px 20px !important;
+	}
+	.compare > ul > li:last-child{margin-left: 0 !important;}
+	.compare-results{margin-top:0 !important;}
+	.compare-page .frame{overflow-x: auto;}
+
 
 }
