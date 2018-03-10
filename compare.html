@@ -326,8 +326,10 @@
 										<li>
 											<div class="compare-item">
 												<a class="remove overlay-bttn" href="#doubleCheck"></a>
-												<img src="images/products/specific-1.jpg" alt="" />
-												<h6>مایکروویو ال جی سری سولاردام مدل MS94</h6>
+												<div class="sticky-compare">
+													<img src="images/products/specific-1.jpg" alt="" />
+													<h6>مایکروویو ال جی سری سولاردام مدل MS94</h6>
+												</div><!-- sticky-compare end -->
 												<span class="minor-info font-size-xsmall">LG MS94 SolarDom Series Microwave Oven</span>
 												<div class="star-box has-xxsmall-top-margin">
 													<span class="active"></span>
@@ -342,8 +344,10 @@
 										<li>
 											<div class="compare-item">
 												<a class="remove overlay-bttn" href="#doubleCheck"></a>
-												<img src="images/products/specific-1.jpg" alt="" />
-												<h6>مایکروویو ال جی سری سولاردام مدل MS94</h6>
+												<div class="sticky-compare">
+													<img src="images/products/specific-1.jpg" alt="" />
+													<h6>مایکروویو ال جی سری سولاردام مدل MS94</h6>
+												</div><!-- sticky-compare end -->
 												<span class="minor-info font-size-xsmall">LG MS94 SolarDom Series Microwave Oven</span>
 												<div class="star-box has-xxsmall-top-margin">
 													<span class="active"></span>
@@ -509,5 +513,22 @@
 			</footer><!-- footer end -->
 			
 		</div><!-- wrapper end -->
+<script>
+// Sticky Item
+if($(window).width() > 1000){
+	jQuery(document).ready(function($){
+
+	    $('.sticky-compare').sticky({
+	    	parent: '.body',
+	        top: 0,
+	        bottom: 0
+	    });
+
+	    $('img').on('load', function () {
+		    $('.sticky-compare').sticky('recalculate').sticky('refresh');
+		});
+	});
+}
+</script>
 	</body>
 </html>

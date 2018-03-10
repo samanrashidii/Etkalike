@@ -677,6 +677,22 @@
 												<img src="images/icons/checkout.png" alt="تکمیل سبد خرید" />
 												<p>این سفارش به <strong>سامان رشیدی</strong> به آدرس <strong>تهران، خیابان نیاوران، بالای میدان باهنر، خیابان جبلی، پلاک ۷</strong> در روز <strong>یکشنبه</strong> در بین بازه ساعتی <strong>۱۵ - ۱۸</strong> تحویل می گردد. همچنین ارسال کالا توسط <strong>تحویل اکسپرس اتکا</strong> و با هزینه <strong>۹۰۰۰ تومان</strong> انجام می شود.</p>
 												<p>پرداخت این خرید به صورت <strong>اینترنتی</strong> انجام می گردد.</p>
+												<div class="choose-bank center-aligned has-medium-top-margin">
+													<ul>
+														<li>
+															<input type="radio" name="choose_bank" id="bank_1" checked/>
+															<label for="bank_1"><img src="images/payment/saman.jpg" alt=""></label>
+														</li>
+														<li>
+															<input type="radio" name="choose_bank" id="bank_2" />
+															<label for="bank_2"><img src="images/payment/mellat.jpg" alt=""></label>
+														</li>
+														<li>
+															<input type="radio" name="choose_bank" id="bank_3" />
+															<label for="bank_3"><img src="images/payment/pasargad.jpg" alt=""></label>
+														</li>
+													</ul>
+												</div><!-- choose-bank end -->
 												<div class="has-medium-top-margin">
 													<input type="submit" value="تایید خرید و پرداخت اینترنتی" />
 													<a class="bttn site-2 block-display has-xxsmall-top-margin overlay-close" href="javascript:void(0)">انصراف</a>
@@ -771,12 +787,15 @@
 // Sticky Item
 if($(window).width() > 1000){
 	jQuery(document).ready(function($){
-		$('img').load(function(){
-		    $('.checkout-box > h4').sticky({
-		        parent: '.checkout-box',
-		        top: 10,
-		        bottom: 0
-		    });
+
+	    $('.checkout-box > h4').sticky({
+	        parent: '.checkout-box',
+	        top: 10,
+	        bottom: 0
+	    });
+
+	    $('img').on('load', function () {
+		    $('.checkout-box > h4').sticky('recalculate').sticky('refresh');
 		});
 	});
 }

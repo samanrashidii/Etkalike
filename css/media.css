@@ -153,7 +153,14 @@
 
 	.login-status a.bttn.overlay-bttn{width:100%;}
 
-	.search-result{padding:7px 10px;}
+	.search-result{padding:10px;}
+
+	.search-items{
+		float: none;
+		width: 100%;
+		margin:0;
+	}
+	.search-categories{display: none;}
 
 	.ms-partialview-template{min-height: 0;}
 	.countdown-box-wrapper{border-radius: 0;}
