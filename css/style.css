@@ -419,13 +419,13 @@ a.site-color:hover{color:#22577c !important;}
 	z-index: 100;
 }
 
-.sale a::before,
-.product-box.sale::before,
-.product-price.sale::before{
+.sale a::after,
+.product-box.sale::after,
+.product-price.sale::after{
 	content:'تخفیف';
 	position: absolute;
 	top:-2px;
-	left:10px;
+	right:10px;
 	width: 40px;
 	height: 78px;
 	font-size: 11px;
@@ -546,11 +546,25 @@ a.site-color:hover{color:#22577c !important;}
 	z-index: 10;
 }
 
+.ads{direction: ltr;}
 .ads a{display: block;}
 .ads a:hover{opacity: .9;}
 
-.brands .owl-carousel .owl-stage-outer{padding:22px 0;}
+.ads.carousel .owl-item{display: inline-block;}
+.ads.carousel .owl-stage-outer{overflow: hidden;}
+.ads.carousel .owl-dots{text-align: center;}
+.ads.carousel .owl-dot{
+	display: inline-block;
+	width:10px;
+	height: 10px;
+	margin:0 3px;
+	cursor: pointer;
+	background-color: #eaeaea;
+	border-radius: 50%;
+}
+.ads.carousel .owl-dot.active{background-color: #3e474f;}
 
+.brands .owl-carousel .owl-stage-outer{padding:22px 0;}
 .brands .owl-carousel .owl-nav .owl-prev,
 .brands .owl-carousel .owl-nav .owl-next{
 	top:0;

@@ -69,6 +69,17 @@ $('.navigation a.close').on('click', function(){
 
 // Overlay //
 
+function remove_hash_from_url(){
+  var uri = window.location.toString();
+  if (uri.indexOf("#") > 0) {
+      var clean_uri = uri.substring(0, uri.indexOf("#"));
+      window.history.replaceState({}, document.title, clean_uri);
+  }
+}
+
+var locationHashURL = window.location.hash.substr(1);
+$('#' + locationHashURL).addClass('active');
+
 $('.overlay-bttn').on('click', function(){
   var bttnID = $(this).attr('href');
   $(bttnID).toggleClass('active');
@@ -78,11 +89,13 @@ $('.overlay-bttn').on('click', function(){
 $('.overlay-close').on('click', function(){
   $(this).parents('.overlay').removeClass('active');
   $('body').removeClass('hidden-overflow');
+  remove_hash_from_url();
 });
 
 $('.overlay').on('click', function(){
   $(this).removeClass('active');
   $('body').removeClass('hidden-overflow');
+  remove_hash_from_url();
 });
 
 $('.inner-overlay-box').on('click', function(e){
