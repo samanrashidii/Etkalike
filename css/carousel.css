@@ -184,7 +184,7 @@ position: relative;
 z-index: 1;
 height: 100%;
 width: 100%; }
-
+.owl-nav.disabled{display: none;}
 .owl-theme .owl-nav {
 margin-top: 10px;
 text-align: center;

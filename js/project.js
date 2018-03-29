@@ -5,7 +5,7 @@ $(document).ready(function(){
 if($(window).width() < 1000){
 
   // Megamenu
-  $('.megamenu').siblings('a').append('<span class="megamenu-bttn"></span>');
+  $('.megamenu').parent().append('<span class="megamenu-bttn"></span>');
   $(document).on('click', '.megamenu-bttn', function(){
     $(this).parents('li').find('.megamenu').toggle();
   });
@@ -52,6 +52,16 @@ $('.login-bttn').on('click', function(){
 
 $('.forgot-password-bttn').on('click', function(){
 	$('.forgot-password-box').fadeIn().siblings().hide();
+});
+
+// Ads Carousel
+
+$('.ads.carousel').owlCarousel({
+  autoplay:true,
+  loop:true,
+  margin:10,
+  nav:false,
+  items:1
 });
 
 // Proucts Carousel
