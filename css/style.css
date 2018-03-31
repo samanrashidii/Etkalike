@@ -65,7 +65,8 @@ a.site-color:hover{color:#22577c !important;}
 
 .logged-in .search{min-width: 490px;}
 
-.search input[type="submit"]{
+.search input[type="submit"],
+.search button{
 	position: absolute;
 	top:0;
 	left:0;
@@ -618,7 +619,8 @@ a.site-color:hover{color:#22577c !important;}
 	border:none;
 }
 
-.newsletter input[type="submit"]{font-size: 13px;}
+.newsletter input[type="submit"],
+.newsletter button{font-size: 13px;}
 
 .footer-contact-info{
 	padding-top:15px;
@@ -1151,8 +1153,11 @@ span.comment{
 
 .review-box .star-box,
 .review-box input[type="submit"],
-.QtoA-box input[type="submit"], 
-.question-box input[type="submit"]{margin-top:12px;}
+.review-box button,
+.QtoA-box input[type="submit"],
+.QtoA-box button, 
+.question-box input[type="submit"],
+.question-box button{margin-top:12px;}
 
 .QtoA-box label{color:#ffffff !important;}
 .QtoA-box .field-holder{margin-top:0;}

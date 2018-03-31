@@ -239,9 +239,12 @@ label{
 
 label a{color:#3079AB;}
 
-input[type="submit"]{
+input[type="submit"],
+button{
 	display: block;
     width: 100%;
+    height: 40px;
+	line-height: 40px;
 	font-size: 13px;
 	color:#ffffff;
 	text-align: center;
@@ -306,7 +309,9 @@ select:focus{border-color: #3079AB;}
 input[type="search"]:focus{border-color: #a9b3bb;}
 
 input[type="submit"]:hover,
-input[type="submit"]:focus{background-color: #22577c !important;}
+button:hover,
+input[type="submit"]:focus,
+button:focus{background-color: #22577c !important;}
 
 /* -- _Validation -- */
 
@@ -622,14 +627,16 @@ label.error::before{
 }
 
 .button-holder a,
-.button-holder input{
+.button-holder input,
+.button-holder button{
 	float: right;
 	width:49%;
 	margin-right: 2%;
 }
 
 .button-holder a:nth-child(2n+1),
-.button-holder input:nth-child(2n+1){margin-right: 0;}
+.button-holder input:nth-child(2n+1),
+.button-holder button:nth-child(2n+1){margin-right: 0;}
 
 .bttn{
 	position: relative;
@@ -719,7 +726,8 @@ label.error::before{
 }
 
 .bttn:active,
-input[type="submit"]:active{
+input[type="submit"]:active,
+button:active{
 	-webkit-transform:translateY(1px);
 	-moz-transform:translateY(1px);
 	transform:translateY(1px);
@@ -2393,7 +2401,8 @@ a.close:hover{background-color: #22577c;}
 	.search input,
 	.newsletter_form input[type="email"]{font-size: 16px !important;}
 
-	input[type="submit"]{font-size: 13px !important;}
+	input[type="submit"],
+	button{font-size: 13px !important;}
 
 	::-webkit-input-placeholder{font-size:11px;}
 	:-moz-placeholder{font-size:11px;}
@@ -2642,7 +2651,9 @@ a.close:hover{background-color: #22577c;}
 	.checkbox-holder input[type="checkbox"] + label,
 	.radio-holder input[type="radio"] + label{padding-right: 28px;}
 
-	.button-holder a, .button-holder input{
+	.button-holder a,
+	.button-holder input,
+	.button-holder button{
 		float: none;
 		min-width: 0 !important;
 		width:100%;
