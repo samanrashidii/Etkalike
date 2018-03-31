@@ -14,7 +14,8 @@
 
 	input[type="search"]{padding:0 5px 0 47px;}
 
-	.search input[type="submit"]{width:40px;}
+	.search input[type="submit"],
+	.search button{width:40px;}
 
 	.top-header .frame{
 		text-align: center;
