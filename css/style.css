@@ -2487,7 +2487,7 @@ a.go-back{
 	box-shadow: 0 0 10px #6a6a6a;
 }
 
-/* New Features */
+/* Instant Buying */
 
 .list-button{
 	position: absolute;
@@ -2528,7 +2528,7 @@ a.go-back{
 	padding:10px 10px 60px 10px;
 	background-color:#3e474f;
 	border-radius: 0 5px 5px 0;
-	z-index: 99999999999;
+	z-index: 99999999;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
