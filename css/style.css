@@ -2536,6 +2536,30 @@ a.go-back{
 
 .products-list.active{left:0;}
 
+.products-list.animated{
+	-webkit-animation: bounceAnim .4s ease-in-out;
+	-moz-animation: bounceAnim .4s ease-in-out;
+	animation: bounceAnim .4s ease-in-out;
+}
+
+.products-list.reverse-animated{
+	-webkit-animation: bounceAnimReverse .4s ease-in-out;
+	-moz-animation: bounceAnimReverse .4s ease-in-out;
+	animation: bounceAnimReverse .4s ease-in-out;
+}
+
+@keyframes bounceAnim {
+	0%{transform:scale(1,1)}
+	50%{transform:scale(1.2,1.2)}
+	100%{transform:scale(1,1)}
+}
+
+@keyframes bounceAnimReverse {
+	0%{transform:scale(1,1)}
+	50%{transform:scale(0.8,0.8)}
+	100%{transform:scale(1,1)}
+}
+
 .products-list-button{
 	position:absolute;
 	top:50%;
