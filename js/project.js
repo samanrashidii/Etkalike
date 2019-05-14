@@ -647,6 +647,10 @@ function removeItem(value){
 }
 
 $('.add-product').on('click', function(){
+  $('.products-list').addClass('animated');
+  setTimeout(() => {
+    $('.products-list').removeClass('animated');
+  }, 400);
   if(productsQuantity < 1){
     $('.products-list').addClass('active');
   }
@@ -676,6 +680,10 @@ $('.add-product').on('click', function(){
 });
 
 $('.remove-product').on('click', function(){
+  $('.products-list').addClass('reverse-animated');
+  setTimeout(() => {
+    $('.products-list').removeClass('reverse-animated');
+  }, 400);
   productsQuantity --;
   if(productsQuantity == 0){
     $('.products-list').removeClass('active');
