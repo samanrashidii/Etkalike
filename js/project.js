@@ -613,7 +613,7 @@ $('.contact_form').validate({
   }
 });
 
-/* New Features */
+/* Instant Buying */
 
 $('.products-list-button').on('click', function(){
   $('.products-list').toggleClass('active');
@@ -651,8 +651,8 @@ $('.add-product').on('click', function(){
     $('.products-list').addClass('active');
   }
   productsQuantity ++;
-	let itemName = $(this).parents('.product-box').attr('product-name');
-  let itemPrice = Number($(this).siblings('.item-details').find('.price-box strong:not(.off-price) span').text().replace(/,/g, ''));
+	var itemName = $(this).parents('.product-box').attr('product-name');
+  var itemPrice = Number($(this).siblings('.item-details').find('.price-box strong:not(.off-price) span').text().replace(/,/g, ''));
 	if($(this).parents('.product-box').hasClass('selected')){
 		var itemQuantity = Number($('tr[itemname="'+itemName+'"] span').text());
 		itemQuantity ++;
@@ -673,7 +673,6 @@ $('.add-product').on('click', function(){
   }
   $('.products-list-button span').html(productsQuantity);
   $('input.selected_products').val(selectedProducts);
-  console.log(selectedProducts);
 });
 
 $('.remove-product').on('click', function(){
@@ -681,8 +680,8 @@ $('.remove-product').on('click', function(){
   if(productsQuantity == 0){
     $('.products-list').removeClass('active');
   }
-	let itemName = $(this).parents('.product-box').attr('product-name');
-	let itemPrice = Number($(this).siblings('.item-details').find('.price-box strong:not(.off-price) span').text().replace(/,/g, ''));
+	var itemName = $(this).parents('.product-box').attr('product-name');
+	var itemPrice = Number($(this).siblings('.item-details').find('.price-box strong:not(.off-price) span').text().replace(/,/g, ''));
 	var itemQuantity = Number($('tr[itemname="'+itemName+'"] span').text());
 	itemQuantity --;
 	itemNewPrice = itemPrice * itemQuantity;
@@ -697,9 +696,6 @@ $('.remove-product').on('click', function(){
   }
   $('.products-list-button span').html(productsQuantity);
   $('input.selected_products').val(selectedProducts);
-  console.log(selectedProducts);
 });
-
-
 
 });

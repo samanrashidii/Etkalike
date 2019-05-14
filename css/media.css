@@ -414,6 +414,39 @@
 		border-left:1px solid #3e474f;
 	}
 
+	/* Instant Buying */
+
+	.products-list{
+		left:0;
+		width: 100%;
+		top: auto;
+		bottom: calc(-100% + 40px);
+		height: calc(100% - 40px);
+		border-radius: 5px 5px 0 0;
+	}
+
+	.products-list.active{
+		bottom: 0;
+	}
+
+	.products-list-button{
+		top:-49px;
+		margin-top:0;
+		right:50%;
+		margin-right:-31px;
+		border-radius: 4px 0 0 4px;
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+		transform:rotate(90deg);
+	}
+	.products-list-button span{margin-bottom:9px;}
+	.products-list-button svg,
+	.products-list-button span{
+		-webkit-transform:rotate(-90deg);
+		-moz-transform:rotate(-90deg);
+		transform:rotate(-90deg);
+	}
+
 }
 
 						/*            620px Screen Start        */
