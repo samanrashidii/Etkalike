@@ -2525,7 +2525,7 @@ a.go-back{
 	left:-300px;
 	width:300px;
 	height:60%;
-	padding:10px 10px 60px 10px;
+	padding:50px 10px 100px 10px;
 	background-color:#3e474f;
 	border-radius: 0 5px 5px 0;
 	z-index: 99999999;
@@ -2604,6 +2604,20 @@ a.go-back{
 }
 .inner-products-list button:hover{background-color:#5cb860 !important;}
 
+.inner-products-list .total-price{
+	position: absolute;
+	bottom:60px;
+	right: 10px;
+	width: calc(100% - 20px);
+	font-size: 17px;
+	color:#ffffff;
+	text-align: center;
+}
+.inner-products-list .total-price span{
+	font-size: 19px;
+	color:#5cb860;
+}
+
 .products-list .table{
 	font-size:12px;
 	border-radius: 0;
@@ -2621,4 +2635,12 @@ a.go-back{
 	text-align: right;
 	background-color:#ffffff;
 	border-color:#b5b5b5;
+}
+
+.products-list table thead{
+	position: absolute;
+    top: 10px;
+    right: 7px;
+    width: calc(100% - 15px);
+    z-index: 10;
 }
