@@ -626,6 +626,7 @@ $('.products-listing.different-type .section').each(function(){
 
 var productsQuantity = 0;
 var selectedProducts = [];
+var totalPrice = 0;
 
 function changeQuantity(n, q, p) {
   for (var i in selectedProducts) {
@@ -657,6 +658,8 @@ $('.add-product').on('click', function(){
   productsQuantity ++;
 	var itemName = $(this).parents('.product-box').attr('product-name');
   var itemPrice = Number($(this).siblings('.item-details').find('.price-box strong:not(.off-price) span').text().replace(/,/g, ''));
+  totalPrice += itemPrice;
+  $('.total-price span').html(totalPrice);
 	if($(this).parents('.product-box').hasClass('selected')){
 		var itemQuantity = Number($('tr[itemname="'+itemName+'"] span').text());
 		itemQuantity ++;
@@ -690,7 +693,9 @@ $('.remove-product').on('click', function(){
   }
 	var itemName = $(this).parents('.product-box').attr('product-name');
 	var itemPrice = Number($(this).siblings('.item-details').find('.price-box strong:not(.off-price) span').text().replace(/,/g, ''));
-	var itemQuantity = Number($('tr[itemname="'+itemName+'"] span').text());
+  var itemQuantity = Number($('tr[itemname="'+itemName+'"] span').text());
+  totalPrice -= itemPrice;
+  $('.total-price span').html(totalPrice);
 	itemQuantity --;
 	itemNewPrice = itemPrice * itemQuantity;
 	$('tr[itemname="'+itemName+'"] span').html(itemQuantity);
