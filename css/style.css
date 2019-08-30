@@ -2644,3 +2644,9 @@ a.go-back{
     width: calc(100% - 15px);
     z-index: 10;
 }
+
+/* Site Types */
+
+	/* Site Type 2 */
+
+	#siteType2 {}
