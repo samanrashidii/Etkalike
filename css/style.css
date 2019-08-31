@@ -2649,4 +2649,336 @@ a.go-back{
 
 	/* Site Type 2 */
 
-	#siteType2 {}
+	#siteType2 .cart a,
+	#siteType2 .range-slider .ui-slider-range,
+	#siteType2 .bttn.site,
+	#siteType2 .product-tabs > ul li.active a{background-color: #507488;}
+	#siteType2 .sitemap h5,
+	#siteType2 .my-account-box ul li > span{color:#507488;}
+	#siteType2 .site-color,
+	#siteType2 .static-sidebar li.active a{color:#507488 !important;}
+	#siteType2 .pagination ul li.active a{
+		background-color: #507488;
+		border-color:#507488;
+	}
+	#siteType2 .bttn,
+	#siteType2 .search input[type="submit"],
+	#siteType2 .search button,
+	#siteType2 .owl-carousel .owl-nav .owl-prev,
+	#siteType2 .owl-carousel .owl-nav .owl-next,
+	#siteType2 input[type="submit"],
+	#siteType2 button,
+	#siteType2 .top-filters ul li.active a,
+	#siteType2 .ui-slider .ui-slider-handle,
+	#siteType2 .quantity-button,
+	#siteType2 .check-coupon,
+	#siteType2 .checkout-box > h4,
+	#siteType2 a.close,
+	#siteType2 .circle-bullet li::before,
+	#siteType2 .radio-holder input[type="radio"] + label::after,
+	#siteType2 .web-tags a,
+	#siteType2 .my-page-sidebar li.active a{background-color: #182e3a;}
+	#siteType2 .menu-box h5,
+	#siteType2 .tabs li.active a{color:#182e3a;}
+	#siteType2 .static-content blockquote{color:#182e3a !important;}
+	#siteType2 .ui-selectmenu-button[aria-expanded="true"],
+	#siteType2 input:focus,
+	#siteType2 select:focus,
+	#siteType2 textarea:focus,
+	#siteType2 .radio-holder input[type="radio"]:checked + label::before{border-color:#182e3a;}
+	#siteType2 .pagination ul li.prev a,
+	#siteType2 .pagination ul li.next a,
+	#siteType2 input[type="checkbox"]:checked + label::before,
+	#siteType2 .ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+		background-color: #182e3a;
+		border-color:#182e3a;
+	}
+	#siteType2 .bttn.transparent:not(.active){background-color: transparent;}
+
+	/* Site Type 3 */
+
+	#siteType3 .cart a,
+	#siteType3 .range-slider .ui-slider-range,
+	#siteType3 .bttn.site,
+	#siteType3 .product-tabs > ul li.active a{background-color: #18a689;}
+	#siteType3 .sitemap h5,
+	#siteType3 .my-account-box ul li > span{color:#18a689;}
+	#siteType3 .site-color,
+	#siteType3 .static-sidebar li.active a{color:#18a689 !important;}
+	#siteType3 .pagination ul li.active a{
+		background-color: #18a689;
+		border-color:#18a689;
+	}
+	#siteType3 .bttn,
+	#siteType3 .search input[type="submit"],
+	#siteType3 .search button,
+	#siteType3 .owl-carousel .owl-nav .owl-prev,
+	#siteType3 .owl-carousel .owl-nav .owl-next,
+	#siteType3 input[type="submit"],
+	#siteType3 button,
+	#siteType3 .top-filters ul li.active a,
+	#siteType3 .ui-slider .ui-slider-handle,
+	#siteType3 .quantity-button,
+	#siteType3 .check-coupon,
+	#siteType3 .checkout-box > h4,
+	#siteType3 a.close,
+	#siteType3 .circle-bullet li::before,
+	#siteType3 .radio-holder input[type="radio"] + label::after,
+	#siteType3 .web-tags a,
+	#siteType3 .my-page-sidebar li.active a{background-color: #66dcc4;}
+	#siteType3 .menu-box h5,
+	#siteType3 .tabs li.active a{color:#66dcc4;}
+	#siteType3 .static-content blockquote{color:#66dcc4 !important;}
+	#siteType3 .ui-selectmenu-button[aria-expanded="true"],
+	#siteType3 input:focus,
+	#siteType3 select:focus,
+	#siteType3 textarea:focus,
+	#siteType3 .radio-holder input[type="radio"]:checked + label::before{border-color:#66dcc4;}
+	#siteType3 .pagination ul li.prev a,
+	#siteType3 .pagination ul li.next a,
+	#siteType3 input[type="checkbox"]:checked + label::before,
+	#siteType3 .ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+		background-color: #66dcc4;
+		border-color:#66dcc4;
+	}
+	#siteType3 .bttn.transparent:not(.active){background-color: transparent;}
+
+	/* Site Type 4 */
+
+	#siteType4 .cart a,
+	#siteType4 .range-slider .ui-slider-range,
+	#siteType4 .bttn.site,
+	#siteType4 .product-tabs > ul li.active a{background-color: #4a89dc;}
+	#siteType4 .sitemap h5,
+	#siteType4 .my-account-box ul li > span{color:#4a89dc;}
+	#siteType4 .site-color,
+	#siteType4 .static-sidebar li.active a{color:#4a89dc !important;}
+	#siteType4 .pagination ul li.active a{
+		background-color: #4a89dc;
+		border-color:#4a89dc;
+	}
+	#siteType4 .bttn,
+	#siteType4 .search input[type="submit"],
+	#siteType4 .search button,
+	#siteType4 .owl-carousel .owl-nav .owl-prev,
+	#siteType4 .owl-carousel .owl-nav .owl-next,
+	#siteType4 input[type="submit"],
+	#siteType4 button,
+	#siteType4 .top-filters ul li.active a,
+	#siteType4 .ui-slider .ui-slider-handle,
+	#siteType4 .quantity-button,
+	#siteType4 .check-coupon,
+	#siteType4 .checkout-box > h4,
+	#siteType4 a.close,
+	#siteType4 .circle-bullet li::before,
+	#siteType4 .radio-holder input[type="radio"] + label::after,
+	#siteType4 .web-tags a,
+	#siteType4 .my-page-sidebar li.active a{background-color: #96bbeb;}
+	#siteType4 .menu-box h5,
+	#siteType4 .tabs li.active a{color:#96bbeb;}
+	#siteType4 .static-content blockquote{color:#96bbeb !important;}
+	#siteType4 .ui-selectmenu-button[aria-expanded="true"],
+	#siteType4 input:focus,
+	#siteType4 select:focus,
+	#siteType4 textarea:focus,
+	#siteType4 .radio-holder input[type="radio"]:checked + label::before{border-color:#96bbeb;}
+	#siteType4 .pagination ul li.prev a,
+	#siteType4 .pagination ul li.next a,
+	#siteType4 input[type="checkbox"]:checked + label::before,
+	#siteType4 .ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+		background-color: #96bbeb;
+		border-color:#96bbeb;
+	}
+	#siteType4 .bttn.transparent:not(.active){background-color: transparent;}
+
+	/* Site Type 5 */
+
+	#siteType5 .cart a,
+	#siteType5 .range-slider .ui-slider-range,
+	#siteType5 .bttn.site,
+	#siteType5 .product-tabs > ul li.active a{background-color: #f7941e;}
+	#siteType5 .sitemap h5,
+	#siteType5 .my-account-box ul li > span{color:#f7941e;}
+	#siteType5 .site-color,
+	#siteType5 .static-sidebar li.active a{color:#f7941e !important;}
+	#siteType5 .pagination ul li.active a{
+		background-color: #f7941e;
+		border-color:#f7941e;
+	}
+	#siteType5 .bttn,
+	#siteType5 .search input[type="submit"],
+	#siteType5 .search button,
+	#siteType5 .owl-carousel .owl-nav .owl-prev,
+	#siteType5 .owl-carousel .owl-nav .owl-next,
+	#siteType5 input[type="submit"],
+	#siteType5 button,
+	#siteType5 .top-filters ul li.active a,
+	#siteType5 .ui-slider .ui-slider-handle,
+	#siteType5 .quantity-button,
+	#siteType5 .check-coupon,
+	#siteType5 .checkout-box > h4,
+	#siteType5 a.close,
+	#siteType5 .circle-bullet li::before,
+	#siteType5 .radio-holder input[type="radio"] + label::after,
+	#siteType5 .web-tags a,
+	#siteType5 .my-page-sidebar li.active a{background-color: #f5bf3d;}
+	#siteType5 .menu-box h5,
+	#siteType5 .tabs li.active a{color:#f5bf3d;}
+	#siteType5 .static-content blockquote{color:#f5bf3d !important;}
+	#siteType5 .ui-selectmenu-button[aria-expanded="true"],
+	#siteType5 input:focus,
+	#siteType5 select:focus,
+	#siteType5 textarea:focus,
+	#siteType5 .radio-holder input[type="radio"]:checked + label::before{border-color:#f5bf3d;}
+	#siteType5 .pagination ul li.prev a,
+	#siteType5 .pagination ul li.next a,
+	#siteType5 input[type="checkbox"]:checked + label::before,
+	#siteType5 .ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+		background-color: #f5bf3d;
+		border-color:#f5bf3d;
+	}
+	#siteType5 .bttn.transparent:not(.active){background-color: transparent;}
+
+	/* Site Type 6 */
+
+	#siteType6 .cart a,
+	#siteType6 .range-slider .ui-slider-range,
+	#siteType6 .bttn.site,
+	#siteType6 .product-tabs > ul li.active a{background-color: #b71c1c;}
+	#siteType6 .sitemap h5,
+	#siteType6 .my-account-box ul li > span{color:#b71c1c;}
+	#siteType6 .site-color,
+	#siteType6 .static-sidebar li.active a{color:#b71c1c !important;}
+	#siteType6 .pagination ul li.active a{
+		background-color: #b71c1c;
+		border-color:#b71c1c;
+	}
+	#siteType6 .bttn,
+	#siteType6 .search input[type="submit"],
+	#siteType6 .search button,
+	#siteType6 .owl-carousel .owl-nav .owl-prev,
+	#siteType6 .owl-carousel .owl-nav .owl-next,
+	#siteType6 input[type="submit"],
+	#siteType6 button,
+	#siteType6 .top-filters ul li.active a,
+	#siteType6 .ui-slider .ui-slider-handle,
+	#siteType6 .quantity-button,
+	#siteType6 .check-coupon,
+	#siteType6 .checkout-box > h4,
+	#siteType6 a.close,
+	#siteType6 .circle-bullet li::before,
+	#siteType6 .radio-holder input[type="radio"] + label::after,
+	#siteType6 .web-tags a,
+	#siteType6 .my-page-sidebar li.active a{background-color: #d50000;}
+	#siteType6 .menu-box h5,
+	#siteType6 .tabs li.active a{color:#d50000;}
+	#siteType6 .static-content blockquote{color:#d50000 !important;}
+	#siteType6 .ui-selectmenu-button[aria-expanded="true"],
+	#siteType6 input:focus,
+	#siteType6 select:focus,
+	#siteType6 textarea:focus,
+	#siteType6 .radio-holder input[type="radio"]:checked + label::before{border-color:#d50000;}
+	#siteType6 .pagination ul li.prev a,
+	#siteType6 .pagination ul li.next a,
+	#siteType6 input[type="checkbox"]:checked + label::before,
+	#siteType6 .ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+		background-color: #d50000;
+		border-color:#d50000;
+	}
+	#siteType6 .bttn.transparent:not(.active){background-color: transparent;}
+
+	/* Site Type 7 */
+
+	#siteType7 .cart a,
+	#siteType7 .range-slider .ui-slider-range,
+	#siteType7 .bttn.site,
+	#siteType7 .product-tabs > ul li.active a{background-color: #7c28a3;}
+	#siteType7 .sitemap h5,
+	#siteType7 .my-account-box ul li > span{color:#7c28a3;}
+	#siteType7 .site-color,
+	#siteType7 .static-sidebar li.active a{color:#7c28a3 !important;}
+	#siteType7 .pagination ul li.active a{
+		background-color: #7c28a3;
+		border-color:#7c28a3;
+	}
+	#siteType7 .bttn,
+	#siteType7 .search input[type="submit"],
+	#siteType7 .search button,
+	#siteType7 .owl-carousel .owl-nav .owl-prev,
+	#siteType7 .owl-carousel .owl-nav .owl-next,
+	#siteType7 input[type="submit"],
+	#siteType7 button,
+	#siteType7 .top-filters ul li.active a,
+	#siteType7 .ui-slider .ui-slider-handle,
+	#siteType7 .quantity-button,
+	#siteType7 .check-coupon,
+	#siteType7 .checkout-box > h4,
+	#siteType7 a.close,
+	#siteType7 .circle-bullet li::before,
+	#siteType7 .radio-holder input[type="radio"] + label::after,
+	#siteType7 .web-tags a,
+	#siteType7 .my-page-sidebar li.active a{background-color: #b22ff0;}
+	#siteType7 .menu-box h5,
+	#siteType7 .tabs li.active a{color:#b22ff0;}
+	#siteType7 .static-content blockquote{color:#b22ff0 !important;}
+	#siteType7 .ui-selectmenu-button[aria-expanded="true"],
+	#siteType7 input:focus,
+	#siteType7 select:focus,
+	#siteType7 textarea:focus,
+	#siteType7 .radio-holder input[type="radio"]:checked + label::before{border-color:#b22ff0;}
+	#siteType7 .pagination ul li.prev a,
+	#siteType7 .pagination ul li.next a,
+	#siteType7 input[type="checkbox"]:checked + label::before,
+	#siteType7 .ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+		background-color: #b22ff0;
+		border-color:#b22ff0;
+	}
+	#siteType7 .bttn.transparent:not(.active){background-color: transparent;}
+
+	/* Site Type 8 */
+
+	#siteType8 .cart a,
+	#siteType8 .range-slider .ui-slider-range,
+	#siteType8 .bttn.site,
+	#siteType8 .product-tabs > ul li.active a{background-color: #00369e;}
+	#siteType8 .sitemap h5,
+	#siteType8 .my-account-box ul li > span{color:#00369e;}
+	#siteType8 .site-color,
+	#siteType8 .static-sidebar li.active a{color:#00369e !important;}
+	#siteType8 .pagination ul li.active a{
+		background-color: #00369e;
+		border-color:#00369e;
+	}
+	#siteType8 .bttn,
+	#siteType8 .search input[type="submit"],
+	#siteType8 .search button,
+	#siteType8 .owl-carousel .owl-nav .owl-prev,
+	#siteType8 .owl-carousel .owl-nav .owl-next,
+	#siteType8 input[type="submit"],
+	#siteType8 button,
+	#siteType8 .top-filters ul li.active a,
+	#siteType8 .ui-slider .ui-slider-handle,
+	#siteType8 .quantity-button,
+	#siteType8 .check-coupon,
+	#siteType8 .checkout-box > h4,
+	#siteType8 a.close,
+	#siteType8 .circle-bullet li::before,
+	#siteType8 .radio-holder input[type="radio"] + label::after,
+	#siteType8 .web-tags a,
+	#siteType8 .my-page-sidebar li.active a{background-color: #a84100;}
+	#siteType8 .menu-box h5,
+	#siteType8 .tabs li.active a{color:#a84100;}
+	#siteType8 .static-content blockquote{color:#a84100 !important;}
+	#siteType8 .ui-selectmenu-button[aria-expanded="true"],
+	#siteType8 input:focus,
+	#siteType8 select:focus,
+	#siteType8 textarea:focus,
+	#siteType8 .radio-holder input[type="radio"]:checked + label::before{border-color:#a84100;}
+	#siteType8 .pagination ul li.prev a,
+	#siteType8 .pagination ul li.next a,
+	#siteType8 input[type="checkbox"]:checked + label::before,
+	#siteType8 .ui-selectmenu-button[aria-expanded="true"] .ui-icon{
+		background-color: #a84100;
+		border-color:#a84100;
+	}
+	#siteType8 .bttn.transparent:not(.active){background-color: transparent;}
