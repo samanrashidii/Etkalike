@@ -2,6 +2,10 @@
 
 etline is an ecommerce template developed step-by-step from scratch and completed by using some plugins.
 
+## Language
+
+Persian - RTL
+
 ## Live Version
 
 You can see the project built on template by clicking below link :
