@@ -1,4 +1,4 @@
-# etline - Ecommerce HTML Template
+# etline | E-Commerce HTML Template
 
 etline is an ecommerce template developed step-by-step from scratch and completed by using some plugins.
 
